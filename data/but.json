@@ -1,0 +1,1429 @@
+{
+  "maj": "2026-09-28",
+  "avertissement": "Synthèse non officielle réalisée à partir des documents cités. En cas de doute, les M3C 2026-2027 et le directeur des études font foi.",
+  "sources": [
+    {
+      "fichier": "M3C BUT 2024-2025 (IUT Nice Côte d'Azur)",
+      "annee_du_document": "2024-2025 (daté du 26/09/2024)",
+      "remarque": "PÉRIMÉ : remplacé par les M3C communes 2026-2027 ci-dessous. Changements notables : justificatif d'absence sous 48 h (au lieu de 5 jours ouvrés), rattrapage, seuil de 25 %, bonus « sur l'UE ». Utilisé seulement pour comparaison et pour l'article 17 (fraudes)."
+    },
+    {
+      "fichier": "M3C communes BUT 2026-2027",
+      "annee_du_document": "2026-2027 (Nice, 17/09/2026 ; avis favorables du CERTEC du 24/06/2026 et du Conseil de l'Institut du 17/09/2026)",
+      "url": "https://iut.univ-cotedazur.fr/medias/fichier/m3c-but-communes-2026-2027-votees-au-cinst-du-17-09-26_1790150367045-pdf",
+      "remarque": "Version en vigueur, téléchargée le 28/09/2026 depuis https://iut.univ-cotedazur.fr/etudiant-a-liut/scolarite/modalites-de-controle-des-connaissances (lien court https://swll.to/M3C_BUT_Communes_2026_2027_IUTNCA). Source principale des règles ci-dessous."
+    },
+    {
+      "fichier": "MCC BUT Informatique 2024-2025",
+      "annee_du_document": "2024-2025 (éditées le 30/09/2024)",
+      "remarque": "Ancienne version, mais le tableau des coefficients du S1 est strictement identique à celui de 2026-2027 (comparaison ligne à ligne)."
+    },
+    {
+      "fichier": "MCC BUT Informatique 2026-2027",
+      "annee_du_document": "2026-2027 (éditées le 22/09/2026)",
+      "url": "https://iut.univ-cotedazur.fr/medias/fichier/mccs-buts-info-2026-2027_1790151186471-pdf",
+      "remarque": "Version en vigueur (lien court https://swll.to/M3C_BUTINFO_2026_2027_IUTNCA). S1 : p. 3/13 (formation classique) et p. 2/13 (alternance), coefficients identiques. Seule différence avec 2024-2025 : une ligne « HP Heures pour encadrement des projets » à coefficient 0 aux S2, S4 et S6."
+    },
+    {
+      "fichier": "Livret d'accueil BUT Informatique 2026-2027",
+      "annee_du_document": "2026-2027 (couverture « Promotion 2026-2027 »), mais en-têtes et sommaire encore « 2025-2026 »",
+      "remarque": "Partiellement mis à jour : le calendrier des congés est bien celui de 2026-2027 (image p. 6) ; la partie absences reprend l'ancienne règle des 5 jours ouvrés. Pages citées = numéros imprimés en bas de page (page PDF = numéro + 1)."
+    },
+    {
+      "fichier": "Contrat pédagogique 2025-2026",
+      "annee_du_document": "2025-2026",
+      "remarque": "Formulaire de l'an dernier (date limite 7 novembre 2025 pour le S1) : version et date limite 2026-2027 à demander au secrétariat."
+    },
+    {
+      "fichier": "Programme national du BUT Informatique (2022)",
+      "annee_du_document": "2022 (annexe 15, © MESRI 2022)",
+      "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf",
+      "remarque": "Le ministère publie une version « Programmes nationaux 2022 – mis à jour en 2023 » (URL ci-contre) ; comparaison faite : les seules différences de fond concernent le S2 (liens entre R2.xx et SAÉ 2.02), rien pour le S1."
+    },
+    {
+      "fichier": "Annonces Moodle et intranet (septembre 2026)",
+      "annee_du_document": "2026-2027 (mis à jour le 27/09/2026)",
+      "remarque": "Contacts, IUT Notes, élection CDEP, fenêtre de demande d'alternance."
+    },
+    {
+      "fichier": "Annonces Moodle R1.02 (septembre 2026)",
+      "annee_du_document": "2026-2027 (27/09/2026)",
+      "remarque": "Coefficients internes des évaluations de R1.02 (annonce Moodle du 15/09)."
+    },
+    {
+      "fichier": "ScoDoc (logiciel de notes utilisé par IUT Notes)",
+      "annee_du_document": "documentation en ligne consultée le 28/09/2026",
+      "url": "https://scodoc.org/BUTCodesJury/",
+      "remarque": "Codes de jury (ADM, PASD, PAS1NCI, ADSUP...) et formules de calcul (https://scodoc.org/BUT/)."
+    },
+    {
+      "fichier": "Site de l'IUT - page Modalités de contrôle des connaissances",
+      "annee_du_document": "liste 2026-2027",
+      "url": "https://iut.univ-cotedazur.fr/etudiant-a-liut/scolarite/modalites-de-controle-des-connaissances",
+      "remarque": "Page officielle d'où proviennent les M3C et MCC 2026-2027."
+    }
+  ],
+  "competences": [
+    {
+      "num": 1,
+      "code": "C1",
+      "nom": "Réaliser",
+      "intitule": "Réaliser un développement d'application",
+      "definition_pn": "Développer — c'est-à-dire concevoir, coder, tester et intégrer — une solution informatique pour un client.",
+      "niveau_1": "Développer des applications informatiques simples",
+      "niveaux_parcours_A": 3,
+      "apprentissages_critiques_niveau_1": [
+        "AC11.01 | Implémenter des conceptions simples",
+        "AC11.02 | Élaborer des conceptions simples",
+        "AC11.03 | Faire des essais et évaluer leurs résultats en regard des spécifications",
+        "AC11.04 | Développer des interfaces utilisateurs"
+      ],
+      "ue_s1": "UE 1.1",
+      "ue_s2": "UE 2.1",
+      "rcue_but1": "UE 1.1 + UE 2.1 (niveau 1)",
+      "source": "Programme national BUT Informatique 2022, p. 16 (compétences), p. 18 (niveaux), p. 19-24 (apprentissages critiques) ; intitulés : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 et Livret d'accueil BUT Info 2026-2027, p. 10 (§ 4.2.3). Parcours A : C3, C4 et C5 s'arrêtent au niveau 2 (livret p. 10)."
+    },
+    {
+      "num": 2,
+      "code": "C2",
+      "nom": "Optimiser",
+      "intitule": "Optimiser des applications informatiques",
+      "definition_pn": "Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d'exécution, précision, consommation de ressources.",
+      "niveau_1": "Appréhender et construire des algorithmes",
+      "niveaux_parcours_A": 3,
+      "apprentissages_critiques_niveau_1": [
+        "AC12.01 | Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données...)",
+        "AC12.02 | Comparer des algorithmes pour des problèmes classiques (tris simples, recherche...)",
+        "AC12.03 | Formaliser et mettre en œuvre des outils mathématiques pour l'informatique"
+      ],
+      "ue_s1": "UE 1.2",
+      "ue_s2": "UE 2.2",
+      "rcue_but1": "UE 1.2 + UE 2.2 (niveau 1)",
+      "source": "Programme national BUT Informatique 2022, p. 16 (compétences), p. 18 (niveaux), p. 19-24 (apprentissages critiques) ; intitulés : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 et Livret d'accueil BUT Info 2026-2027, p. 10 (§ 4.2.3). Parcours A : C3, C4 et C5 s'arrêtent au niveau 2 (livret p. 10)."
+    },
+    {
+      "num": 3,
+      "code": "C3",
+      "nom": "Administrer",
+      "intitule": "Administrer des systèmes informatiques communicants complexes",
+      "definition_pn": "Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d'une organisation.",
+      "niveau_1": "Installer et configurer un poste de travail",
+      "niveaux_parcours_A": 2,
+      "apprentissages_critiques_niveau_1": [
+        "AC13.01 | Identifier les différents composants (matériels et logiciels) d'un système numérique",
+        "AC13.02 | Utiliser les fonctionnalités de base d'un système multitâches / multiutilisateurs",
+        "AC13.03 | Installer et configurer un système d'exploitation et des outils de développement",
+        "AC13.04 | Configurer un poste de travail dans un réseau d'entreprise"
+      ],
+      "ue_s1": "UE 1.3",
+      "ue_s2": "UE 2.3",
+      "rcue_but1": "UE 1.3 + UE 2.3 (niveau 1)",
+      "source": "Programme national BUT Informatique 2022, p. 16 (compétences), p. 18 (niveaux), p. 19-24 (apprentissages critiques) ; intitulés : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 et Livret d'accueil BUT Info 2026-2027, p. 10 (§ 4.2.3). Parcours A : C3, C4 et C5 s'arrêtent au niveau 2 (livret p. 10)."
+    },
+    {
+      "num": 4,
+      "code": "C4",
+      "nom": "Gérer",
+      "intitule": "Gérer des données de l'information",
+      "definition_pn": "Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l'entreprise.",
+      "niveau_1": "Concevoir et mettre en place une base de données à partir d'un cahier des charges client",
+      "niveaux_parcours_A": 2,
+      "apprentissages_critiques_niveau_1": [
+        "AC14.01 | Mettre à jour et interroger une base de données relationnelle (en requêtes directes ou à travers une application)",
+        "AC14.02 | Visualiser des données",
+        "AC14.03 | Concevoir une base de données relationnelle à partir d'un cahier des charges"
+      ],
+      "ue_s1": "UE 1.4",
+      "ue_s2": "UE 2.4",
+      "rcue_but1": "UE 1.4 + UE 2.4 (niveau 1)",
+      "source": "Programme national BUT Informatique 2022, p. 16 (compétences), p. 18 (niveaux), p. 19-24 (apprentissages critiques) ; intitulés : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 et Livret d'accueil BUT Info 2026-2027, p. 10 (§ 4.2.3). Parcours A : C3, C4 et C5 s'arrêtent au niveau 2 (livret p. 10)."
+    },
+    {
+      "num": 5,
+      "code": "C5",
+      "nom": "Conduire",
+      "intitule": "Conduire un projet",
+      "definition_pn": "Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles.",
+      "niveau_1": "Identifier les besoins métiers des clients et des utilisateurs",
+      "niveaux_parcours_A": 2,
+      "apprentissages_critiques_niveau_1": [
+        "AC15.01 | Appréhender les besoins du client et de l'utilisateur",
+        "AC15.02 | Mettre en place les outils de gestion de projet",
+        "AC15.03 | Identifier les acteurs et les différentes phases d'un cycle de développement"
+      ],
+      "ue_s1": "UE 1.5",
+      "ue_s2": "UE 2.5",
+      "rcue_but1": "UE 1.5 + UE 2.5 (niveau 1)",
+      "source": "Programme national BUT Informatique 2022, p. 16 (compétences), p. 18 (niveaux), p. 19-24 (apprentissages critiques) ; intitulés : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 et Livret d'accueil BUT Info 2026-2027, p. 10 (§ 4.2.3). Parcours A : C3, C4 et C5 s'arrêtent au niveau 2 (livret p. 10)."
+    },
+    {
+      "num": 6,
+      "code": "C6",
+      "nom": "Collaborer",
+      "intitule": "Travailler dans une équipe informatique",
+      "definition_pn": "Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.",
+      "niveau_1": "Identifier ses aptitudes pour travailler dans une équipe",
+      "niveaux_parcours_A": 3,
+      "apprentissages_critiques_niveau_1": [
+        "AC16.01 | Appréhender l'écosystème numérique",
+        "AC16.02 | Découvrir les aptitudes requises selon les différents secteurs informatiques",
+        "AC16.03 | Identifier les statuts, les fonctions et les rôles de chaque membre d'une équipe pluridisciplinaire",
+        "AC16.04 | Acquérir les compétences interpersonnelles pour travailler en équipe"
+      ],
+      "ue_s1": "UE 1.6",
+      "ue_s2": "UE 2.6",
+      "rcue_but1": "UE 1.6 + UE 2.6 (niveau 1)",
+      "source": "Programme national BUT Informatique 2022, p. 16 (compétences), p. 18 (niveaux), p. 19-24 (apprentissages critiques) ; intitulés : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 et Livret d'accueil BUT Info 2026-2027, p. 10 (§ 4.2.3). Parcours A : C3, C4 et C5 s'arrêtent au niveau 2 (livret p. 10)."
+    }
+  ],
+  "ue_s1": [
+    {
+      "code": "UE 1.1",
+      "code_mcc": "UE11",
+      "competence": "Réaliser",
+      "competence_num": 1,
+      "intitule": "Réaliser un développement d'application",
+      "ects": 5,
+      "total_coefs": 100,
+      "part_ressources_pct": 60,
+      "part_sae_pct": 40,
+      "coefficients": [
+        {
+          "module": "R1.01",
+          "intitule": "Initiation au développement",
+          "type": "ressource",
+          "coef": 42
+        },
+        {
+          "module": "R1.02",
+          "intitule": "Développement d'interfaces web",
+          "type": "ressource",
+          "coef": 12
+        },
+        {
+          "module": "R1.10",
+          "intitule": "Anglais technique",
+          "type": "ressource",
+          "coef": 6
+        },
+        {
+          "module": "SAÉ 1.01",
+          "intitule": "Implémentation d'un besoin client",
+          "type": "sae",
+          "coef": 40
+        }
+      ],
+      "rcue": "UE 1.1 (S1) + UE 2.1 (S2) = niveau 1 de « Réaliser »",
+      "source": "MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 (formation classique ; identique p. 2/13 en alternance et identique aux MCC 2024-2025)"
+    },
+    {
+      "code": "UE 1.2",
+      "code_mcc": "UE12",
+      "competence": "Optimiser",
+      "competence_num": 2,
+      "intitule": "Optimiser des applications informatiques",
+      "ects": 5,
+      "total_coefs": 100,
+      "part_ressources_pct": 60,
+      "part_sae_pct": 40,
+      "coefficients": [
+        {
+          "module": "R1.01",
+          "intitule": "Initiation au développement",
+          "type": "ressource",
+          "coef": 24
+        },
+        {
+          "module": "R1.03",
+          "intitule": "Introduction à l'architecture des ordinateurs",
+          "type": "ressource",
+          "coef": 6
+        },
+        {
+          "module": "R1.06",
+          "intitule": "Mathématiques discrètes",
+          "type": "ressource",
+          "coef": 15
+        },
+        {
+          "module": "R1.07",
+          "intitule": "Outils mathématiques fondamentaux",
+          "type": "ressource",
+          "coef": 15
+        },
+        {
+          "module": "SAÉ 1.02",
+          "intitule": "Comparaison d'approches algorithmiques",
+          "type": "sae",
+          "coef": 40
+        }
+      ],
+      "rcue": "UE 1.2 (S1) + UE 2.2 (S2) = niveau 1 de « Optimiser »",
+      "source": "MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 (formation classique ; identique p. 2/13 en alternance et identique aux MCC 2024-2025)"
+    },
+    {
+      "code": "UE 1.3",
+      "code_mcc": "UE13",
+      "competence": "Administrer",
+      "competence_num": 3,
+      "intitule": "Administrer des systèmes informatiques communicants complexes",
+      "ects": 5,
+      "total_coefs": 100,
+      "part_ressources_pct": 60,
+      "part_sae_pct": 40,
+      "coefficients": [
+        {
+          "module": "R1.03",
+          "intitule": "Introduction à l'architecture des ordinateurs",
+          "type": "ressource",
+          "coef": 21
+        },
+        {
+          "module": "R1.04",
+          "intitule": "Introduction aux systèmes d'exploitation",
+          "type": "ressource",
+          "coef": 21
+        },
+        {
+          "module": "R1.10",
+          "intitule": "Anglais technique",
+          "type": "ressource",
+          "coef": 12
+        },
+        {
+          "module": "R1.11",
+          "intitule": "Bases de la communication",
+          "type": "ressource",
+          "coef": 6
+        },
+        {
+          "module": "SAÉ 1.03",
+          "intitule": "Installation d'un poste pour le développement",
+          "type": "sae",
+          "coef": 40
+        }
+      ],
+      "rcue": "UE 1.3 (S1) + UE 2.3 (S2) = niveau 1 de « Administrer »",
+      "source": "MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 (formation classique ; identique p. 2/13 en alternance et identique aux MCC 2024-2025)"
+    },
+    {
+      "code": "UE 1.4",
+      "code_mcc": "UE14",
+      "competence": "Gérer",
+      "competence_num": 4,
+      "intitule": "Gérer des données de l'information",
+      "ects": 5,
+      "total_coefs": 100,
+      "part_ressources_pct": 60,
+      "part_sae_pct": 40,
+      "coefficients": [
+        {
+          "module": "R1.05",
+          "intitule": "Introduction aux bases de données et SQL",
+          "type": "ressource",
+          "coef": 36
+        },
+        {
+          "module": "R1.06",
+          "intitule": "Mathématiques discrètes",
+          "type": "ressource",
+          "coef": 18
+        },
+        {
+          "module": "R1.09",
+          "intitule": "Économie durable et numérique",
+          "type": "ressource",
+          "coef": 6
+        },
+        {
+          "module": "SAÉ 1.04",
+          "intitule": "Création d'une base de données",
+          "type": "sae",
+          "coef": 40
+        }
+      ],
+      "rcue": "UE 1.4 (S1) + UE 2.4 (S2) = niveau 1 de « Gérer »",
+      "source": "MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 (formation classique ; identique p. 2/13 en alternance et identique aux MCC 2024-2025)"
+    },
+    {
+      "code": "UE 1.5",
+      "code_mcc": "UE15",
+      "competence": "Conduire",
+      "competence_num": 5,
+      "intitule": "Conduire un projet",
+      "ects": 5,
+      "total_coefs": 100,
+      "part_ressources_pct": 60,
+      "part_sae_pct": 40,
+      "coefficients": [
+        {
+          "module": "R1.02",
+          "intitule": "Développement d'interfaces web",
+          "type": "ressource",
+          "coef": 18
+        },
+        {
+          "module": "R1.08",
+          "intitule": "Gestion de projet et des organisations",
+          "type": "ressource",
+          "coef": 27
+        },
+        {
+          "module": "R1.11",
+          "intitule": "Bases de la communication",
+          "type": "ressource",
+          "coef": 15
+        },
+        {
+          "module": "SAÉ 1.05",
+          "intitule": "Recueil des besoins",
+          "type": "sae",
+          "coef": 40
+        }
+      ],
+      "rcue": "UE 1.5 (S1) + UE 2.5 (S2) = niveau 1 de « Conduire »",
+      "source": "MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 (formation classique ; identique p. 2/13 en alternance et identique aux MCC 2024-2025)"
+    },
+    {
+      "code": "UE 1.6",
+      "code_mcc": "UE16",
+      "competence": "Collaborer",
+      "competence_num": 6,
+      "intitule": "Travailler dans une équipe informatique",
+      "ects": 5,
+      "total_coefs": 100,
+      "part_ressources_pct": 60,
+      "part_sae_pct": 40,
+      "coefficients": [
+        {
+          "module": "R1.02",
+          "intitule": "Développement d'interfaces web",
+          "type": "ressource",
+          "coef": 5
+        },
+        {
+          "module": "R1.08",
+          "intitule": "Gestion de projet et des organisations",
+          "type": "ressource",
+          "coef": 11
+        },
+        {
+          "module": "R1.09",
+          "intitule": "Économie durable et numérique",
+          "type": "ressource",
+          "coef": 11
+        },
+        {
+          "module": "R1.10",
+          "intitule": "Anglais technique",
+          "type": "ressource",
+          "coef": 11
+        },
+        {
+          "module": "R1.11",
+          "intitule": "Bases de la communication",
+          "type": "ressource",
+          "coef": 11
+        },
+        {
+          "module": "R1.12",
+          "intitule": "Projet professionnel et personnel",
+          "type": "ressource",
+          "coef": 11
+        },
+        {
+          "module": "SAÉ 1.06",
+          "intitule": "Découverte de l'environnement économique et écologique",
+          "type": "sae",
+          "coef": 40
+        }
+      ],
+      "rcue": "UE 1.6 (S1) + UE 2.6 (S2) = niveau 1 de « Collaborer »",
+      "source": "MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 (formation classique ; identique p. 2/13 en alternance et identique aux MCC 2024-2025)"
+    }
+  ],
+  "tableau_coefficients_s1": {
+    "colonnes": [
+      "UE 1.1",
+      "UE 1.2",
+      "UE 1.3",
+      "UE 1.4",
+      "UE 1.5",
+      "UE 1.6"
+    ],
+    "lignes": [
+      {
+        "module": "R1.01",
+        "code_mcc": "R1.01",
+        "intitule_mcc": "Initiation au développement",
+        "intitule_pn": "Initiation au développement",
+        "type": "ressource",
+        "coef_semestre": 66,
+        "coefs": [
+          42,
+          24,
+          0,
+          0,
+          0,
+          0
+        ],
+        "heures_pn": "70 h dont 38 h de TP"
+      },
+      {
+        "module": "R1.02",
+        "code_mcc": "R1.02",
+        "intitule_mcc": "Développement d'interfaces web",
+        "intitule_pn": "Développement d'interfaces web",
+        "type": "ressource",
+        "coef_semestre": 35,
+        "coefs": [
+          12,
+          0,
+          0,
+          0,
+          18,
+          5
+        ],
+        "heures_pn": "16 h dont 12 h de TP"
+      },
+      {
+        "module": "R1.03",
+        "code_mcc": "R1.03",
+        "intitule_mcc": "Introduction à l'architecture des ordinateurs",
+        "intitule_pn": "Introduction à l'architecture des ordinateurs",
+        "type": "ressource",
+        "coef_semestre": 27,
+        "coefs": [
+          0,
+          6,
+          21,
+          0,
+          0,
+          0
+        ],
+        "heures_pn": "16 h dont 6 h de TP"
+      },
+      {
+        "module": "R1.04",
+        "code_mcc": "R1.04",
+        "intitule_mcc": "Introduction aux systèmes d'exploitation",
+        "intitule_pn": "Introduction aux systèmes d'exploitation et à leur fonctionnement",
+        "type": "ressource",
+        "coef_semestre": 21,
+        "coefs": [
+          0,
+          0,
+          21,
+          0,
+          0,
+          0
+        ],
+        "heures_pn": "19 h dont 14 h de TP"
+      },
+      {
+        "module": "R1.05",
+        "code_mcc": "R1.05",
+        "intitule_mcc": "Introduction aux bases de données et SQL",
+        "intitule_pn": "Introduction aux bases de données et SQL",
+        "type": "ressource",
+        "coef_semestre": 36,
+        "coefs": [
+          0,
+          0,
+          0,
+          36,
+          0,
+          0
+        ],
+        "heures_pn": "36 h dont 18 h de TP"
+      },
+      {
+        "module": "R1.06",
+        "code_mcc": "R1.06",
+        "intitule_mcc": "Mathématiques discrètes",
+        "intitule_pn": "Mathématiques discrètes",
+        "type": "ressource",
+        "coef_semestre": 33,
+        "coefs": [
+          0,
+          15,
+          0,
+          18,
+          0,
+          0
+        ],
+        "heures_pn": "28 h dont 7 h de TP"
+      },
+      {
+        "module": "R1.07",
+        "code_mcc": "R1.07",
+        "intitule_mcc": "Outils mathématiques fondamentaux",
+        "intitule_pn": "Outils mathématiques fondamentaux",
+        "type": "ressource",
+        "coef_semestre": 15,
+        "coefs": [
+          0,
+          15,
+          0,
+          0,
+          0,
+          0
+        ],
+        "heures_pn": "17 h dont 7 h de TP"
+      },
+      {
+        "module": "R1.08",
+        "code_mcc": "R1.08",
+        "intitule_mcc": "Gestion de projet et des organisations",
+        "intitule_pn": "Introduction à la gestion des organisations",
+        "type": "ressource",
+        "coef_semestre": 38,
+        "coefs": [
+          0,
+          0,
+          0,
+          0,
+          27,
+          11
+        ],
+        "heures_pn": "25 h dont 7 h de TP"
+      },
+      {
+        "module": "R1.09",
+        "code_mcc": "R1.09",
+        "intitule_mcc": "Économie durable et numérique",
+        "intitule_pn": "Introduction à l'économie durable et numérique",
+        "type": "ressource",
+        "coef_semestre": 17,
+        "coefs": [
+          0,
+          0,
+          0,
+          6,
+          0,
+          11
+        ],
+        "heures_pn": "18 h dont 4 h de TP"
+      },
+      {
+        "module": "R1.10",
+        "code_mcc": "R1.10",
+        "intitule_mcc": "Anglais technique",
+        "intitule_pn": "Anglais",
+        "type": "ressource",
+        "coef_semestre": 29,
+        "coefs": [
+          6,
+          0,
+          12,
+          0,
+          0,
+          11
+        ],
+        "heures_pn": "21 h dont 7 h de TP"
+      },
+      {
+        "module": "R1.11",
+        "code_mcc": "R1.11",
+        "intitule_mcc": "Bases de la communication",
+        "intitule_pn": "Bases de la communication",
+        "type": "ressource",
+        "coef_semestre": 32,
+        "coefs": [
+          0,
+          0,
+          6,
+          0,
+          15,
+          11
+        ],
+        "heures_pn": "21 h dont 7 h de TP"
+      },
+      {
+        "module": "R1.12",
+        "code_mcc": "R1.12",
+        "intitule_mcc": "Projet professionnel et personnel",
+        "intitule_pn": "Projet professionnel et personnel",
+        "type": "ressource",
+        "coef_semestre": 11,
+        "coefs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11
+        ],
+        "heures_pn": "11 h dont 3 h de TP"
+      },
+      {
+        "module": "R1.13",
+        "code_mcc": "R1.AL",
+        "intitule_mcc": "Remise à niveau et méthodologie",
+        "intitule_pn": null,
+        "type": "ressource locale (coef 0, ne compte pas)",
+        "coef_semestre": 0,
+        "coefs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "heures_pn": null
+      },
+      {
+        "module": "SAÉ 1.01",
+        "code_mcc": "SAE1.01",
+        "intitule_mcc": "Implémentation d'un besoin client",
+        "intitule_pn": "Implémentation d'un besoin client",
+        "type": "sae",
+        "coef_semestre": 40,
+        "coefs": [
+          40,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "heures_pn": "volume défini localement"
+      },
+      {
+        "module": "SAÉ 1.02",
+        "code_mcc": "SAE1.02",
+        "intitule_mcc": "Comparaison d'approches algorithmiques",
+        "intitule_pn": "Comparaison d'approches algorithmiques",
+        "type": "sae",
+        "coef_semestre": 40,
+        "coefs": [
+          0,
+          40,
+          0,
+          0,
+          0,
+          0
+        ],
+        "heures_pn": "volume défini localement"
+      },
+      {
+        "module": "SAÉ 1.03",
+        "code_mcc": "SAE1.03",
+        "intitule_mcc": "Installation d'un poste pour le développement",
+        "intitule_pn": "Installation d'un poste pour le développement",
+        "type": "sae",
+        "coef_semestre": 40,
+        "coefs": [
+          0,
+          0,
+          40,
+          0,
+          0,
+          0
+        ],
+        "heures_pn": "volume défini localement"
+      },
+      {
+        "module": "SAÉ 1.04",
+        "code_mcc": "SAE1.04",
+        "intitule_mcc": "Création d'une base de données",
+        "intitule_pn": "Création d'une base de données",
+        "type": "sae",
+        "coef_semestre": 40,
+        "coefs": [
+          0,
+          0,
+          0,
+          40,
+          0,
+          0
+        ],
+        "heures_pn": "volume défini localement"
+      },
+      {
+        "module": "SAÉ 1.05",
+        "code_mcc": "SAE1.05",
+        "intitule_mcc": "Recueil des besoins",
+        "intitule_pn": "Recueil de besoins",
+        "type": "sae",
+        "coef_semestre": 40,
+        "coefs": [
+          0,
+          0,
+          0,
+          0,
+          40,
+          0
+        ],
+        "heures_pn": "volume défini localement"
+      },
+      {
+        "module": "SAÉ 1.06",
+        "code_mcc": "SAE1.06",
+        "intitule_mcc": "Découverte de l'environnement économique et écologique",
+        "intitule_pn": "Découverte de l'environnement économique et écologique",
+        "type": "sae",
+        "coef_semestre": 40,
+        "coefs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          40
+        ],
+        "heures_pn": "volume défini localement"
+      }
+    ],
+    "totaux_par_ue": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "total_semestre": 600,
+    "ects_par_ue": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "sous_parties": "Aucune : les MCC 2026-2027 ne découpent aucune ressource en sous-modules (R1.06 et R1.07 sont deux modules distincts). À vérifier sur IUT Notes.",
+    "lecture": "coefs[i] = coefficient du module dans colonnes[i]. Chaque UE totalise 100 : 60 pour les ressources, 40 pour la SAÉ de la compétence.",
+    "source": "MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 — https://iut.univ-cotedazur.fr/medias/fichier/mccs-buts-info-2026-2027_1790151186471-pdf (vérifié ligne à ligne : identique aux MCC 2024-2025). Heures : Programme national BUT Informatique 2022, p. 61 et fiches p. 69-80."
+  },
+  "calcul_moyennes": {
+    "formule_ue": "Moyenne UE 1.k = Σ (coef du module dans l'UE × moyenne du module pour cette UE) ÷ Σ (coefs), moins l'éventuelle pénalité d'absence, plus l'éventuel bonus.",
+    "exemple": "UE 1.2 (Optimiser) = (24 × R1.01 + 6 × R1.03 + 15 × R1.06 + 15 × R1.07 + 40 × SAÉ 1.02) ÷ 100.",
+    "estimation_en_cours_de_semestre": "Tant que des notes manquent, ne garder que les modules déjà notés et diviser par la somme de leurs coefficients. Ex. : dans l'UE 1.2, si seules R1.01 = 12 et R1.06 = 9 sont connues : (24 × 12 + 15 × 9) ÷ (24 + 15) = 10,85. Estimation indicative : IUT Notes (ScoDoc) fait foi.",
+    "moyenne_module": "La note d'un module est la moyenne pondérée de ses évaluations, avec des coefficients fixés par l'enseignant. Dans ScoDoc, une évaluation peut aussi avoir un poids différent selon l'UE (par défaut, le même pour toutes les UE du module).",
+    "rcue": "Moyenne d'un RCUE (calculée en fin de S2) = (moyenne UE 1.k + moyenne UE 2.k) ÷ 2 (les deux UE valent 5 ECTS).",
+    "pas_de_moyenne_generale": "Le BUT ne se valide pas sur une moyenne générale : chaque compétence est jugée séparément (un « rang » peut apparaître sur les relevés, calculé sur les UE).",
+    "ponderations_internes_connues": [
+      {
+        "module": "R1.02",
+        "evaluations": [
+          {
+            "nom": "Évaluation n°1 : QCM sur les TD 1 à 3 (mardi 29/09/2026, 9h-10h, amphi)",
+            "coef": 0.5
+          },
+          {
+            "nom": "DS final (mercredi 04/11/2026, 1h30, salle 508)",
+            "coef": 1.5
+          },
+          {
+            "nom": "Rendu des TD 1 à 6 (avant le vendredi 15/01/2027, 20h)",
+            "coef": 0.5
+          },
+          {
+            "nom": "Sites web des SAÉ",
+            "coef": 0.5
+          }
+        ],
+        "formule": "R1.02 = (0,5 × QCM + 1,5 × DS + 0,5 × TD + 0,5 × SAÉ) ÷ 3",
+        "source": "Annonce Moodle R1.02 du 15/09/2026"
+      }
+    ],
+    "sources": [
+      "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 3.1 (p. 2) et art. 5 (p. 3)",
+      "Livret d'accueil BUT Info 2026-2027, p. 10",
+      "MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13",
+      "ScoDoc - Le BUT : introduction (https://scodoc.org/BUT/) et Implémentation jurys BUT (https://scodoc.org/DevJuryBUT/ : « moy_rcue : moyenne des moyennes d'UE »)",
+      "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), p. 9 (rang calculé sur les seules UE)"
+    ]
+  },
+  "regles_validation": [
+    {
+      "titre": "6 UE = 6 compétences, pas de moyenne générale",
+      "texte": "Au S1, il y a 6 UE (UE 1.1 à UE 1.6), une par compétence, chacune de 5 ECTS (30 ECTS au semestre). Chaque UE a sa propre moyenne. Les compétences ne se compensent pas entre elles : un 16 en « Réaliser » ne rattrape pas un 6 en « Collaborer ».",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 10 (§ 4.2.3) ; MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    },
+    {
+      "titre": "Poids ressources / SAÉ",
+      "texte": "Dans chaque UE, 60 % de la moyenne vient des ressources (R1.xx) et 40 % de la SAÉ de la compétence (coef 40 sur 100). Aucune évaluation ne peut représenter plus de 50 % de la note finale d'une UE.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 10 ; M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 3.1 (p. 2 : rapport de 40 à 60 %) et art. 5 (p. 3) ; MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    },
+    {
+      "titre": "Calcul de la moyenne d'une UE",
+      "texte": "Moyenne pondérée des modules de l'UE avec leurs coefficients (voir tableau_coefficients_s1), moins les éventuelles pénalités d'absence. Les notes ne sont définitives qu'après délibération du jury.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 5 (p. 3)"
+    },
+    {
+      "titre": "UE acquise et capitalisée",
+      "texte": "Une UE dont la moyenne est ≥ 10/20 est définitivement acquise et capitalisée, avec ses 5 ECTS. En cas de redoublement, une UE acquise reste acquise ; si tu la suis de nouveau, le jury retient la meilleure moyenne.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 3.1 (p. 2) et art. 10 (p. 4)"
+    },
+    {
+      "titre": "Compensation dans un RCUE (S1 + S2 d'une même compétence)",
+      "texte": "Un regroupement cohérent d'UE (RCUE) réunit les deux UE d'un même niveau de compétence : UE 1.k (S1) + UE 2.k (S2). La compensation y est intégrale : une UE < 10 est acquise par compensation si et seulement si la moyenne du RCUE est ≥ 10. Exemple : UE 1.1 = 8,5 et UE 2.1 = 11,7 → RCUE = 10,1 → les deux UE sont validées. Aucune compensation entre compétences différentes.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 3.2 (p. 2) ; Livret d'accueil BUT Info 2026-2027, p. 10 ; ScoDoc (moyenne RCUE = moyenne des moyennes d'UE)"
+    },
+    {
+      "titre": "Passage du S1 au S2",
+      "texte": "De droit, quelles que soient les notes du S1. Une UE du S1 sous 10 n'est pas perdue : elle peut encore être compensée par l'UE du S2 de la même compétence.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 9 (p. 3) ; Livret d'accueil BUT Info 2026-2027, p. 10"
+    },
+    {
+      "titre": "Passage en BUT2 (semestre 3)",
+      "texte": "À la fin du S2, il faut : la moyenne (≥ 10) à plus de la moitié des RCUE, soit au moins 4 compétences sur 6, ET au moins 8/20 à chaque RCUE. Exemple : 4 RCUE ≥ 10 et 2 RCUE entre 8 et 10 → passage de droit. Un seul RCUE < 8, ou seulement 3 RCUE ≥ 10 → pas de passage de droit (le jury, souverain, décide).",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 9 (p. 3) ; Livret d'accueil BUT Info 2026-2027, p. 10"
+    },
+    {
+      "titre": "Passer avec une compétence non validée (l'équivalent BUT de l'AJAC)",
+      "texte": "Le terme AJAC n'existe pas en BUT. Si tu passes en BUT2 avec un ou deux RCUE entre 8 et 10, ces RCUE ne sont pas validés mais tu ne refais pas le BUT1 : valider en BUT2 les deux UE du niveau 2 de la même compétence valide automatiquement le niveau 1 (code ScoDoc ADSUP). Codes d'année possibles : ADM (admis), PASD (« non admis, mais passage de droit »), PAS1NCI (« non admis, mais passage par décision de jury »), RED (« ajourné, mais autorisé à redoubler »), NAR (« non admis, réorientation »), DEF (défaillant).",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 3.1 (p. 2) ; Livret d'accueil BUT Info 2026-2027, p. 10 ; ScoDoc - Codes jury BUT (https://scodoc.org/BUTCodesJury/)"
+    },
+    {
+      "titre": "Entrée en BUT3 (S5) — à anticiper",
+      "texte": "M3C : il faut en plus avoir validé toutes les UE des semestres 1 à 4 (directement, par compensation ou par décision de jury). Livret (parcours A) : C3, C4 et C5 doivent être validées au niveau 2 (elles s'arrêtent en BUT2), toutes les compétences doivent avoir une moyenne ≥ 8, au moins une compétence parmi C1, C2, C6 doit être validée au niveau 2, et celles qui ne le sont pas doivent l'avoir été au niveau 1. Les deux textes ne disent pas exactement la même chose : voir a_verifier.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 9 (p. 3) ; Livret d'accueil BUT Info 2026-2027, p. 10"
+    },
+    {
+      "titre": "Obtention du BUT et du DUT",
+      "texte": "Le BUT (grade de licence, 180 ECTS) s'obtient par acquisition de toutes les UE ou par compensation. En parcours A (« Réalisation d'applications »), C1, C2 et C6 doivent être validées au niveau 3 en BUT3. Le DUT est délivré au terme des 120 premiers ECTS. Sans diplôme, une attestation liste les UE acquises et leurs crédits.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 2-3.1 (p. 2), art. 6 (p. 3) et art. 10 (p. 4) ; Livret d'accueil BUT Info 2026-2027, p. 10"
+    },
+    {
+      "titre": "Redoublement",
+      "texte": "Chaque semestre peut être redoublé une seule fois, dans la limite de 4 redoublements sur tout le cursus (un de plus possible en cas de force majeure, sur décision du directeur de l'IUT). Un refus de redoublement doit être motivé et accompagné de conseils d'orientation. Un redoublant signe un contrat pédagogique « redoublant » listant les UE acquises et celles à refaire.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 9 (p. 3) ; Contrat pédagogique 2025-2026, p. 1"
+    },
+    {
+      "titre": "Pas de session de rattrapage globale",
+      "texte": "Le BUT est en contrôle continu intégral : il n'y a pas de « seconde session » pour rattraper une UE ratée. Un rattrapage n'existe que pour une absence justifiée à un contrôle, sur demande (voir la partie absences).",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 5 (p. 3) et art. 14 (p. 6)"
+    },
+    {
+      "titre": "Jurys et contestation",
+      "texte": "Un jury présidé par le directeur de l'IUT se réunit à chaque semestre ; il est souverain. Pour contester une décision (erreur), demande écrite argumentée au secrétariat de la direction de l'IUT dans les 2 mois suivant la proclamation des résultats. La fin du semestre correspond à la date du jury : reste disponible jusque-là (projets, soutenances).",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 6 à 8 (p. 3) ; Livret d'accueil BUT Info 2026-2027, p. 5"
+    },
+    {
+      "titre": "Bonus sport, engagement, culture, entrepreneuriat",
+      "texte": "Sport (SUAPS) : jusqu'à +0,25 point par semestre, sur proposition écrite du SUAPS (participation, assiduité), décision du jury. Engagement étudiant : +0,25 point (dossier à la Maison de l'Étudiant). Culture : +0,25 point « sur l'unité d'enseignement », pour au moins 20 h d'engagement par semestre (40 h par an), demande à UniCA Culture au démarrage du projet. Entrepreneuriat (UniCA Entreprendre) : jusqu'à +0,25 point selon le nombre d'événements. Les bonus ne se cumulent pas : seul le plus élevé est retenu.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 17 à 20 (p. 8-9)"
+    },
+    {
+      "titre": "Déroulement des contrôles",
+      "texte": "Les contrôles peuvent avoir lieu du lundi au samedi et sont obligatoires. L'accès à la salle est refusé après la distribution des sujets, sauf exception (retard de 30 min maximum et aucun candidat sorti). Impossible de sortir avant la première demi-heure ; une fois la copie rendue, on ne revient pas.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 14.1 (p. 6) et art. 15 (p. 7)"
+    },
+    {
+      "titre": "Fraude, plagiat et IA",
+      "texte": "Tout usage d'intelligence artificielle non signalé dans un travail rendu (oral, exposé, colles, DM, DS) est considéré comme une fraude. Le plagiat (même non intentionnel, ex. sources oubliées) entraîne une convocation en conseil de discipline : de la note 0 avec avertissement jusqu'à l'exclusion.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 11 (§ 6 Règlement d'examen) ; M3C 2024-2025, art. 17"
+    },
+    {
+      "titre": "Stages (aucun en BUT1)",
+      "texte": "Pas de stage en BUT1. Sur le cursus : 22 à 26 semaines, dont 8 à 12 sur les quatre premiers semestres (programme national : 8 à 10 semaines au S4) et 12 à 16 en dernière année (PN : 14 à 16 au S6). Le passage en BUT3 et le DUT exigent une note de stage ≥ 6/20, chaque élément (rapport, soutenance, évaluation en entreprise) devant aussi être ≥ 6/20.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 4.2 et art. 9 (p. 3) ; Programme national BUT Informatique 2022, p. 59"
+    }
+  ],
+  "absences": [
+    {
+      "titre": "Présence obligatoire",
+      "texte": "L'assiduité est obligatoire à toutes les activités : cours, TD, TP, SAÉ, conférences, visites d'entreprise... Les enseignants contrôlent la présence. Si tu es refusé en cours à cause d'un retard, ou exclu, cela compte comme une absence non justifiée.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 11.1 (p. 4) et art. 11.2 (p. 5)"
+    },
+    {
+      "titre": "Délai pour justifier : 48 heures",
+      "texte": "Toute absence doit être justifiée par écrit dans les 48 heures à compter de son début (même si elle se prolonge), sur IUT Notes ou au secrétariat du département. Passé ce délai, aucun justificatif n'est accepté : l'absence devient non justifiée. Attention, le livret d'accueil et les M3C 2024-2025 disent encore « 5 jours ouvrés » : c'est l'ancienne règle, respecte les 48 h.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 12 (p. 5) ; ancienne règle : Livret d'accueil BUT Info 2026-2027, p. 7 et M3C 2024-2025, art. 11"
+    },
+    {
+      "titre": "Comment déclarer sur IUT Notes",
+      "texte": "Sur IUT Notes (ScoDoc, https://iut-notes.unice.fr/), un récapitulatif en bas de page liste tes absences (date, heure, matière, enseignant) : dépose le justificatif (8 Mo maximum ; un même fichier peut couvrir plusieurs absences) puis suis sa validation. Seul le directeur des études (BUT1 : Nicolas Pourcelot) valide ou non le motif. Le livret demande aussi de remettre l'original papier en main propre au secrétariat.",
+      "source": "Annonces Moodle et intranet (septembre 2026) ; Livret d'accueil BUT Info 2026-2027, p. 7 (§ 4.2.1)"
+    },
+    {
+      "titre": "Motifs d'absence valables",
+      "texte": "Pour un étudiant en formation classique : maladie ou maternité avec certificat médical ; décès du conjoint, d'un grand-parent, d'un frère ou d'une sœur (acte officiel) ; journée défense et citoyenneté (convocation) ; épreuves du permis de conduire (convocation) ; obligations administratives (convocation). Les autres motifs sont laissés à l'appréciation du directeur des études ou du chef de département. Absence prévisible : prévenir le secrétariat à l'avance.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 12 (p. 5)"
+    },
+    {
+      "titre": "Pénalité pour absences non justifiées",
+      "texte": "Les heures d'absence non justifiée sont comptées par semestre. De 0 à 8 h : tolérance. À partir de la 9e heure : −0,05 point par heure d'absence sur la moyenne de chaque UE du semestre. Exemple pour 14 h non justifiées : −0,30 point sur chacune des 6 UE si seules les heures au-delà de 8 comptent (lecture la plus probable), −0,70 si toutes les heures comptent : à faire confirmer.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 11.2 (p. 5)"
+    },
+    {
+      "titre": "Absence à un contrôle et rattrapage",
+      "texte": "Absence non justifiée : 0 au contrôle. Absence justifiée : pour être rattrapé, il faut demander le rattrapage par écrit au directeur des études dans les 5 jours ouvrés à compter du début de l'absence, sinon 0. Le livret précise : demande par mail au responsable du module, avec en copie les directeurs des études et le secrétariat. Conditions : ne pas avoir manqué plus de 25 % des enseignements concernés par l'épreuve (absences justifiées ou non) ; un seul rattrapage par épreuve ; absent au rattrapage = 0 (ABI si injustifié, ABJ si justifié). Un justificatif ne donne pas automatiquement droit à un rattrapage.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 14.1 et 14.2 (p. 6) ; Livret d'accueil BUT Info 2026-2027, p. 7"
+    },
+    {
+      "titre": "Rattrapage impossible avant le jury, travaux de groupe",
+      "texte": "Si le rattrapage ne peut pas avoir lieu avant le jury, la note peut être neutralisée si le chef de département juge le module suffisamment évalué ; sinon, 0 et le jury délibère sur cette base. Pour une production collective, une absence justifiée ne donne pas droit automatiquement à une évaluation individuelle : rattrapage, évaluation alternative ou neutralisation au choix du directeur des études et de l'enseignant.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 14.3 (p. 6-7)"
+    },
+    {
+      "titre": "Seuil des 25 % : défaillance",
+      "texte": "Un étudiant absent à 25 % des enseignements de l'année peut être déclaré défaillant et se voir refuser le passage en année supérieure. En cas de problème de santé temporaire ou durable, consulte un médecin et, si besoin, le Centre de santé universitaire ou la Mission handicap.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 11.1 (p. 4)"
+    },
+    {
+      "titre": "Absence prolongée",
+      "texte": "Au-delà de 10 jours ouvrés d'absence non justifiée : lettre recommandée du directeur de l'IUT. Sans régularisation dans les 10 jours ouvrés, tu peux être considéré comme démissionnaire (carte étudiante à rendre, droits non remboursés ; CROUS et préfecture informés).",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 13 (p. 6)"
+    },
+    {
+      "titre": "Autres conséquences",
+      "texte": "Le nombre d'absences non justifiées peut figurer dans les dossiers de poursuite d'études ; pour les boursiers, il est signalé au service des bourses du CROUS. Toute erreur dans ton relevé d'absences doit être signalée au secrétariat avant le jury : après, aucune réclamation.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 12 (p. 5)"
+    },
+    {
+      "titre": "Élus étudiants",
+      "texte": "Seuls les étudiants élus aux conseils de l'IUT et de l'université peuvent s'absenter pendant les réunions de ces conseils, sur présentation de la convocation officielle. Toute autre absence liée à une responsabilité associative est non justifiée.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 16.5 (p. 8)"
+    },
+    {
+      "titre": "Statuts particuliers : contrat pédagogique",
+      "texte": "Sportif ou artiste de haut niveau, salarié (au moins 10 h par semaine), chargé de famille, situation de handicap, élu, double cursus, étudiant-entrepreneur : un contrat pédagogique peut aménager l'assiduité. Il se dépose au secrétariat du département avec les justificatifs (en 2025-2026 : au plus tard le 7 novembre pour le S1). Handicap : se faire connaître de la Mission handicap de l'IUT et déposer la demande d'aménagement au Centre de santé universitaire, au plus tard avant la fin du premier mois de l'année universitaire.",
+      "source": "Contrat pédagogique 2025-2026 ; M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 16.2 à 16.4 (p. 7-8)"
+    }
+  ],
+  "calendrier": [
+    {
+      "debut": "2026-10-19",
+      "fin": "2026-10-19",
+      "libelle": "Élection des représentants étudiants au conseil de département (CDEP)",
+      "type": "autre",
+      "detail": "Lundi 19/10, de 8 h à 17 h, vote sur Moodle (cours « BUT Informatique »). Candidature avant le lundi 12/10 à 10 h, par mail.",
+      "source": "Annonce et calendrier Moodle « BUT Informatique » (28/09/2026)"
+    },
+    {
+      "debut": "2026-10-24",
+      "fin": "2026-11-01",
+      "libelle": "Vacances de la Toussaint",
+      "type": "vacances",
+      "detail": "Du vendredi 23 octobre 2026 après les cours au lundi 2 novembre 2026 au matin.",
+      "reprise": "2026-11-02",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2026-11-01",
+      "fin": "2026-11-01",
+      "libelle": "Jour férié : Toussaint",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Dimanche 01/11/2026 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2026-11-11",
+      "fin": "2026-11-11",
+      "libelle": "Jour férié : Armistice 1918",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Mercredi 11/11/2026 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2026-12-19",
+      "fin": "2027-01-03",
+      "libelle": "Vacances de Noël (fermeture de l'IUT)",
+      "type": "vacances",
+      "detail": "Fermeture de l'IUT du vendredi 18 décembre 2026 après les cours au lundi 4 janvier 2027 au matin (intitulé « HIVER » dans le livret).",
+      "reprise": "2027-01-04",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2026-12-25",
+      "fin": "2026-12-25",
+      "libelle": "Jour férié : Noël",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Vendredi 25/12/2026 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-01-01",
+      "fin": "2027-01-01",
+      "libelle": "Jour férié : Jour de l'an",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Vendredi 01/01/2027 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-02-27",
+      "fin": "2027-03-07",
+      "libelle": "Vacances d'hiver",
+      "type": "vacances",
+      "detail": "Du vendredi 26 février 2027 après les cours au lundi 8 mars 2027 au matin.",
+      "reprise": "2027-03-08",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-03-29",
+      "fin": "2027-03-29",
+      "libelle": "Jour férié : Lundi de Pâques",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Lundi 29/03/2027 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-04-17",
+      "fin": "2027-05-02",
+      "libelle": "Vacances de printemps",
+      "type": "vacances",
+      "detail": "Du vendredi 16 avril 2027 après les cours au lundi 3 mai 2027 au matin.",
+      "reprise": "2027-05-03",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-05-01",
+      "fin": "2027-05-01",
+      "libelle": "Jour férié : Fête du Travail",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Samedi 01/05/2027 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-05-06",
+      "fin": "2027-05-06",
+      "libelle": "Jour férié : Ascension",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Jeudi 06/05/2027 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-05-06",
+      "fin": "2027-05-09",
+      "libelle": "Pont de l'Ascension (fermeture de l'IUT)",
+      "type": "vacances",
+      "detail": "Fermeture de l'IUT du mercredi 5 mai 2027 après les cours au lundi 10 mai 2027 au matin.",
+      "reprise": "2027-05-10",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-05-08",
+      "fin": "2027-05-08",
+      "libelle": "Jour férié : Victoire du 8 mai 1945",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Samedi 08/05/2027 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-05-17",
+      "fin": "2027-05-17",
+      "libelle": "Jour férié : Lundi de Pentecôte",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Lundi 17/05/2027 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-07-14",
+      "fin": "2027-07-14",
+      "libelle": "Jour férié : Fête nationale",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Mercredi 14/07/2027 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-07-22",
+      "fin": "2027-08-25",
+      "libelle": "Fermeture estivale de l'IUT",
+      "type": "vacances",
+      "detail": "Fermeture de l'IUT du mercredi 21 juillet 2027 après les cours au jeudi 26 août 2027 au matin.",
+      "reprise": "2027-08-26",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    },
+    {
+      "debut": "2027-08-15",
+      "fin": "2027-08-15",
+      "libelle": "Jour férié : Assomption",
+      "type": "autre",
+      "sous_type": "ferie",
+      "detail": "Dimanche 15/08/2027 : IUT fermé.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 6 (§ 3.2, calendrier des congés 2026-2027)"
+    }
+  ],
+  "sae_s1": [
+    {
+      "code": "SAÉ 1.01",
+      "intitule": "Implémentation d'un besoin client",
+      "competence": "Réaliser",
+      "ue": "UE 1.1",
+      "coef_ue": 40,
+      "problematique": "Créer tout ou partie d'une application simple à partir d'un besoin exprimé par un client.",
+      "livrables_types": [
+        "Code de l'application",
+        "Traces d'exécution des jeux d'essais"
+      ],
+      "ressources_mobilisees": [
+        "R1.01",
+        "R1.02",
+        "R1.10"
+      ],
+      "source": "Programme national BUT Informatique 2022, fiches SAÉ p. 62-67 ; coefficient : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    },
+    {
+      "code": "SAÉ 1.02",
+      "intitule": "Comparaison d'approches algorithmiques",
+      "competence": "Optimiser",
+      "ue": "UE 1.2",
+      "coef_ue": 40,
+      "problematique": "Implémenter, comparer plusieurs approches pour résoudre un même problème et faire des mesures de performance simples.",
+      "livrables_types": [
+        "Code de l'application",
+        "Présentation du problème et de la comparaison des différentes approches"
+      ],
+      "ressources_mobilisees": [
+        "R1.01",
+        "R1.03",
+        "R1.06",
+        "R1.07"
+      ],
+      "source": "Programme national BUT Informatique 2022, fiches SAÉ p. 62-67 ; coefficient : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    },
+    {
+      "code": "SAÉ 1.03",
+      "intitule": "Installation d'un poste pour le développement",
+      "competence": "Administrer",
+      "ue": "UE 1.3",
+      "coef_ue": 40,
+      "problematique": "Identifier les outils adaptés à un besoin, les installer, les configurer et rédiger une notice d'utilisation.",
+      "livrables_types": [
+        "Dossier d'étude et de choix des solutions",
+        "Notice d'utilisation",
+        "Présentation orale",
+        "Schéma de l'architecture logicielle"
+      ],
+      "ressources_mobilisees": [
+        "R1.03",
+        "R1.04",
+        "R1.10",
+        "R1.11"
+      ],
+      "source": "Programme national BUT Informatique 2022, fiches SAÉ p. 62-67 ; coefficient : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    },
+    {
+      "code": "SAÉ 1.04",
+      "intitule": "Création d'une base de données",
+      "competence": "Gérer",
+      "ue": "UE 1.4",
+      "coef_ue": 40,
+      "problematique": "Étudier puis réaliser une base de données portant sur une partie du système d'information d'un client.",
+      "livrables_types": [
+        "Jeu de données",
+        "Modèle de données",
+        "Rapport sur l'importance de ces données en entreprise",
+        "Script de création de la base"
+      ],
+      "ressources_mobilisees": [
+        "R1.05",
+        "R1.06",
+        "R1.09"
+      ],
+      "source": "Programme national BUT Informatique 2022, fiches SAÉ p. 62-67 ; coefficient : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    },
+    {
+      "code": "SAÉ 1.05",
+      "intitule": "Recueil des besoins (PN : « Recueil de besoins »)",
+      "competence": "Conduire",
+      "ue": "UE 1.5",
+      "coef_ue": 40,
+      "problematique": "Formaliser les attentes d'un client pour un projet, par un dialogue continu avec lui.",
+      "livrables_types": [
+        "Questionnaire destiné au client",
+        "Présentation des besoins (maquettes, scénarios, persona...)",
+        "Présentation orale avec supports numériques (site web, poster, diaporama...)"
+      ],
+      "ressources_mobilisees": [
+        "R1.02",
+        "R1.08",
+        "R1.11"
+      ],
+      "source": "Programme national BUT Informatique 2022, fiches SAÉ p. 62-67 ; coefficient : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    },
+    {
+      "code": "SAÉ 1.06",
+      "intitule": "Découverte de l'environnement économique et écologique",
+      "competence": "Collaborer",
+      "ue": "UE 1.6",
+      "coef_ue": 40,
+      "problematique": "Présenter de façon numérique le positionnement économique ou écologique d'une entreprise ou d'un ensemble d'entreprises.",
+      "livrables_types": [
+        "Rapport présentant le positionnement de l'entreprise",
+        "Documents numériques"
+      ],
+      "ressources_mobilisees": [
+        "R1.08",
+        "R1.09",
+        "R1.10",
+        "R1.11"
+      ],
+      "source": "Programme national BUT Informatique 2022, fiches SAÉ p. 62-67 ; coefficient : MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    }
+  ],
+  "sae_portfolio_ppp": [
+    {
+      "titre": "Les SAÉ, c'est quoi ?",
+      "texte": "Les situations d'apprentissage et d'évaluation sont des projets « authentiques », proches de situations professionnelles, où tu dois choisir et combiner plusieurs ressources pour démontrer une compétence. Elles incluent de l'autoévaluation et s'appuient sur la démarche portfolio. Au S1 : 6 SAÉ, une par compétence, chacune comptant pour 40 % de son UE. Elles sont encadrées par des enseignants référents qui jouent le rôle de tuteurs.",
+      "source": "Programme national BUT Informatique 2022, p. 56 ; MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13 ; Livret d'accueil BUT Info 2026-2027, p. 9"
+    },
+    {
+      "titre": "Projets transverses et volume horaire",
+      "texte": "Le BUT compte 600 h de projets (dits « projets transverses » dans les M3C 2026-2027) sur trois ans, qui nourrissent les SAÉ. Au S1, le programme national prévoit 425 h d'enseignement encadré (ressources + SAÉ) et 75 h de projet.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 4.1 (p. 2) ; Programme national BUT Informatique 2022, p. 59"
+    },
+    {
+      "titre": "Le portfolio",
+      "texte": "Dossier où tu documentes et argumentes ta progression dans les compétences, avec des traces (preuves) tirées de tes SAÉ. Au S1, c'est un simple point d'étape non évalué pour te situer sur le niveau 1 ; au S2, le portfolio (P2.01) est noté : coefficient 12 au semestre, soit 2 dans chacune des 6 UE.",
+      "source": "Programme national BUT Informatique 2022, p. 56-57 et p. 68 ; MCC BUT Info 2026-2027, p. 5/13 (S2)"
+    },
+    {
+      "titre": "Le PPP (R1.12)",
+      "texte": "Le projet personnel et professionnel, présent à chaque semestre, t'aide à comprendre le référentiel, découvrir les métiers et parcours, préparer la recherche de stage ou d'alternance et construire ton projet. Au S1 : 11 h au programme national (dont 3 h de TP), coefficient 11 dans l'UE 1.6. Le PPP accompagne ; le portfolio sert à évaluer les compétences : ce n'est pas la même chose.",
+      "source": "Programme national BUT Informatique 2022, p. 57 et fiche R1.12 ; MCC BUT Informatique 2026-2027 (éditées le 22/09/2026), p. 3/13"
+    },
+    {
+      "titre": "Conseil pratique",
+      "texte": "Garde dès maintenant des traces datées de ce que tu fais en SAÉ et en TP (code, captures d'écran, comptes rendus, retours du client) : ce sont les preuves attendues dans le portfolio.",
+      "source": "Programme national BUT Informatique 2022, p. 57 (traces et preuves issues des SAÉ)"
+    },
+    {
+      "titre": "Parcours et alternance",
+      "texte": "Le département propose le parcours A « Réalisation d'applications : conception, développement, validation ». Un passage en alternance (BUT2 ou BUT3) se demande sur Moodle entre fin janvier et fin mars (règles dans le cours « BUT Informatique »).",
+      "source": "Livret d'accueil BUT Info 2026-2027, couverture et p. 10 ; Annonces Moodle et intranet (septembre 2026)"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Directeur des études de BUT1",
+      "texte": "Nicolas Pourcelot (nicolas.pourcelot@univ-cotedazur.fr) — valide les justificatifs d'absence et reçoit les demandes de rattrapage ; il enseigne aussi R1.02.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 2 ; Annonces Moodle et intranet (septembre 2026)"
+    },
+    {
+      "titre": "Secrétariat pédagogique du département",
+      "texte": "secretariat-iut-info@unice.fr — Sylvia Caruana, Béatrice Brun, Nadège Hogie. Tél. 04 89 15 30 82 / 04 89 15 30 83. Fabron : lundi-vendredi 9h-12h et 14h-16h, fermé le mercredi après-midi. Sophia : lundi-vendredi 9h-13h (mercredi fermeture à 12h).",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 2 et 5"
+    },
+    {
+      "titre": "Scolarité de l'IUT",
+      "texte": "41 bd Napoléon III, 06206 Nice. Tél. 04 89 15 30 30. iut.scolarite@univ-cotedazur.fr. Horaires : 9h-12h et 14h-16h.",
+      "source": "Annonces Moodle et intranet (septembre 2026) ; site de l'IUT (page calendrier universitaire)"
+    },
+    {
+      "titre": "Équipe du département",
+      "texte": "Cheffe de département : Marie-Agnès Peraldi ; président du conseil de département : Nicolas Ferry (annonce Moodle du 28/09/2026). Directeurs des études : BUT1 Nicolas Pourcelot, BUT2 Olivier Pantz, BUT3 Elena Cabrio. Stages : Erol Acundeger. Relations internationales : Benjamin Abel. Communication : Aline Menin. Relations avec les entreprises : Morgan Jacq-Lagoutière. Adresses au format prenom.nom@univ-cotedazur.fr (liste complète p. 2 du livret).",
+      "source": "Annonce Moodle « BUT Informatique » du 28/09/2026 ; livret d'accueil BUT Informatique 2026-2027, p. 2"
+    },
+    {
+      "titre": "Service numérique du département",
+      "texte": "Gère les moyens informatiques du département (Gilles Bilancini, Timothée Christin, Benoit Benedetti, Jamel Kebal) : iut.informatique@unice.fr (p. 2) ou iut-informatique@unice.fr (p. 5) selon la page du livret.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 2 et 5"
+    },
+    {
+      "titre": "Outils numériques",
+      "texte": "Compte Sésame à activer (sesame.unice.fr). Messagerie @etu.univ-cotedazur.fr : la seule adresse utilisée par l'administration et les enseignants, à consulter régulièrement. Cours : Moodle (lms.univ-cotedazur.fr). Emploi du temps : ADE via l'intranet. Notes et absences : IUT Notes (ScoDoc, https://iut-notes.unice.fr/). Infos du département et règlement intérieur : Teams. Wi-Fi : eduroam ou Unice-Hotspot.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 4-5"
+    },
+    {
+      "titre": "Emploi du temps",
+      "texte": "Il peut changer d'une semaine à l'autre : consulte ADE. Une demande de modification se fait auprès de l'enseignant, avec en copie le directeur des études et le secrétariat (jamais directement au secrétariat).",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 5"
+    },
+    {
+      "titre": "Salles de DS à Fabron",
+      "texte": "Certaines salles de cours ou de DS (ex. 508) sont dans le bâtiment central et non dans le bâtiment informatique : repère-les avant le jour du DS.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 5"
+    },
+    {
+      "titre": "Salles pour les SAÉ",
+      "texte": "À Fabron, après avoir récupéré une feuille de présence au secrétariat : emprunt de la clé au secrétariat (cahier de bord) ou ouverture par un enseignant présent. Salles inaccessibles entre 12h et 14h.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 9 (§ 4.2.2)"
+    },
+    {
+      "titre": "Règles de vie",
+      "texte": "Nourriture et boissons interdites dans les salles pédagogiques ; calme dans les couloirs (l'IUT se vit comme une entreprise). En fin de semestre, reste disponible jusqu'aux jurys même sans cours (projets, soutenances).",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 5"
+    },
+    {
+      "titre": "En cas de problème",
+      "texte": "Identifie la nature du problème (pédagogique, administratif, relationnel...) et écris à la bonne personne en respectant l'ordre : délégué du groupe, secrétariat, responsable du cours, directeur des études.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 10 (§ 5)"
+    },
+    {
+      "titre": "Santé et soutien",
+      "texte": "Centre de santé universitaire (rendez-vous sur Doctolib) : médecine générale, accompagnement, ateliers de gestion du stress des examens. Assistante sociale : servicesocial-sophia@univ-cotedazur.fr (rendez-vous aussi via le CROUS). Psychologue : Sophie Bereny, sophie.bereny@univ-cotedazur.fr (permanences à venir).",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 3"
+    },
+    {
+      "titre": "Handicap",
+      "texte": "Mission handicap de l'université : handicap@univ-cotedazur.fr. La demande d'aménagement des études et des examens doit être faite au plus tôt, au plus tard avant la fin du premier mois de l'année : sans arrêté d'aménagement, rien n'est appliqué.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 3-4 ; M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 16.4 (p. 7-8)"
+    },
+    {
+      "titre": "Signalements",
+      "texte": "Plateforme confidentielle pour signaler des conduites ou situations contraires à l'intérêt général ou individuel : https://univ-cotedazur.signalement.net",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 4"
+    },
+    {
+      "titre": "Sport (SUAPS)",
+      "texte": "Activités sportives pour les étudiants de l'université : https://sport.univ-cotedazur.fr/ — l'assiduité peut rapporter un bonus jusqu'à +0,25 point par semestre.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 4 ; M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 17 (p. 8)"
+    },
+    {
+      "titre": "Bibliothèque de l'IUT",
+      "texte": "iut.biblio-nice@univ-cotedazur.fr",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 4"
+    },
+    {
+      "titre": "Logement et restauration (CROUS)",
+      "texte": "Crous de Nice-Toulon, 18 avenue des Fleurs, 06050 Nice cedex 1. Tél. 04 92 15 50 50. https://www.crous-nice.fr — aides au logement : caf.fr.",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 3"
+    },
+    {
+      "titre": "Tutorat",
+      "texte": "L'université propose un tutorat disciplinaire assuré par des étudiants plus avancés : se renseigner dans l'espace Promo sur Moodle ou auprès du responsable de formation. Contact : tutorat@univ-cotedazur.fr.",
+      "source": "Université Côte d'Azur - page Tutorat (https://univ-cotedazur.fr/tutorat)"
+    },
+    {
+      "titre": "Règlement intérieur de l'IUT",
+      "texte": "À lire : https://iut.univ-cotedazur.fr/etudiant-a-liut/scolarite/reglement-interieur-de-liut (aussi sur Teams).",
+      "source": "Livret d'accueil BUT Info 2026-2027, p. 7"
+    },
+    {
+      "titre": "Poursuite d'études",
+      "texte": "Pour un dossier de candidature nécessitant des pièces du département (relevés, avis), il faut le transmettre complet au secrétariat au moins 15 jours ouvrés avant la date limite de l'établissement visé.",
+      "source": "M3C communes BUT 2026-2027 (IUT Nice Côte d'Azur, 17/09/2026), art. 21 (p. 10)"
+    },
+    {
+      "titre": "Repère national",
+      "texte": "En France, 71,8 % des néo-bacheliers entrés en BUT en 2021 sont passés en 2e année en un an (72,5 % pour ceux de 2023) et 54,9 % ont obtenu le BUT en trois ans : environ un étudiant sur quatre ne passe pas en BUT2 du premier coup.",
+      "source": "MESRE-SIES, Note Flash n°26, novembre 2025 (https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-11/nf-sies-2025-26-38244.pdf)"
+    }
+  ],
+  "a_verifier": [
+    "Les M3C et MCC 2024-2025 sont périmées : les versions 2026-2027 sont en ligne (URLs dans « sources »). Les coefficients du S1 n'ont pas changé, mais plusieurs règles d'absence et de rattrapage si.",
+    "Délai de justification d'une absence : 48 h (M3C 2026-2027, art. 12) contre 5 jours ouvrés (livret 2026-2027 p. 7 et M3C 2024-2025). Appliquer 48 h et le faire confirmer par le secrétariat.",
+    "Pénalité d'absence : « à partir de la 9e heure, −0,05 point par heure » — on ne sait pas si seules les heures au-delà de 8 sont comptées ou toutes les heures ; le livret parle de pénalité sur la « moyenne générale », les M3C sur « chaque UE ».",
+    "Demande de rattrapage : M3C = écrit au directeur des études sous 5 jours ouvrés à compter du début de l'absence ; livret = mail au responsable du module avec copie aux directeurs des études et au secrétariat. Faire les deux.",
+    "Le livret exige de remettre l'original papier du justificatif au secrétariat ; les M3C 2026-2027 ne le mentionnent pas.",
+    "Calendrier : la date de rentrée 2026, la fin des cours du S1, les semaines de DS et les dates des jurys S1/S2 ne figurent dans aucun document (peut-être dans la présentation de rentrée sur SharePoint, non accessible sans connexion). À demander au directeur des études ou à vérifier sur ADE.",
+    "Livret : la fermeture du 18/12/2026 au 04/01/2027 est intitulée « HIVER » (probablement Noël) ; en-têtes et sommaire du livret encore marqués « 2025-2026 ».",
+    "Contrat pédagogique 2026-2027 : date limite de dépôt inconnue (7 novembre 2025 l'an dernier).",
+    "Entrée en S5 : les M3C exigent « toutes les UE des semestres 1 à 4 », alors que les M3C d'autres universités reprennent la formulation nationale « semestres 1 et 2 » et que le livret donne des conditions par compétence. À clarifier en BUT2 (sans effet sur le BUT1).",
+    "Sous-modules : les MCC ne découpent aucune ressource (R1.06 et R1.07 sont séparées). Vérifier sur IUT Notes qu'aucun module n'est scindé en sous-parties notées séparément.",
+    "Pondérations internes des modules : fixées par chaque enseignant et absentes des MCC (seule celle de R1.02 est connue). ScoDoc peut aussi pondérer une évaluation différemment selon l'UE.",
+    "Bonus : les M3C 2026-2027 disent « sur l'unité d'enseignement » (culture, entrepreneuriat) sans préciser s'il s'agit de chaque UE ; le bonus sport est « par semestre ». Application exacte à confirmer.",
+    "Les M3C 2026-2027 ne reprennent plus l'article « Fraudes » ni le délai de contestation d'une note (8 jours ouvrables après sa communication) des M3C 2024-2025 : vérifier dans la charte des examens de l'université.",
+    "La règle 2024-2025 sur l'absence non justifiée la veille ou le matin d'un contrôle (possible refus de composer, jusqu'à 0) et celle des « plus de 5 arrêts de travail » n'apparaissent plus en 2026-2027 (remplacées par la défaillance à 25 % d'absence).",
+    "Motifs valables 2026-2027 : le « décès d'un parent » ne figure plus dans la liste (il y était en 2024-2025) — probablement un oubli.",
+    "Adresse du service numérique : iut.informatique@unice.fr (livret p. 2) ou iut-informatique@unice.fr (p. 5). Téléphones : standard IUT 04 89 15 30 00 (M3C), scolarité 04 89 15 30 30, secrétariat info 04 89 15 30 82 / 83.",
+    "Fenêtre de demande d'alternance (« entre fin janvier et fin mars ») et date limite exacte des demandes d'aménagement handicap (« avant la fin du premier mois ») : dates précises à vérifier sur Moodle / auprès de la Mission handicap.",
+    "Intitulés différents entre MCC et programme national : R1.08 « Gestion de projet et des organisations » (PN : « Introduction à la gestion des organisations »), R1.09 (PN : « Introduction à l'économie durable et numérique »), R1.10 « Anglais technique » (PN : « Anglais »), SAÉ 1.05 « Recueil des besoins » (PN : « Recueil de besoins »). Les codes sont identiques."
+  ]
+}
