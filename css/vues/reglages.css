@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Réglages · feuille façon Réglages iOS : listes groupées en verre,
+   icônes carrées, interrupteurs, segment, QR code d'accès.
+   ========================================================================== */
+
+/* ---------- Feuille ---------- */
+.feuille.rg-feuille {
+  --verre: color-mix(in srgb, var(--fond) 92%, transparent);
+  width: min(600px, 100%);
+  /* Pas de marge haute : l'ancrage du bouton de fermeture ne dépend pas du navigateur */
+  padding: 0 16px calc(env(safe-area-inset-bottom) + 28px);
+  box-shadow: var(--ombre-haute), inset 0 1px 0 var(--rim-4), inset 0 0 0 .5px var(--rim-2);
+  scrollbar-width: thin;
+  scrollbar-color: var(--encre-4) transparent;
+}
+/* Le liseré générique (::before absolu) défilerait avec le contenu : remplacé par les ombres internes. */
+.feuille.rg-feuille::before { display: none; }
+.feuille.rg-feuille .poignee { margin-top: 10px; }
+
+/* Bouton de fermeture : pastille de verre qui reste en haut pendant le défilement */
+.feuille.rg-feuille .fermer {
+  position: sticky; top: 12px; z-index: 5;
+  display: flex; width: 34px; height: 34px; margin: -6px -4px -34px auto;
+  color: var(--encre-2);
+  background: linear-gradient(180deg, var(--reflet) -30%, transparent 70%), var(--verre-fort);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  backdrop-filter: blur(14px) saturate(180%);
+  box-shadow: 0 4px 14px -4px rgb(0 0 0 / .2), inset 0 0 0 .5px var(--rim-2), inset 0 1px 0 var(--rim-4);
+}
+.feuille.rg-feuille .fermer svg.ic { width: 15px; height: 15px; stroke-width: 2.5; }
+
+.rg > h2 { font-size: 30px; font-weight: 750; letter-spacing: -.028em; margin: 2px 48px 20px 4px; }
+
+/* ---------- Groupes ---------- */
+.rg-groupe + .rg-groupe { margin-top: 26px; }
+.rg-entete {
+  padding: 0 16px 7px;
+  font-size: 13px; font-weight: 600; letter-spacing: .004em; line-height: 1.3; color: var(--encre-3);
+}
+.rg-liste {
+  list-style: none; margin: 0; padding: 0; overflow: hidden;
+  border-radius: var(--r-md);
+  background: linear-gradient(180deg, var(--reflet) -160%, transparent 40%), var(--verre-fort);
+  box-shadow: inset 0 0 0 .5px var(--trait-fort), inset 0 1px 0 var(--rim-4);
+}
+.rg-note { padding: 8px 16px 0; font-size: 12.5px; line-height: 1.4; color: var(--encre-3); }
+
+/* Séparateurs alignés sur le texte, comme iOS */
+.rg-liste > li { position: relative; --retrait: 58px; }
+.rg-liste > li + li::before {
+  content: ""; position: absolute; z-index: 1; top: 0; left: var(--retrait); right: 0; height: 1px;
+  background: var(--trait-fort); pointer-events: none;
+}
+@media (min-resolution: 2dppx) { .rg-liste > li + li::before { height: .5px; } }
+.rg-liste > li:has(> .rg-centre, > .rg-ligne-segment) { --retrait: 16px; }
+
+/* ---------- Lignes ---------- */
+.rg-ligne {
+  display: flex; align-items: center; gap: 12px;
+  width: 100%; min-height: 50px; margin: 0; padding: 9px 16px;
+  border: 0; border-radius: 0; background: none;
+  color: var(--encre); font: inherit; text-align: left;
+  text-decoration: none !important;
+  transition: background-color .3s var(--doux);
+}
+.rg-touche { cursor: pointer; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+@media (hover: hover) { .rg-touche:hover { background-color: var(--verre-creux); } }
+.rg-touche:active { background-color: var(--trait-fort); transition-duration: 0s; }
+.rg-touche:focus-visible { outline-offset: -3px; border-radius: var(--r-md); }
+
+.rg-texte { flex: 1; min-width: 0; }
+.rg-titre { font-size: 16px; line-height: 1.3; letter-spacing: -.012em; }
+.rg-sous { margin-top: 1px; font-size: 13px; line-height: 1.35; color: var(--encre-3); }
+.rg-insecable { white-space: nowrap; }
+.rg-sous.rg-alerte { color: var(--orange-encre); font-weight: 550; }
+.rg-valeur {
+  flex: none; max-width: 52%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-size: 15px; color: var(--encre-3);
+}
+.rg svg.rg-chevron { width: 15px; height: 15px; margin-right: -2px; color: var(--encre-4); stroke-width: 2.4; }
+.rg svg.rg-pivot { transition: transform .45s var(--ressort); }
+.rg [aria-expanded="true"] > svg.rg-pivot { transform: rotate(90deg); }
+
+/* ---------- Profil ---------- */
+.rg-profil { display: flex; align-items: center; gap: 14px; padding: 14px 16px; }
+.rg-avatar {
+  flex: none; width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center;
+  font-size: 23px; font-weight: 650; letter-spacing: .01em; color: #fff;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--gris) 76%, #fff), color-mix(in srgb, var(--gris) 80%, #000));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .35), 0 6px 16px -6px rgb(0 0 0 / .35);
+}
+.rg-nom { font-size: 20px; font-weight: 650; line-height: 1.2; letter-spacing: -.022em; }
+.rg-profil .rg-sous { margin-top: 3px; font-size: 13.5px; }
+
+/* ---------- Apparence : segment et interrupteur ---------- */
+.rg-ligne.rg-ligne-segment { min-height: 0; padding: 8px; }
+.rg .rg-segment { width: 100%; }
+.rg .rg-segment button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  height: 34px; padding: 0 8px; font-size: 14px;
+}
+.rg .rg-segment svg.ic { width: 16px; height: 16px; stroke-width: 2; }
+
+.rg-interrupteur {
+  position: relative; flex: none; width: 51px; height: 31px; margin: 0; padding: 0;
+  border: 0; border-radius: 999px;
+  background: var(--trait-fort);
+  transition: background-color .3s var(--doux);
+}
+.rg-interrupteur::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 27px; height: 27px; border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 3px 8px rgb(0 0 0 / .15), 0 1px 1px rgb(0 0 0 / .16);
+  transition: transform .45s var(--ressort), width .3s var(--ressort);
+}
+.rg-interrupteur[aria-checked="true"] { background: var(--vert); }
+.rg-interrupteur[aria-checked="true"]::after { transform: translateX(20px); }
+.rg-interrupteur:active::after { width: 33px; }
+.rg-interrupteur[aria-checked="true"]:active::after { transform: translateX(14px); }
+.rg-interrupteur:focus-visible { border-radius: 999px; }
+
+/* ---------- Accès : dépliant et QR code ---------- */
+.rg-depliant { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s var(--doux); }
+.rg-depliant.ouvert { grid-template-rows: 1fr; }
+.rg-depliant > div { min-height: 0; overflow: hidden; opacity: 0; transition: opacity .25s var(--doux); }
+.rg-depliant.ouvert > div { opacity: 1; transition-delay: .1s; }
+
+.rg-qr { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 6px 20px 20px; text-align: center; }
+.rg-qr-carte {
+  width: 204px; aspect-ratio: 1; padding: 16px; border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / .06), 0 14px 32px -12px rgb(0 0 0 / .32), inset 0 0 0 .5px rgb(0 0 0 / .08);
+  /* Carte toujours claire (lisibilité du QR), y compris en mode sombre */
+  --verre-creux: rgb(10 15 28 / .05);
+  --verre-doux: rgb(10 15 28 / .11);
+}
+.rg-qr-carte svg { display: block; width: 100%; height: 100%; }
+.rg-qr-carte .squelette { width: 100%; height: 100%; border-radius: 12px; }
+.rg-qr > p { max-width: 34ch; font-size: 13px; line-height: 1.4; color: var(--encre-3); }
+.rg-qr .rg-qr-carte .rg-qr-erreur {
+  display: grid; place-items: center; height: 100%; padding: 8px;
+  font-size: 13px; line-height: 1.4; color: rgb(10 15 28 / .62);
+}
+.rg-qr .bouton { color: var(--accent-encre); background: color-mix(in srgb, var(--accent) 13%, transparent); }
+@media (hover: hover) { .rg-qr .bouton:hover { background: color-mix(in srgb, var(--accent) 19%, transparent); } }
+
+/* ---------- Synchronisation ---------- */
+.rg-action { color: var(--accent-encre); }
+.rg-action svg.ic { width: 30px; height: 20px; stroke-width: 2; }
+.rg-action[disabled] { cursor: default; }
+.rg-action[disabled] .rg-titre { opacity: .55; }
+.rg-tourne svg.ic { animation: rg-tourner .8s linear infinite; }
+@keyframes rg-tourner { to { transform: rotate(360deg); } }
+
+/* ---------- Contacts ---------- */
+.rg-monogramme {
+  flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
+  font-size: 11.5px; font-weight: 700; letter-spacing: .03em; color: #fff;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--gris) 76%, #fff), color-mix(in srgb, var(--gris) 82%, #000));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .3);
+}
+.rg-actions { flex: none; display: flex; gap: 8px; }
+.rg-rond {
+  width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  color: var(--accent-encre); background: color-mix(in srgb, var(--accent) 13%, transparent);
+  text-decoration: none !important;
+  transition: transform .45s var(--ressort), background-color .2s;
+}
+.rg-rond svg.ic { width: 17px; height: 17px; stroke-width: 2; }
+@media (hover: hover) { .rg-rond:hover { background: color-mix(in srgb, var(--accent) 20%, transparent); } }
+.rg-rond:active { transform: scale(.9); transition-duration: .12s; }
+
+/* ---------- Actions centrées (verrouiller, quitter la démo) ---------- */
+.rg-ligne.rg-centre { justify-content: center; text-align: center; }
+.rg-accent { color: var(--accent-encre); }
+.rg-ligne.rg-danger { color: var(--rouge-encre); }
+.rg-ligne.rg-confirmer { background-color: color-mix(in srgb, var(--rouge) 13%, transparent); }
+.rg-confirmer .rg-titre { font-weight: 600; }
+
+/* Groupe mis en avant à l'ouverture (pastille de synchro) */
+.rg-eclat { outline: 2px solid transparent; outline-offset: 3px; animation: rg-eclat 1.6s var(--doux) .4s both; }
+@keyframes rg-eclat { 25% { outline-color: color-mix(in srgb, var(--accent) 60%, transparent); } }
+
+/* ---------- Ordinateur ---------- */
+@media (min-width: 760px) {
+  .feuille.rg-feuille { padding: 0 22px 26px; }
+  .feuille.rg-feuille .fermer { margin-top: 16px; }
+  .rg > h2 { font-size: 28px; }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .feuille.rg-feuille { --verre: var(--fond); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rg-tourne svg.ic, .rg-eclat { animation: none; }
+}
