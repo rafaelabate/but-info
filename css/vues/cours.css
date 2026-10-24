@@ -1,0 +1,393 @@
+/* ==========================================================================
+   Vue « Cours » : grille des modules, fiche module, Notes & UE
+   Toutes les classes sont préfixées co-
+   ========================================================================== */
+
+/* ---------- Barre du haut ---------- */
+.co-barre { display: flex; align-items: center; gap: 12px; margin: 0 0 18px; }
+.co-segment { width: min(100%, 320px); }
+.co-mini-titre {
+  display: flex; align-items: baseline; gap: 6px;
+  margin: 16px 0 6px; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--encre-3);
+}
+.co-code { font-size: 12px; font-weight: 700; letter-spacing: .01em; color: var(--m-encre, var(--encre-3)); font-variant-numeric: tabular-nums; }
+.co-compte { font-size: 13px; font-weight: 650; color: var(--encre-3); }
+
+/* ==========================================================================
+   Grille des modules
+   ========================================================================== */
+.co-groupe + .co-groupe { margin-top: 26px; }
+.co-titre-groupe {
+  display: flex; align-items: baseline; gap: 8px; margin: 0 4px 10px;
+  font-size: 13px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--encre-3);
+}
+.co-titre-groupe span { font-weight: 600; color: var(--encre-4); }
+.co-grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(292px, 1fr)); gap: 12px; }
+
+.co-carte {
+  display: flex; flex-direction: column; gap: 12px; min-width: 0;
+  padding: 15px 16px 14px; border-radius: var(--r-lg);
+  color: var(--encre); text-decoration: none !important;
+  transition: transform .5s var(--ressort), box-shadow .3s var(--doux);
+}
+.co-carte:active { transform: scale(.975); transition-duration: .15s; }
+@media (hover: hover) { .co-carte:hover { transform: translateY(-2px); box-shadow: var(--ombre-haute); } }
+.co-carte-tete { display: flex; align-items: center; gap: 12px; }
+.co-carte-tete .icone-carree { width: 38px; height: 38px; border-radius: 11px; }
+.co-carte-tete .icone-carree svg.ic { width: 21px; height: 21px; }
+.co-carte-noms { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.co-carte-noms b {
+  font-size: 15.5px; font-weight: 650; line-height: 1.25; letter-spacing: -.014em;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.co-mini { display: flex; align-items: center; gap: 6px; align-self: flex-start; padding-top: 2px; font-size: 12px; font-weight: 650; color: var(--encre-3); }
+.co-mini .anneau .jauge { filter: none; }
+
+.co-carte-lignes { display: grid; gap: 7px; }
+.co-ligne { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: 13.5px; line-height: 1.3; color: var(--encre-2); }
+.co-ligne svg.ic { width: 16px; height: 16px; stroke-width: 2; color: var(--m-encre, var(--encre-3)); }
+.co-ligne > span:not(.puce) { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.co-ligne .puce { flex: none; height: 22px; font-size: 11.5px; }
+.co-ligne.co-muet, .co-ligne.co-muet svg.ic { color: var(--encre-4); }
+.co-ligne.co-eval > span:not(.puce) { color: var(--encre); font-weight: 600; }
+
+.co-ues { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 2px; }
+.co-ue-puce {
+  display: inline-flex; align-items: center; gap: 6px; height: 22px; padding: 0 8px 0 7px; border-radius: 7px;
+  font-size: 11.5px; font-weight: 600; color: var(--encre-2); background: var(--verre-creux); white-space: nowrap;
+}
+.co-ue-puce::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--c); }
+.co-ue-puce b { font-weight: 700; color: var(--encre); }
+
+/* Module sans support de cours local : carte plus discrète */
+.co-carte.co-discrete { --verre: var(--verre-doux); box-shadow: none; }
+.co-carte.co-discrete .icone-carree { box-shadow: none; opacity: .88; }
+.co-carte.co-discrete .co-carte-noms b { font-weight: 600; }
+
+/* ==========================================================================
+   Fiche module
+   ========================================================================== */
+.co-nav { display: flex; align-items: center; gap: 8px; margin: -4px 0 14px; }
+.co-nav .espace { flex: 1; }
+.co-retour {
+  display: inline-flex; align-items: center; gap: 1px; margin-left: -7px; height: 36px; padding-right: 6px;
+  font-size: 16px; font-weight: 560; color: var(--accent-encre); text-decoration: none !important;
+  transition: opacity .2s;
+}
+.co-retour svg.ic { width: 24px; height: 24px; stroke-width: 2.3; }
+.co-retour:active { opacity: .5; }
+.co-voisin { gap: 4px; padding: 0 12px 0 8px; font-size: 12.5px; color: var(--encre-2); }
+.co-voisin:last-child { padding: 0 8px 0 12px; }
+.co-voisin svg.ic { width: 16px; height: 16px; stroke-width: 2.4; color: var(--m-encre); }
+
+.co-fiche { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 14px; align-items: start; }
+.co-fiche > .co-tete { grid-column: 1 / -1; }
+.co-col { display: grid; gap: 14px; align-content: start; min-width: 0; }
+
+/* En-tête coloré */
+.co-tete { padding: 22px 24px 20px; }
+.co-tete-haut { display: flex; align-items: flex-start; gap: 14px; }
+.co-icone-xl { width: 54px; height: 54px; border-radius: 15px; }
+.co-icone-xl svg.ic { width: 29px; height: 29px; stroke-width: 1.9; }
+.co-tete-titres { flex: 1; min-width: 0; padding-top: 2px; }
+.co-tete-sur { font-size: 12.5px; font-weight: 600; color: var(--encre-3); }
+.co-tete h2 { margin-top: 3px; font-size: clamp(24px, 3.1vw, 32px); font-weight: 750; letter-spacing: -.028em; line-height: 1.1; }
+.co-moodle { flex: none; gap: 6px; }
+.co-moodle svg.ic { width: 14px; height: 14px; stroke-width: 2.2; color: var(--encre-3); }
+.co-resume { margin-top: 14px; max-width: 72ch; font-size: 15.5px; line-height: 1.5; color: var(--encre-2); }
+
+.co-stats { display: flex; flex-wrap: wrap; gap: 10px 32px; margin-top: 18px; }
+.co-stats > div { display: flex; flex-direction: column; min-width: 0; }
+.co-stats b { font-size: 30px; font-weight: 700; letter-spacing: -.035em; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.co-stats b small { margin-left: 1px; font-size: 16px; font-weight: 650; letter-spacing: -.01em; color: var(--encre-3); }
+.co-stats span { margin-top: 3px; font-size: 12px; font-weight: 600; color: var(--encre-3); }
+
+.co-poids { margin-top: 18px; padding-top: 2px; border-top: 1px solid var(--trait); }
+.co-poids .co-mini-titre { margin-top: 14px; }
+.co-poids-ligne {
+  display: grid; grid-template-columns: 58px minmax(84px, 128px) minmax(40px, 1fr) 46px; align-items: center; gap: 12px;
+  min-height: 30px; font-size: 13.5px; color: var(--encre); text-decoration: none !important;
+}
+.co-poids-ue { font-size: 12.5px; font-weight: 700; color: var(--encre-3); }
+.co-poids-comp { display: flex; align-items: center; gap: 7px; font-weight: 600; white-space: nowrap; }
+.co-poids-comp::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--u); flex: none; }
+.co-poids-ligne .barre { height: 5px; }
+.co-poids-ligne b { text-align: right; font-weight: 700; }
+@media (hover: hover) { .co-poids-ligne:hover .co-poids-comp { color: var(--accent-encre); } }
+
+/* Listes à puces sobres */
+.co-puces { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.co-puces li { position: relative; padding-left: 16px; font-size: 14.5px; line-height: 1.45; }
+.co-puces li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--m, var(--accent)); }
+
+/* À maîtriser : cases à cocher persistantes */
+.co-maitrise .carte-tete { margin-bottom: 4px; }
+.co-maitrise-n { font-size: 13px; font-weight: 700; color: var(--encre-2); }
+.co-coches { list-style: none; margin: 0; padding: 0; }
+.co-coches li { position: relative; }
+.co-coches li + li::before { content: ""; position: absolute; top: 0; left: 34px; right: 0; height: 1px; background: var(--trait); }
+.co-coche {
+  display: flex; align-items: flex-start; gap: 12px; width: 100%; padding: 11px 0; border: 0; background: none;
+  text-align: left; font-size: 14.5px; line-height: 1.42; color: var(--encre); border-radius: 8px;
+}
+.co-rond {
+  flex: none; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%;
+  box-shadow: inset 0 0 0 1.7px var(--encre-4);
+  transition: background .25s var(--doux), box-shadow .25s, transform .45s var(--ressort);
+}
+.co-rond svg.ic { width: 13px; height: 13px; stroke-width: 3.2; color: #fff; opacity: 0; transform: scale(.4); transition: opacity .2s, transform .5s var(--ressort); }
+.co-coche[aria-pressed="true"] .co-rond { background: var(--m, var(--accent)); box-shadow: 0 2px 8px -3px color-mix(in srgb, var(--m, var(--accent)) 70%, transparent); }
+.co-coche[aria-pressed="true"] .co-rond svg.ic { opacity: 1; transform: none; }
+.co-coche-texte { transition: color .25s; }
+.co-coche[aria-pressed="true"] .co-coche-texte { color: var(--encre-3); }
+.co-coche:active .co-rond { transform: scale(.82); }
+
+/* Comment réviser : étapes numérotées */
+.co-etapes { list-style: none; margin: 0; padding: 0; counter-reset: etape; display: grid; gap: 11px; }
+.co-etapes li { position: relative; padding-left: 34px; font-size: 14.5px; line-height: 1.45; counter-increment: etape; }
+.co-etapes li::before {
+  content: counter(etape); position: absolute; left: 0; top: -1px; width: 23px; height: 23px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 12px; font-weight: 750; font-variant-numeric: tabular-nums;
+  color: var(--m-encre, var(--accent-encre)); background: color-mix(in srgb, var(--m, var(--accent)) 15%, transparent);
+}
+
+/* Pièges */
+.co-pieges-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.co-pieges-liste li { position: relative; padding-left: 16px; font-size: 14.5px; line-height: 1.45; }
+.co-pieges-liste li::before { content: ""; position: absolute; left: 1px; top: .28em; bottom: .28em; width: 3px; border-radius: 3px; background: var(--orange); }
+
+/* Progression en accordéon */
+.co-prog-groupe .co-mini-titre { margin-top: 12px; }
+.co-prog-groupe:first-of-type .co-mini-titre { margin-top: 2px; }
+.co-chap { transition: background .25s; }
+.co-chap + .co-chap { border-top: 1px solid var(--trait); }
+.co-chap[open] { border-radius: 14px; background: var(--verre-creux); border-top-color: transparent; }
+.co-chap[open] + .co-chap { border-top-color: transparent; }
+.co-chap summary {
+  display: flex; align-items: center; gap: 10px; min-height: 46px; padding: 8px 10px; cursor: pointer; list-style: none;
+  border-radius: 14px;
+}
+.co-chap summary::-webkit-details-marker { display: none; }
+.co-chap-label {
+  flex: 0 0 72px; font-size: 11.5px; font-weight: 700; letter-spacing: .01em; line-height: 1.25;
+  color: var(--m-encre, var(--encre-3)); font-variant-numeric: tabular-nums;
+}
+.co-chap-titre { flex: 1; min-width: 0; font-size: 14.5px; font-weight: 600; line-height: 1.3; }
+.co-chap-n { flex: none; font-size: 12.5px; font-weight: 650; color: var(--encre-4); }
+.co-chevron { width: 16px !important; height: 16px !important; color: var(--encre-4); stroke-width: 2.4 !important; transition: transform .45s var(--ressort); }
+.co-chap[open] .co-chevron { transform: rotate(180deg); }
+.co-notions { list-style: none; margin: 0; padding: 0 12px 12px 92px; display: grid; gap: 5px; animation: co-deplie .45s var(--doux); }
+.co-notions li { position: relative; font-size: 13.5px; line-height: 1.4; color: var(--encre-2); }
+.co-notions li::before { content: ""; position: absolute; left: -12px; top: .55em; width: 4px; height: 4px; border-radius: 50%; background: var(--encre-4); }
+@keyframes co-deplie { from { opacity: 0; transform: translateY(-4px); } }
+
+/* Évaluations et rendus */
+.co-moy-module { font-size: 20px; font-weight: 750; letter-spacing: -.02em; color: var(--encre); }
+.co-moy-module small { font-size: 12px; font-weight: 650; color: var(--encre-3); }
+.co-evs > li { align-items: flex-start; }
+.co-ev-icone {
+  flex: none; width: 30px; height: 30px; margin-top: 1px; border-radius: 9px; display: grid; place-items: center;
+  color: var(--m-encre, var(--encre-2)); background: color-mix(in srgb, var(--m, var(--gris)) 15%, transparent);
+}
+.co-ev-icone svg.ic { width: 16px; height: 16px; stroke-width: 2.2; }
+.co-ev.co-eval .co-ev-icone { color: var(--rouge-encre); background: color-mix(in srgb, var(--rouge) 14%, transparent); }
+.co-ev .titre a { color: inherit; }
+.co-ev .puce { margin-top: 3px; }
+.co-ev-details { margin-top: 6px; font-size: 13px; line-height: 1.4; color: var(--encre-2); }
+.co-ev.co-passe .titre { color: var(--encre-2); font-weight: 550; }
+.co-ev.co-passe .co-ev-icone { color: var(--encre-3); background: var(--verre-creux); }
+
+.co-tableau { list-style: none; margin: 0; padding: 0; }
+.co-tableau li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: baseline; gap: 12px; padding: 8px 0; font-size: 13.5px; line-height: 1.35; }
+.co-tableau li + li { border-top: 1px solid var(--trait); }
+.co-tableau small { color: var(--encre-3); font-size: 12px; }
+.co-tableau b { font-size: 15px; font-weight: 700; text-align: right; }
+.co-tableau b small { font-weight: 600; }
+.co-t-coef { color: var(--encre-3); font-size: 12.5px; }
+.co-formule { margin-top: 6px; padding: 9px 12px; border-radius: 12px; background: var(--verre-creux); font-size: 12.5px; color: var(--encre-2); }
+
+/* Séances */
+.co-seances-liste > li { gap: 14px; }
+.co-date {
+  flex: none; width: 42px; display: flex; flex-direction: column; align-items: center; line-height: 1.05;
+  padding: 5px 0; border-radius: 11px; background: color-mix(in srgb, var(--m, var(--gris)) 12%, transparent);
+}
+.co-date span { font-size: 10.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--m-encre, var(--encre-3)); }
+.co-date b { font-size: 19px; font-weight: 700; letter-spacing: -.02em; }
+.co-type { margin-left: 4px; font-size: 12px; font-weight: 650; color: var(--encre-3); }
+.co-en-cours .co-date { background: var(--m, var(--accent)); }
+.co-en-cours .co-date span, .co-en-cours .co-date b { color: #fff; }
+.co-plus { margin-top: 4px; font-size: 12.5px; color: var(--encre-3); }
+
+/* Ressources */
+.co-res > li { padding: 0; }
+.co-res-lien {
+  display: flex; align-items: flex-start; gap: 12px; width: 100%; padding: 12px 0;
+  color: var(--encre); text-decoration: none !important;
+}
+.co-res-icone {
+  flex: none; width: 30px; height: 30px; margin-top: 1px; border-radius: 9px; display: grid; place-items: center;
+  color: var(--m-encre, var(--encre-2)); background: color-mix(in srgb, var(--m, var(--gris)) 14%, transparent);
+}
+.co-res-icone svg.ic { width: 16px; height: 16px; stroke-width: 2.1; }
+.co-res-meta { margin-top: 1px; font-size: 12px; font-weight: 600; color: var(--encre-3); }
+.co-res .sous { margin-top: 4px; color: var(--encre-2); }
+.co-ext { width: 15px !important; height: 15px !important; margin-top: 3px; color: var(--encre-4); stroke-width: 2.2 !important; }
+@media (hover: hover) { .co-res-lien:hover .titre { color: var(--accent-encre); } .co-res-lien:hover .co-ext { color: var(--accent-encre); } }
+
+/* ==========================================================================
+   Notes & UE
+   ========================================================================== */
+.co-notes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(330px, 400px); gap: 14px; align-items: start; }
+.co-notes-principal { display: grid; gap: 14px; min-width: 0; }
+.co-notes-cote { position: sticky; top: calc(env(safe-area-inset-top) + 64px); min-width: 0; }
+.co-ues-grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(262px, 1fr)); gap: 12px; }
+.co-notes-bas { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; align-items: start; }
+
+/* Carte d'UE */
+.co-ue { display: flex; flex-direction: column; padding: 16px 18px 15px; }
+.co-ue-tete { display: flex; align-items: center; gap: 8px; }
+.co-ue-tete .espace { flex: 1; }
+.co-ue-code { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 700; color: var(--encre-2); }
+.co-ue-code::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--u); }
+.co-ue-ects { font-size: 12px; font-weight: 600; color: var(--encre-3); }
+.co-ue-comp { margin-top: 6px; font-size: 21px; font-weight: 720; letter-spacing: -.022em; }
+.co-ue-moy { display: flex; align-items: flex-end; gap: 22px; margin-top: 10px; }
+.co-ue-moy > div { display: flex; flex-direction: column; }
+.co-ue-moy span { font-size: 11.5px; font-weight: 650; color: var(--encre-3); }
+.co-ue-grand b { font-size: 40px; font-weight: 700; letter-spacing: -.045em; line-height: 1; }
+.co-ue-reel b { font-size: 19px; font-weight: 650; letter-spacing: -.02em; line-height: 1.1; color: var(--encre-2); }
+.co-ue-moy b.co-nul { color: var(--encre-4); font-weight: 500; }
+
+.co-jauge { position: relative; height: 6px; margin-top: 14px; border-radius: 99px; background: var(--verre-creux); }
+.co-jauge > i {
+  position: absolute; inset: 0 auto 0 0; width: calc(var(--p, 0) * 100%); border-radius: inherit; background: var(--c, var(--gris));
+  transition: width .7s var(--ressort), background .3s;
+}
+.co-seuil { position: absolute; top: -3px; bottom: -3px; left: calc(var(--s) * 100%); width: 2px; border-radius: 2px; background: var(--encre-4); }
+.co-seuil-10 { background: var(--encre-2); }
+
+.co-segments { display: flex; gap: 2px; height: 8px; margin-top: 14px; border-radius: 5px; overflow: hidden; }
+.co-segments > i { flex: var(--w) 1 0; min-width: 3px; background: var(--c); opacity: .9; }
+.co-seg-legende { display: flex; justify-content: space-between; margin-top: 5px; font-size: 11px; font-weight: 600; color: var(--encre-3); }
+
+.co-ue-mods { list-style: none; margin: 10px 0 0; padding: 0; }
+.co-ue-mods li { display: grid; grid-template-columns: minmax(0, 1fr) 30px 50px; align-items: center; gap: 8px; min-height: 30px; font-size: 13.5px; }
+.co-ue-mods li + li { border-top: 1px solid var(--trait); }
+.co-ue-mods a { display: flex; align-items: center; gap: 8px; min-width: 0; color: var(--encre); font-weight: 550; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.co-pastille { flex: none; width: 7px; height: 7px; border-radius: 2.5px; background: var(--m); }
+.co-ue-coef { text-align: right; font-size: 12px; font-weight: 600; color: var(--encre-3); }
+.co-ue-mods b { text-align: right; font-weight: 700; }
+.co-ue-mods b.co-sans { color: var(--encre-4); font-weight: 600; }
+.co-ue-min { margin-top: auto; padding-top: 10px; font-size: 12.5px; line-height: 1.4; color: var(--encre-2); }
+.co-ue-min b { color: var(--encre); font-weight: 750; }
+.co-ue-min:empty { display: none; }
+
+/* Simulateur */
+.co-simu { padding-bottom: 14px; }
+.co-simu .carte-tete { margin-bottom: 10px; }
+.co-resume-simu { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 5px; }
+.co-resume-ue {
+  display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 7px 0 6px; border-radius: 11px;
+  background: color-mix(in srgb, var(--c, var(--gris)) 13%, transparent);
+  transition: background .3s;
+}
+.co-resume-ue small { font-size: 10.5px; font-weight: 700; color: var(--encre-3); }
+.co-resume-ue b { font-size: 13.5px; font-weight: 750; letter-spacing: -.02em; color: var(--c-encre, var(--encre-2)); }
+.co-resume-ue.c-gris b { color: var(--encre-3); }
+.co-simu-liste > li { min-height: 52px; gap: 11px; padding: 7px 0; --retrait: 41px; }
+.co-simu-liste .titre { font-size: 14px; font-weight: 600; line-height: 1.28; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.co-simu-liste .titre .co-code { margin-right: 2px; }
+.co-simu-liste .sous { margin-top: 2px; font-size: 11.5px; line-height: 1.3; }
+.co-petite-icone { width: 30px; height: 30px; }
+.co-champ { flex: none; display: flex; align-items: baseline; gap: 3px; font-size: 12px; font-weight: 600; color: var(--encre-3); }
+.co-note {
+  width: 64px; height: 36px; padding: 0 10px; border: 0; border-radius: 11px; outline: 0;
+  font-size: 16px; font-weight: 700; text-align: right; color: var(--encre);
+  background: var(--verre-creux); box-shadow: inset 0 0 0 1px var(--trait);
+  transition: box-shadow .2s, background .2s;
+}
+.co-note::placeholder { color: var(--encre-4); font-weight: 600; }
+.co-note:focus { background: var(--verre-fort); box-shadow: inset 0 0 0 1.5px var(--m, var(--accent)), 0 0 0 4px color-mix(in srgb, var(--m, var(--accent)) 18%, transparent); }
+.co-note.co-invalide { box-shadow: inset 0 0 0 1.5px var(--rouge), 0 0 0 4px color-mix(in srgb, var(--rouge) 16%, transparent); }
+.co-note-bas { margin-top: 10px; font-size: 12px; line-height: 1.4; color: var(--encre-3); }
+
+/* Règles */
+.co-regles-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.co-regles-liste li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px; font-size: 13.5px; line-height: 1.4; }
+.co-regles-liste b { font-weight: 700; }
+.co-regles-liste span { color: var(--encre-2); }
+
+/* Absences */
+.co-periode { font-size: 12.5px; font-weight: 600; color: var(--encre-3); }
+.co-abs-chiffres { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.co-abs-chiffres > div { display: flex; flex-direction: column; }
+.co-abs-chiffres b { font-size: 26px; font-weight: 700; letter-spacing: -.03em; line-height: 1.05; }
+.co-abs-chiffres b small { font-size: 14px; font-weight: 650; color: var(--encre-3); }
+.co-abs-chiffres span { margin-top: 2px; font-size: 11.5px; font-weight: 600; color: var(--encre-3); }
+.co-abs-chiffres .co-alerte b { color: var(--rouge-encre); }
+.co-abs-barre { margin-top: 14px; }
+.co-abs-legende { display: flex; justify-content: space-between; margin-top: 6px; font-size: 12px; font-weight: 600; color: var(--encre-3); }
+.co-abs-liste { margin-top: 8px; }
+.co-abs-liste > li { min-height: 40px; gap: 10px; font-size: 13px; color: var(--encre-2); }
+
+/* Feuille « Règles du BUT » */
+.co-f-sous { margin-bottom: 6px; font-size: 13.5px; color: var(--encre-3); }
+.co-f-titre { margin: 20px 0 2px; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--encre-3); }
+.co-f-liste > li { align-items: flex-start; padding: 12px 0; }
+.co-f-texte { margin-top: 4px; font-size: 14px; line-height: 1.5; color: var(--encre-2); }
+.co-f-source { margin-top: 6px; font-size: 11.5px; line-height: 1.4; color: var(--encre-4); }
+
+/* ==========================================================================
+   Adaptation aux écrans
+   ========================================================================== */
+@media (max-width: 1080px) {
+  /* Notes : cartes d'UE, puis simulateur, puis règles et absences */
+  .co-notes { grid-template-columns: minmax(0, 1fr); }
+  .co-notes-principal { display: contents; }
+  .co-ues-grille { order: 1; }
+  .co-notes-cote { order: 2; position: static; }
+  .co-notes-bas { order: 3; }
+}
+@media (max-width: 899px) {
+  /* Fiche : une seule colonne, cartes réordonnées par urgence */
+  .co-fiche { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .co-col { display: contents; }
+  .co-tete { order: 0; }
+  .co-infos { order: 1; }
+  .co-evals { order: 2; }
+  .co-seances { order: 3; }
+  .co-maitrise { order: 4; }
+  .co-reviser { order: 5; }
+  .co-pieges { order: 6; }
+  .co-progression { order: 7; }
+  .co-ressources { order: 8; }
+}
+@media (max-width: 599px) {
+  .co-segment { width: 100%; }
+  .co-grille { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .co-tete { padding: 18px 18px 16px; }
+  .co-icone-xl { width: 46px; height: 46px; border-radius: 13px; }
+  .co-icone-xl svg.ic { width: 25px; height: 25px; }
+  .co-tete-haut { flex-wrap: wrap; }
+  .co-tete-titres { flex-basis: calc(100% - 60px); }
+  .co-moodle { order: 3; margin-left: 60px; }
+  .co-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px 12px; }
+  .co-stats b { font-size: 25px; }
+  .co-stats b small { font-size: 14px; }
+  .co-stats span { font-size: 11.5px; line-height: 1.25; }
+  .co-chap-label { flex-basis: 60px; }
+  .co-poids-ligne { grid-template-columns: 52px minmax(0, 1fr) 54px 40px; gap: 10px; }
+  .co-voisin { padding: 0 10px 0 6px; }
+  .co-voisin:last-child { padding: 0 6px 0 10px; }
+  .co-notions { padding-left: 22px; }
+  .co-chap-label { min-width: 0; }
+  .co-ues-grille { grid-template-columns: minmax(0, 1fr); }
+  .co-regles-liste li { grid-template-columns: minmax(0, 1fr); gap: 1px; }
+  .carte.co-simu, .carte.co-ue { padding-left: 16px; padding-right: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .co-notions { animation: none; }
+  .co-carte:hover { transform: none; }
+}
