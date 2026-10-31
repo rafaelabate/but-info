@@ -1,0 +1,974 @@
+{
+  "maj": "2026-09-28",
+  "intro": "Dix principes validés par la recherche en psychologie cognitive et en didactique de l'informatique, appliqués aux modules du S1 de BUT Info. Les niveaux d'efficacité suivent Dunlosky et al. (2013) quand la technique y figure, sinon la source indiquée.",
+  "contexte_but1": {
+    "chiffre": "En France, 71,8 % des néo-bacheliers entrés en BUT en 2021 sont passés en 2e année en un an (72,5 % pour ceux de 2023) : environ un sur quatre ne passe pas du premier coup.",
+    "message": "Le BUT1 se joue sur la régularité : les méthodes ci-dessous visent à ce que chaque heure de travail compte.",
+    "sources": [
+      {
+        "titre": "MESRE-SIES. Note Flash n°26 (novembre 2025) : Parcours et réussite en IUT, résultats de la session 2024.",
+        "url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-11/nf-sies-2025-26-38244.pdf"
+      }
+    ]
+  },
+  "principes": [
+    {
+      "id": "rappel-actif",
+      "titre": "Rappel actif : teste-toi au lieu de relire",
+      "icone": "brain",
+      "accroche": "Ce que tu vas chercher dans ta mémoire, tu le retiens ; ce que tu relis, tu crois seulement le savoir.",
+      "pourquoi": "Roediger & Karpicke (2006) : une semaine après, des étudiants qui s'étaient testés trois fois sur un texte en retenaient 61 %, contre 40 % pour ceux qui l'avaient relu quatre fois — alors qu'ils l'avaient lu 3,4 fois contre 14,2, et que les « relecteurs » se disaient plus sûrs d'eux. Les méta-analyses confirment l'effet (Rowland, 2014 ; Adesope et al., 2017), plus fort quand tu dois produire la réponse que quand tu la reconnais. Dunlosky et al. (2013) classent l'auto-test parmi les deux seules techniques d'utilité élevée.",
+      "comment": [
+        "Ferme le cours et écris sur une feuille blanche tout ce que tu retiens (5 à 10 min), puis compare et complète dans une autre couleur.",
+        "Transforme chaque titre du cours en question et réponds sans regarder.",
+        "Refais les exercices de TD sans le corrigé ; ouvre-le seulement après avoir vraiment cherché.",
+        "Corrige-toi tout de suite : une erreur suivie de la bonne réponse se retient bien.",
+        "Pour t'entraîner, préfère les questions ouvertes aux QCM, même si l'examen est un QCM."
+      ],
+      "en_but_info": "R1.01 (C) : écris de mémoire une boucle for qui parcourt un tableau et un printf avec les bons formats (%d, %f, %c), puis compile pour vérifier. R1.02 : écris sans aide le HTML d'un formulaire et la règle CSS qui centre un bloc avec flexbox. R1.05 : écris la requête SQL de l'exercice avant de regarder la correction du TD. R1.06 : refais une démonstration par récurrence sur feuille blanche. R1.03 : dix conversions binaire ↔ hexadécimal ↔ décimal en 5 minutes chrono.",
+      "efficacite": "élevée",
+      "efficacite_note": "« Practice testing » : utilité élevée selon Dunlosky et al. (2013).",
+      "sources": [
+        {
+          "titre": "Roediger & Karpicke (2006). Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. Psychological Science, 17(3), 249-255.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16507066/"
+        },
+        {
+          "titre": "Rowland (2014). The effect of testing versus restudy on retention: a meta-analytic review of the testing effect. Psychological Bulletin, 140(6), 1432-1463.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25150680/"
+        },
+        {
+          "titre": "Adesope, Trevisan & Sundararajan (2017). Rethinking the Use of Tests: A Meta-Analysis of Practice Testing. Review of Educational Research, 87(3), 659-701.",
+          "url": "https://doi.org/10.3102/0034654316689306"
+        },
+        {
+          "titre": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013). Improving Students' Learning With Effective Learning Techniques. Psychological Science in the Public Interest, 14(1), 4-58.",
+          "url": "https://doi.org/10.1177/1529100612453266"
+        }
+      ]
+    },
+    {
+      "id": "repetition-espacee",
+      "titre": "Répétition espacée : revois un peu, mais souvent",
+      "icone": "repeat",
+      "accroche": "Quatre séances de 30 minutes étalées sur deux semaines battent deux heures la veille.",
+      "pourquoi": "Sans révision, on oublie vite : la courbe d'oubli d'Ebbinghaus a été répliquée en 2015 (Murre & Dros). La méta-analyse de Cepeda et al. (2006 ; 839 mesures, 317 expériences) montre que des séances espacées donnent une meilleure rétention que des séances groupées. Sur plus de 1 350 personnes (Cepeda et al., 2008), l'écart idéal entre deux révisions valait environ 20 à 40 % du délai restant pour un test à une semaine. Kornell (2009) : l'espacement a été plus efficace pour 90 % des participants… alors que 72 % pensaient l'inverse.",
+      "comment": [
+        "Revois chaque cours le lendemain (J+1), puis quelques jours après (J+3 ou J+4), à J+7, puis toutes les 2 à 3 semaines.",
+        "Chaque révision se fait en rappel actif (feuille blanche, questions), pas en relecture.",
+        "Mets les notions qui résistent dans Anki : l'appli calcule elle-même quand te les reposer.",
+        "Dès qu'une date de contrôle tombe, place tes révisions dans ton agenda.",
+        "Préfère des séances régulières de 20 à 30 minutes à une longue séance tardive."
+      ],
+      "en_but_info": "En BUT, tout est en contrôle continu : les notes tombent tout le semestre (ex. QCM de R1.02 le 29/09, DS de R1.02 le 04/11). Reprends le week-end les cours de la semaine, puis de nouveau avant chaque contrôle. Cartes Anki typiques : « = ou == en C ? », « clé primaire ou clé étrangère ? », « complément à 2 de −5 sur 8 bits ? », « margin ou padding ? », « contraposée de A ⇒ B ? ».",
+      "efficacite": "élevée",
+      "efficacite_note": "« Distributed practice » : utilité élevée selon Dunlosky et al. (2013).",
+      "sources": [
+        {
+          "titre": "Cepeda, Pashler, Vul, Wixted & Rohrer (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3), 354-380.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16719566/"
+        },
+        {
+          "titre": "Cepeda, Vul, Rohrer, Wixted & Pashler (2008). Spacing effects in learning: a temporal ridgeline of optimal retention. Psychological Science, 19(11), 1095-1102.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19076480/"
+        },
+        {
+          "titre": "Murre & Dros (2015). Replication and Analysis of Ebbinghaus' Forgetting Curve. PLOS ONE, 10(7), e0120644.",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120644"
+        },
+        {
+          "titre": "Kornell (2009). Optimising learning using flashcards: Spacing is more effective than cramming. Applied Cognitive Psychology, 23(9), 1297-1317.",
+          "url": "https://doi.org/10.1002/acp.1537"
+        },
+        {
+          "titre": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013). Improving Students' Learning With Effective Learning Techniques. Psychological Science in the Public Interest, 14(1), 4-58.",
+          "url": "https://doi.org/10.1177/1529100612453266"
+        }
+      ]
+    },
+    {
+      "id": "pratique-entrelacee",
+      "titre": "Pratique entrelacée : mélange les types d'exercices",
+      "icone": "shuffle",
+      "accroche": "Au DS, personne ne te dit quel chapitre utiliser : entraîne-toi à le reconnaître.",
+      "pourquoi": "Dans une étude en classe (Rohrer, Dedrick & Stershic, 2015 ; 126 élèves sur 3 mois), les problèmes travaillés en mélange ont donné 74 % de réussite à un test surprise 30 jours plus tard, contre 42 % pour les problèmes regroupés par chapitre. La méta-analyse de Brunmair & Richter (2019 ; 59 études) trouve un effet modéré (g = 0,42 ; 0,34 en maths), plus net quand les catégories se ressemblent. Limite : pour mémoriser des listes de mots, travailler par blocs reste meilleur.",
+      "comment": [
+        "Découvre une nouvelle notion par blocs (plusieurs exercices du même type) le temps de la comprendre.",
+        "Dès que les bases sont là, mélange : tire des exercices au hasard dans plusieurs TD.",
+        "Avant de résoudre, dis quelle méthode tu vas utiliser et pourquoi.",
+        "Termine tes révisions par un examen blanc qui mélange tous les chapitres."
+      ],
+      "en_but_info": "R1.06 : mélange récurrence, ensembles, logique et dénombrement dans la même séance. R1.01 : alterne exercices de boucles, de tableaux et de fonctions. R1.05 : pioche des questions dans plusieurs TD (jointure ? GROUP BY/HAVING ? sous-requête ?). R1.03 : alterne conversions, algèbre de Boole et assembleur 8086.",
+      "efficacite": "modérée",
+      "efficacite_note": "« Interleaved practice » : utilité modérée selon Dunlosky et al. (2013).",
+      "sources": [
+        {
+          "titre": "Rohrer, Dedrick & Stershic (2015). Interleaved Practice Improves Mathematics Learning. Journal of Educational Psychology, 107(3), 900-908 (texte intégral sur ERIC).",
+          "url": "https://files.eric.ed.gov/fulltext/ED557355.pdf"
+        },
+        {
+          "titre": "Brunmair & Richter (2019). Similarity matters: A meta-analysis of interleaved learning and its moderators. Psychological Bulletin, 145(11), 1029-1052.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31556629/"
+        },
+        {
+          "titre": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013). Improving Students' Learning With Effective Learning Techniques. Psychological Science in the Public Interest, 14(1), 4-58.",
+          "url": "https://doi.org/10.1177/1529100612453266"
+        }
+      ]
+    },
+    {
+      "id": "elaboration",
+      "titre": "Élaboration : explique-toi le pourquoi et le comment",
+      "icone": "lightbulb",
+      "accroche": "Comprendre, c'est pouvoir dire pourquoi ça marche, pas seulement quoi taper.",
+      "pourquoi": "S'expliquer à soi-même ce qu'on lit ou ce qu'on résout améliore l'apprentissage : la méta-analyse de Bisra et al. (2018 ; 64 études, 69 effets) trouve un effet moyen g = 0,55. Dunlosky et al. (2013) classent l'interrogation élaborative (« pourquoi est-ce vrai ? ») et l'auto-explication en utilité modérée. Relier une notion nouvelle à ce que tu sais déjà fait partie des six stratégies retenues par Weinstein et al. (2018).",
+      "comment": [
+        "Pour chaque notion, réponds à : pourquoi ça marche ? quand l'utiliser ? que se passe-t-il si je change ceci ?",
+        "Explique chaque ligne d'un programme à voix haute (à un camarade ou à un canard en plastique).",
+        "Compare la nouvelle notion avec une notion déjà connue : ressemblances, différences.",
+        "Après chaque exercice, écris en une phrase l'idée qui t'a débloqué."
+      ],
+      "en_but_info": "C : pourquoi une fonction peut-elle modifier un tableau passé en paramètre mais pas une variable int ? SQL : pourquoi faut-il HAVING et non WHERE pour filtrer sur un COUNT ? CSS : pourquoi ma règle ne s'applique pas (cascade, spécificité, héritage) ? Architecture : pourquoi le complément à 2 permet-il de soustraire avec un additionneur ? Maths : pourquoi l'initialisation et l'hérédité suffisent-elles dans une récurrence ?",
+      "efficacite": "modérée",
+      "efficacite_note": "Interrogation élaborative et auto-explication : utilité modérée selon Dunlosky et al. (2013).",
+      "sources": [
+        {
+          "titre": "Bisra, Liu, Nesbit, Salimi & Winne (2018). Inducing Self-Explanation: a Meta-Analysis. Educational Psychology Review, 30(3), 703-725.",
+          "url": "https://doi.org/10.1007/s10648-018-9434-x"
+        },
+        {
+          "titre": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013). Improving Students' Learning With Effective Learning Techniques. Psychological Science in the Public Interest, 14(1), 4-58.",
+          "url": "https://doi.org/10.1177/1529100612453266"
+        },
+        {
+          "titre": "Weinstein, Madan & Sumeracki (2018). Teaching the science of learning. Cognitive Research: Principles and Implications, 3, 2 (accès libre).",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5780548/"
+        }
+      ]
+    },
+    {
+      "id": "exemples-travailles",
+      "titre": "Exemples travaillés : décortique un corrigé, puis fais seul",
+      "icone": "book",
+      "accroche": "Quand tu débutes, un bon exemple corrigé t'apprend plus qu'une heure bloqué devant une page blanche.",
+      "pourquoi": "Chez les débutants, étudier des exemples résolus puis s'exercer sur des problèmes proches fait mieux apprendre que de tout résoudre seul d'emblée (Sweller & Cooper, 1985). La synthèse d'Atkinson et al. (2000) recommande plusieurs exemples par type de problème, placés juste à côté d'exercices similaires, en s'expliquant chaque étape ; cet avantage concerne surtout les débuts de l'apprentissage. En programmation, remettre dans l'ordre des lignes de code mélangées (problèmes de Parsons) a été aussi efficace qu'écrire le code, en moins de temps (Ericson et al., 2017).",
+      "comment": [
+        "Lis un exemple corrigé en t'expliquant chaque étape (pourquoi cette ligne ?).",
+        "Cache-le et refais-le de mémoire.",
+        "Fais un exercice très proche seul, puis un exercice différent.",
+        "Retire l'aide progressivement : exercice à trous, puis guidé, puis seul.",
+        "Garde une collection de « modèles » (parcours de tableau, jointure, récurrence...) que tu sais réécrire sans regarder."
+      ],
+      "en_but_info": "R1.01 : prends le corrigé « maximum d'un tableau », commente chaque ligne, réécris-le, puis écris seul « minimum », « recherche d'un élément » et « compter les nombres pairs ». R1.05 : décortique une jointure vue en CM (quelles tables, quelle clé), puis écris-en une sur la base du TD8 (bibliotheque.sql). R1.06 : analyse une récurrence bien rédigée, puis rédige la tienne avec la même structure (initialisation, hérédité, conclusion).",
+      "efficacite": "élevée",
+      "efficacite_note": "Pour les débutants (effet de l'exemple travaillé, Sweller & Cooper 1985 ; Atkinson et al. 2000). Technique non classée par Dunlosky et al. ; son intérêt diminue quand tu maîtrises le sujet.",
+      "sources": [
+        {
+          "titre": "Sweller & Cooper (1985). The Use of Worked Examples as a Substitute for Problem Solving in Learning Algebra. Cognition and Instruction, 2(1), 59-89.",
+          "url": "https://doi.org/10.1207/s1532690xci0201_3"
+        },
+        {
+          "titre": "Atkinson, Derry, Renkl & Wortham (2000). Learning from Examples: Instructional Principles from the Worked Examples Research. Review of Educational Research, 70(2), 181-214.",
+          "url": "https://doi.org/10.3102/00346543070002181"
+        },
+        {
+          "titre": "Ericson, Margulieux & Rick (2017). Solving Parsons problems versus fixing and writing code. Koli Calling 2017, 20-29.",
+          "url": "https://doi.org/10.1145/3141880.3141895"
+        }
+      ]
+    },
+    {
+      "id": "double-codage",
+      "titre": "Double codage : associe un schéma à chaque explication",
+      "icone": "image",
+      "accroche": "Un schéma que tu sais redessiner de mémoire vaut une page de notes.",
+      "pourquoi": "Selon la théorie du double codage (Clark & Paivio, 1991), une information codée à la fois en mots et en image est mieux retenue. Weinstein et al. (2018) notent que les illustrations aident surtout quand la notion comporte plusieurs parties ou étapes et quand on débute. En programmation, se représenter ce qui se passe en mémoire pendant l'exécution (la « machine notionnelle ») est une difficulté majeure des débutants (Sorva, 2013). Nuance : Dunlosky et al. (2013) jugent faible l'utilité des images mentales pour apprendre un texte ; ici, il s'agit de schémas concrets que tu dessines.",
+      "comment": [
+        "Pour chaque notion clé, fais un schéma ET une phrase d'explication.",
+        "Redessine le schéma de mémoire puis compare avec l'original (double codage + rappel actif).",
+        "Reste simple : boîtes, flèches, étiquettes, sans décoration.",
+        "Explique ton schéma à voix haute."
+      ],
+      "en_but_info": "C : dessine les cases mémoire d'un tableau et l'état des variables à chaque tour de boucle (Python Tutor le montre aussi pour le C). HTML/CSS : dessine l'arbre DOM et le modèle de boîte (contenu, padding, border, margin). SQL : dessine les tables avec des flèches clé étrangère → clé primaire avant d'écrire une jointure. Architecture : place la table de vérité à côté du circuit logique ; note le contenu des registres (AX, BX...) avant et après chaque instruction 8086.",
+      "efficacite": "modérée",
+      "efficacite_note": "Dunlosky et al. (2013) jugent faible l'imagerie mentale appliquée aux textes, alors que Weinstein et al. (2018) retiennent le double codage parmi six stratégies bien étayées : d'où « modérée ».",
+      "sources": [
+        {
+          "titre": "Clark & Paivio (1991). Dual coding theory and education. Educational Psychology Review, 3(3), 149-210.",
+          "url": "https://doi.org/10.1007/BF01320076"
+        },
+        {
+          "titre": "Weinstein, Madan & Sumeracki (2018). Teaching the science of learning. Cognitive Research: Principles and Implications, 3, 2 (accès libre).",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5780548/"
+        },
+        {
+          "titre": "Sorva (2013). Notional machines and introductory programming education. ACM Transactions on Computing Education, 13(2), 1-31.",
+          "url": "https://doi.org/10.1145/2483710.2483713"
+        },
+        {
+          "titre": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013). Improving Students' Learning With Effective Learning Techniques. Psychological Science in the Public Interest, 14(1), 4-58.",
+          "url": "https://doi.org/10.1177/1529100612453266"
+        }
+      ]
+    },
+    {
+      "id": "sommeil",
+      "titre": "Sommeil : c'est la nuit que ta mémoire se consolide",
+      "icone": "moon",
+      "accroche": "Une nuit blanche avant un DS coûte plus de points qu'elle n'en rapporte.",
+      "pourquoi": "Le sommeil consolide les souvenirs de la journée (revue de Diekelmann & Born, 2010). Une seule nuit sans dormir réduit nettement la capacité à mémoriser de nouvelles informations le lendemain (Yoo et al., 2007). Chez 88 étudiants équipés d'un bracelet (Okano et al., 2019), la qualité, la durée et la régularité du sommeil sur le mois et la semaine précédant les examens expliquaient près de 25 % des écarts de notes ; la nuit juste avant, seule, ne comptait pas. Pour un jeune adulte, la recommandation est de 7 à 9 h par nuit (National Sleep Foundation).",
+      "comment": [
+        "Vise 7 à 9 h par nuit, à horaires réguliers, week-end compris.",
+        "Pas de nuit blanche : c'est le sommeil des semaines qui précèdent qui compte le plus.",
+        "Fixe-toi une heure de fin de travail (ex. 23 h) et tiens-la, même avec un rendu.",
+        "Le soir, fais une courte séance de rappel actif puis dors : le sommeil consolide ce que tu viens de travailler.",
+        "Si tu dors mal depuis longtemps, parles-en au Centre de santé universitaire."
+      ],
+      "en_but_info": "Les dépôts Moodle tombent souvent le soir (ex. 23 h pour les TP de R1.03) : vise un rendu la veille pour ne pas sacrifier ta nuit. Avant un test de C ou un QCM de R1.02, une nuit complète vaut plus qu'une heure de révision de plus à 2 h du matin.",
+      "efficacite": "élevée",
+      "efficacite_note": "Preuves expérimentales (privation de sommeil) et corrélationnelles (étudiants) ; hors du classement de Dunlosky et al.",
+      "sources": [
+        {
+          "titre": "Diekelmann & Born (2010). The memory function of sleep. Nature Reviews Neuroscience, 11(2), 114-126.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20046194/"
+        },
+        {
+          "titre": "Yoo, Hu, Gujar, Jolesz & Walker (2007). A deficit in the ability to form new human memories without sleep. Nature Neuroscience, 10(3), 385-392.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17293859/"
+        },
+        {
+          "titre": "Okano, Kaczmarzyk, Dave, Gabrieli & Grossman (2019). Sleep quality, duration, and consistency are associated with better academic performance in college students. npj Science of Learning, 4, 16.",
+          "url": "https://www.nature.com/articles/s41539-019-0055-z"
+        },
+        {
+          "titre": "Hirshkowitz et al. (2015). National Sleep Foundation's sleep time duration recommendations: methodology and results summary. Sleep Health, 1(1), 40-43.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29073412/"
+        }
+      ]
+    },
+    {
+      "id": "gestion-du-temps",
+      "titre": "Gestion du temps : planifie, bloque des créneaux, travaille par sprints",
+      "icone": "clock",
+      "accroche": "Une tâche sans créneau dans ton agenda reste une bonne intention.",
+      "pourquoi": "Décider à l'avance quand, où et comment tu vas travailler (« si c'est mardi 17 h, alors je fais le TD4 de SQL à la BU ») augmente nettement les chances de le faire : méta-analyse de Gollwitzer & Sheeran (2006 ; 94 tests), effet d = 0,65. Le time-blocking (donner un créneau précis à chaque tâche, méthode décrite par Cal Newport) applique ce principe. Pour la concentration, des pauses planifiées de type Pomodoro ont donné moins de fatigue, plus de concentration et de motivation que des pauses prises « au feeling », pour autant de travail fait en moins de temps (Biwer et al., 2023 ; 87 étudiants).",
+      "comment": [
+        "Chaque dimanche soir (15 à 20 min) : liste les échéances de la semaine (Moodle, tableau de bord, mails).",
+        "Bloque dans ton agenda des créneaux précis par module, en commençant par les plus lourds.",
+        "Formule tes plans en « si… alors… » : moment + lieu + tâche précise.",
+        "Travaille en pomodoros : 25 min à fond, 5 min de pause, une pause longue après 4.",
+        "Garde des marges pour les imprévus ; si le plan saute, refais-le pour le reste de la journée au lieu d'abandonner."
+      ],
+      "en_but_info": "En BUT1, les échéances s'empilent : TP de R1.03 à déposer sur Moodle, TD de R1.05 à rendre, feuilles WIMS de R1.06 avant Noël, TD de R1.02 à déposer sur le serveur avant le 15/01, livrables des six SAÉ. Un créneau fixe par semaine pour R1.01 (C), R1.05 (SQL) et R1.06 (maths), plus un créneau « rendus », évite les nuits de rattrapage.",
+      "efficacite": "modérée",
+      "efficacite_note": "La planification « si… alors » est bien étayée ; pour le Pomodoro, une seule étude contrôlée récente, sur une journée.",
+      "sources": [
+        {
+          "titre": "Gollwitzer & Sheeran (2006). Implementation Intentions and Goal Achievement: A Meta-analysis of Effects and Processes. Advances in Experimental Social Psychology, 38, 69-119.",
+          "url": "https://doi.org/10.1016/S0065-2601(06)38002-1"
+        },
+        {
+          "titre": "Biwer, Wiradhany, oude Egbrink & de Bruin (2023). Understanding effort regulation: Comparing 'Pomodoro' breaks and self-regulated breaks. British Journal of Educational Psychology, 93(S2), 353-367.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36859717/"
+        },
+        {
+          "titre": "Cal Newport. Deep Habits: The Importance of Planning Every Minute of Your Work Day (blog, méthode du time-blocking).",
+          "url": "https://calnewport.com/deep-habits-the-importance-of-planning-every-minute-of-your-work-day/"
+        },
+        {
+          "titre": "Site officiel de la technique Pomodoro (Francesco Cirillo).",
+          "url": "https://www.pomodorotechnique.com/"
+        }
+      ]
+    },
+    {
+      "id": "pratique-du-code",
+      "titre": "Pratique du code : écris, trace et débogue par toi-même",
+      "icone": "code",
+      "accroche": "On apprend à programmer en programmant, pas en regardant quelqu'un programmer.",
+      "pourquoi": "Une étude menée dans sept pays (Lister et al., 2004) a montré que beaucoup d'étudiants débutants avaient du mal à prédire ce que fait un petit programme. Or savoir tracer du code (l'exécuter à la main) et l'expliquer en français est lié à la capacité d'en écrire (Lopez et al., 2008), et enseigner d'abord le traçage puis l'écriture a réduit les erreurs (Xie et al., 2019). Écrire du code de mémoire, c'est du rappel actif appliqué à l'informatique ; et se tromper puis être corrigé aide à apprendre (Metcalfe, 2017).",
+      "comment": [
+        "Avant d'exécuter un programme, prédis sa sortie sur papier (tableau des variables ligne par ligne), puis vérifie.",
+        "Tape le code toi-même, sans copier-coller, même quand la solution est sous tes yeux.",
+        "Débogue avec méthode : lis le premier message d'erreur, reproduis le bug, isole-le (printf), change une seule chose à la fois.",
+        "Tiens un carnet de bugs : l'erreur, sa cause, comment la repérer la prochaine fois.",
+        "Entraîne-toi aussi sur papier : en contrôle, pas de compilateur ni d'autocomplétion."
+      ],
+      "en_but_info": "R1.01 : pour les tests papier, écris du C sans IDE en surveillant points-virgules et accolades, puis « exécute » ton code à la main sur un petit tableau. Chez les débutants, les bugs les plus coriaces sont les erreurs de calcul et les conditions de boucle (Fitzgerald et al., 2008) : vérifie < ou <=, les indices de 0 à n−1, = ou ==. R1.02 : lis le code HTML/CSS d'une page et prédis le rendu avant d'ouvrir le navigateur. R1.05 : prédis le résultat d'une requête sur trois lignes d'exemple avant de l'exécuter dans DataGrip.",
+      "efficacite": "élevée",
+      "efficacite_note": "Repose sur le rappel actif (utilité élevée selon Dunlosky et al.) ; les études propres à l'informatique sont surtout corrélationnelles ou exploratoires.",
+      "sources": [
+        {
+          "titre": "Lister et al. (2004). A multi-national study of reading and tracing skills in novice programmers. ACM SIGCSE Bulletin, 36(4), 119-150.",
+          "url": "https://opus.lib.uts.edu.au/bitstream/10453/4126/3/2004000904.pdf"
+        },
+        {
+          "titre": "Lopez, Whalley, Robbins & Lister (2008). Relationships between reading, tracing and writing skills in introductory programming. ICER 2008, 101-112.",
+          "url": "https://opus.lib.uts.edu.au/bitstream/10453/10806/1/2008001530.pdf"
+        },
+        {
+          "titre": "Xie et al. (2019). A theory of instruction for introductory programming skills. Computer Science Education, 29(2-3), 205-253.",
+          "url": "https://doi.org/10.1080/08993408.2019.1565235"
+        },
+        {
+          "titre": "Fitzgerald et al. (2008). Debugging: finding, fixing and flailing, a multi-institutional study of novice debuggers. Computer Science Education, 18(2), 93-116.",
+          "url": "https://doi.org/10.1080/08993400802114508"
+        },
+        {
+          "titre": "Metcalfe (2017). Learning from Errors. Annual Review of Psychology, 68, 465-489.",
+          "url": "https://doi.org/10.1146/annurev-psych-010416-044022"
+        }
+      ]
+    },
+    {
+      "id": "binome-entraide",
+      "titre": "Binôme et entraide : apprends avec les autres",
+      "icone": "users",
+      "accroche": "Expliquer à un camarade, c'est le meilleur test de ta propre compréhension.",
+      "pourquoi": "Une méta-analyse de 18 études (3 308 étudiants) sur la programmation en binôme dans les cours d'informatique trouve des effets positifs sur les devoirs, les examens et les taux de réussite, mais pas d'effet net sur les mesures affectives (Umapathy & Ritzhaupt, 2017). Dans une étude universitaire, le binôme a amélioré la persévérance dans la filière, la confiance et la qualité des programmes (McDowell et al., 2006). L'Onisep le résume : expliquer un cours à un camarade permet de vérifier qu'on l'a soi-même compris.",
+      "comment": [
+        "Programmation en binôme : un « pilote » au clavier, un « navigateur » qui relit et propose ; changez de rôle régulièrement.",
+        "Interrogez-vous mutuellement avec des questions préparées (du rappel actif à deux).",
+        "Chacun explique à l'autre un exercice qu'il a réussi.",
+        "Pose tes questions tôt : fin de TD, forum Moodle, mail à l'enseignant, tutorat.",
+        "Entraide n'est pas copie : chacun écrit et rend son propre travail."
+      ],
+      "en_but_info": "Les SAÉ se font en groupe : répartissez les tâches mais relisez le travail des autres, car chaque SAÉ compte pour 40 % de son UE. Pour les TD et TP individuels (R1.01, R1.05), travaillez à deux sur la compréhension puis écris ton code seul : au contrôle, tu seras seul. En R1.06, l'enseignant conseille de poser les questions en fin de TD ou sur le forum « Questions diverses ».",
+      "efficacite": "modérée",
+      "efficacite_note": "Effets positifs sur 3 des 4 critères étudiés par la méta-analyse de 2017 ; hors du classement de Dunlosky et al.",
+      "sources": [
+        {
+          "titre": "Umapathy & Ritzhaupt (2017). A Meta-Analysis of Pair-Programming in Computer Programming Courses. ACM Transactions on Computing Education, 17(4).",
+          "url": "https://doi.org/10.1145/2996201"
+        },
+        {
+          "titre": "McDowell, Werner, Bullock & Fernald (2006). Pair programming improves student retention, confidence, and program quality. Communications of the ACM, 49(8), 90-95.",
+          "url": "https://doi.org/10.1145/1145287.1145293"
+        },
+        {
+          "titre": "Onisep. Réussir en BUT (publié le 10/12/2024).",
+          "url": "https://www.onisep.fr/formation/apres-le-bac-les-etudes-superieures/conseils-et-strategies-d-etudes/reussir-dans-le-sup/reussir-en-but"
+        }
+      ]
+    }
+  ],
+  "a_eviter": [
+    {
+      "titre": "Relire et surligner",
+      "pourquoi": "Dunlosky et al. (2013) classent la relecture et le surlignage en utilité faible : le texte devient familier, ce qui donne l'impression de le maîtriser, sans l'ancrer en mémoire. Chez Roediger & Karpicke (2006), relire quatre fois donnait plus de confiance… et de moins bons résultats à une semaine que se tester.",
+      "a_la_place": "Rappel actif : ferme le cours, écris ce que tu sais, puis vérifie. Si tu surlignes, fais-le après t'être testé, pour marquer ce que tu avais oublié.",
+      "sources": [
+        {
+          "titre": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013). Improving Students' Learning With Effective Learning Techniques. Psychological Science in the Public Interest, 14(1), 4-58.",
+          "url": "https://doi.org/10.1177/1529100612453266"
+        },
+        {
+          "titre": "Roediger & Karpicke (2006). Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. Psychological Science, 17(3), 249-255.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16507066/"
+        }
+      ]
+    },
+    {
+      "titre": "Recopier son cours au propre ou faire des résumés passifs",
+      "pourquoi": "Le résumé est lui aussi classé en utilité faible par Dunlosky et al. (2013) : recopier fait travailler la main, pas la mémoire.",
+      "a_la_place": "Écris ta fiche de mémoire sur une feuille blanche, puis complète-la avec le cours : elle devient la liste de ce que tu oublies.",
+      "sources": [
+        {
+          "titre": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013). Improving Students' Learning With Effective Learning Techniques. Psychological Science in the Public Interest, 14(1), 4-58.",
+          "url": "https://doi.org/10.1177/1529100612453266"
+        }
+      ]
+    },
+    {
+      "titre": "Bachoter la veille, faire une nuit blanche",
+      "pourquoi": "Tout réviser d'un coup donne une impression d'efficacité mais s'oublie vite (Kornell, 2009 : l'espacement a battu le bachotage pour 90 % des participants). Une nuit blanche nuit à la mémorisation du lendemain (Yoo et al., 2007).",
+      "a_la_place": "Répétition espacée dès maintenant et une nuit normale avant le contrôle.",
+      "sources": [
+        {
+          "titre": "Kornell (2009). Optimising learning using flashcards: Spacing is more effective than cramming. Applied Cognitive Psychology, 23(9), 1297-1317.",
+          "url": "https://doi.org/10.1002/acp.1537"
+        },
+        {
+          "titre": "Yoo, Hu, Gujar, Jolesz & Walker (2007). A deficit in the ability to form new human memories without sleep. Nature Neuroscience, 10(3), 385-392.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17293859/"
+        }
+      ]
+    },
+    {
+      "titre": "Lire le corrigé avant d'avoir cherché",
+      "pourquoi": "Comprendre une solution n'est pas savoir la produire : c'est une « illusion de compétence » fréquente (Bjork, Dunlosky & Kornell, 2013). Chercher, se tromper puis être corrigé fait mieux retenir (Metcalfe, 2017).",
+      "a_la_place": "Cherche vraiment (10 à 15 min), écris une tentative, puis lis le corrigé et refais l'exercice le lendemain sans aide.",
+      "sources": [
+        {
+          "titre": "Bjork, Dunlosky & Kornell (2013). Self-Regulated Learning: Beliefs, Techniques, and Illusions. Annual Review of Psychology, 64, 417-444.",
+          "url": "https://doi.org/10.1146/annurev-psych-113011-143823"
+        },
+        {
+          "titre": "Metcalfe (2017). Learning from Errors. Annual Review of Psychology, 68, 465-489.",
+          "url": "https://doi.org/10.1146/annurev-psych-010416-044022"
+        }
+      ]
+    },
+    {
+      "titre": "Enchaîner vingt exercices du même type jusqu'au DS",
+      "pourquoi": "Les exercices groupés par chapitre réussissent bien sur le moment mais tiennent mal dans le temps : 42 % contre 74 % pour les exercices mélangés, 30 jours plus tard (Rohrer et al., 2015).",
+      "a_la_place": "Mélange les types d'exercices dès que tu as compris les bases.",
+      "sources": [
+        {
+          "titre": "Rohrer, Dedrick & Stershic (2015). Interleaved Practice Improves Mathematics Learning. Journal of Educational Psychology, 107(3), 900-908 (texte intégral sur ERIC).",
+          "url": "https://files.eric.ed.gov/fulltext/ED557355.pdf"
+        }
+      ]
+    },
+    {
+      "titre": "Travailler avec le téléphone, Discord ou YouTube ouverts",
+      "pourquoi": "Faire autre chose sur son ordinateur pendant un cours fait baisser les résultats au test… et même ceux des voisins qui voient l'écran (Sana, Weston & Cepeda, 2013).",
+      "a_la_place": "Mode avion, une seule fenêtre ouverte, et des pauses planifiées (Pomodoro) pour consulter ton téléphone.",
+      "sources": [
+        {
+          "titre": "Sana, Weston & Cepeda (2013). Laptop multitasking hinders classroom learning for both users and nearby peers. Computers & Education, 62, 24-31.",
+          "url": "https://doi.org/10.1016/j.compedu.2012.10.003"
+        }
+      ]
+    },
+    {
+      "titre": "Copier du code (camarade, Internet, IA) sans le comprendre",
+      "pourquoi": "Tu n'apprends rien et, au contrôle papier, tu seras seul. Au département, tout usage d'IA non signalé dans un travail rendu et tout plagiat sont traités comme des fraudes (conseil de discipline possible).",
+      "a_la_place": "Fais-toi expliquer (enseignant, binôme, tutorat), puis écris ton code toi-même ; si l'IA est autorisée pour un travail, signale-le.",
+      "sources": [
+        {
+          "titre": "Livret d'accueil BUT Informatique 2026-2027, § 6 Règlement d'examen (p. 11) et § 4.2.3 (p. 10)",
+          "url": "",
+          "fichier": "Livret d'accueil BUT Informatique 2026-2027"
+        }
+      ]
+    },
+    {
+      "titre": "Chercher ton « style d'apprentissage » (visuel, auditif...)",
+      "pourquoi": "Aucune preuve solide qu'adapter l'enseignement à un « style » améliore l'apprentissage (Pashler et al., 2008).",
+      "a_la_place": "Utilise les techniques qui marchent pour tout le monde : rappel actif, espacement, mélange, schémas + mots.",
+      "sources": [
+        {
+          "titre": "Pashler, McDaniel, Rohrer & Bjork (2008). Learning Styles: Concepts and Evidence. Psychological Science in the Public Interest, 9(3), 105-119.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26162104/"
+        }
+      ]
+    },
+    {
+      "titre": "Tout miser sur la feuille A4 autorisée",
+      "pourquoi": "Dans une étude, les antisèches autorisées n'ont amélioré ni les notes ni l'anxiété (Dickson & Miller, 2005). Leur intérêt tient surtout à leur préparation, et elles peuvent rassurer autant que stresser (Whitehouse et al., 2024).",
+      "a_la_place": "Prépare-la comme une séance de révision (voir les conseils BUT) et entraîne-toi aussi sans elle.",
+      "sources": [
+        {
+          "titre": "Dickson & Miller (2005). Authorized Crib Cards Do Not Improve Exam Performance. Teaching of Psychology, 32(4), 230-233.",
+          "url": "https://doi.org/10.1207/s15328023top3204_6"
+        },
+        {
+          "titre": "Whitehouse, Bredican, Heaford, de Regt & Plangger (2024). Implications of crib sheets for student well-being and exam performance: a mixed methods study. Studies in Higher Education.",
+          "url": "https://doi.org/10.1080/03075079.2024.2435563"
+        }
+      ]
+    }
+  ],
+  "conseils_but_info": [
+    {
+      "titre": "Code sur papier avant chaque contrôle",
+      "conseil": "Au moins une fois par semaine, écris un exercice de C à la main, sans ordinateur et en temps limité ; tape-le ensuite tel quel et compile pour voir tes erreurs. Même chose en HTML/CSS avant les évaluations de R1.02.",
+      "pourquoi": "Les tests de R1.01 et les évaluations de R1.02 se font sur papier (QCM remplis au feutre noir, cases scannées) : sans compilateur ni autocomplétion, chaque oubli de syntaxe coûte.",
+      "sources": [
+        {
+          "titre": "Consignes de R1.01 : test papier en TD, QCM au feutre noir (cases scannées)",
+          "url": "",
+          "fichier": "Annonces Moodle R1.01 (septembre 2026)"
+        },
+        {
+          "titre": "Consignes de R1.02 (annonce Moodle du 15/09/2026) : feuille A4 manuscrite recto-verso autorisée à chaque évaluation",
+          "url": "",
+          "fichier": "Annonces Moodle R1.02 (septembre 2026)"
+        }
+      ]
+    },
+    {
+      "titre": "Refais les TD sans corrigé et tiens un carnet d'erreurs",
+      "conseil": "Cache le corrigé, refais l'exercice, compare, puis note chaque erreur (erreur → cause → règle) dans un carnet par module. Avant chaque contrôle, révise ce carnet en rappel actif.",
+      "pourquoi": "C'est du rappel actif, et une erreur suivie d'une correction se retient bien.",
+      "sources": [
+        {
+          "titre": "Roediger & Karpicke (2006). Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. Psychological Science, 17(3), 249-255.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16507066/"
+        },
+        {
+          "titre": "Metcalfe (2017). Learning from Errors. Annual Review of Psychology, 68, 465-489.",
+          "url": "https://doi.org/10.1146/annurev-psych-010416-044022"
+        }
+      ]
+    },
+    {
+      "titre": "Lis et trace du code avant d'en écrire",
+      "conseil": "Prédis la sortie des exemples du cours, explique en une phrase ce que fait une fonction, remets dans l'ordre des lignes de code mélangées.",
+      "pourquoi": "Tracer et expliquer du code sont liés à la capacité d'en écrire ; les problèmes de Parsons font progresser aussi bien qu'écrire, en moins de temps.",
+      "sources": [
+        {
+          "titre": "Lister et al. (2004). A multi-national study of reading and tracing skills in novice programmers. ACM SIGCSE Bulletin, 36(4), 119-150.",
+          "url": "https://opus.lib.uts.edu.au/bitstream/10453/4126/3/2004000904.pdf"
+        },
+        {
+          "titre": "Lopez, Whalley, Robbins & Lister (2008). Relationships between reading, tracing and writing skills in introductory programming. ICER 2008, 101-112.",
+          "url": "https://opus.lib.uts.edu.au/bitstream/10453/10806/1/2008001530.pdf"
+        },
+        {
+          "titre": "Ericson, Margulieux & Rick (2017). Solving Parsons problems versus fixing and writing code. Koli Calling 2017, 20-29.",
+          "url": "https://doi.org/10.1145/3141880.3141895"
+        }
+      ]
+    },
+    {
+      "titre": "Débogue avec méthode",
+      "conseil": "Lis le premier message d'erreur du compilateur (les suivants en découlent souvent), reproduis le bug, isole-le avec des printf, explique ton code ligne par ligne, change une seule chose à la fois. Vérifie d'abord les conditions de boucle et les calculs.",
+      "pourquoi": "Chez les débutants, les bugs les plus difficiles à trouver sont les erreurs de calcul et les conditions de boucle incorrectes.",
+      "sources": [
+        {
+          "titre": "Fitzgerald et al. (2008). Debugging: finding, fixing and flailing, a multi-institutional study of novice debuggers. Computer Science Education, 18(2), 93-116.",
+          "url": "https://doi.org/10.1080/08993400802114508"
+        }
+      ]
+    },
+    {
+      "titre": "Ne prends pas de retard sur les TP et les rendus",
+      "conseil": "Dépose chaque TP dans la semaine, même incomplet, et vérifie le dépôt (Moodle, ou serveur pour R1.02). Note chaque date de rendu dans ton agenda dès qu'elle est annoncée.",
+      "pourquoi": "Un rendu manquant vaut 0 et chaque TP prépare le suivant. Un étudiant de BUT informatique le dit à l'Onisep : « Il ne faut pas prendre de retard et bien préparer les travaux dirigés. »",
+      "sources": [
+        {
+          "titre": "Onisep. Ma 1re année en BUT informatique (témoignage de Dylan, IUT de Valence).",
+          "url": "https://www.onisep.fr/formation/apres-le-bac-les-etudes-superieures/ma-1-annee-en/ma-1-annee-en-but/but-informatique"
+        }
+      ]
+    },
+    {
+      "titre": "Fais de la feuille A4 manuscrite un outil de révision",
+      "conseil": "1) Pendant les semaines de cours, note tes erreurs et ce que tu oublies. 2) À J−7, écris la feuille de mémoire, puis complète avec le cours. 3) Condense : pas de copie du cours, seulement syntaxe, pièges et mini-exemples. 4) Fais un sujet avec la feuille, puis un sans. 5) Respecte exactement le format autorisé (R1.02 : une feuille A4 manuscrite recto-verso, rien d'autre).",
+      "pourquoi": "L'antisèche en elle-même n'améliore guère les notes ; c'est surtout sa préparation qui aide à apprendre, a fortiori si tu la fais en rappel actif.",
+      "sources": [
+        {
+          "titre": "Consignes de R1.02 (annonce Moodle du 15/09/2026) : feuille A4 manuscrite recto-verso autorisée à chaque évaluation",
+          "url": "",
+          "fichier": "Annonces Moodle R1.02 (septembre 2026)"
+        },
+        {
+          "titre": "Dickson & Miller (2005). Authorized Crib Cards Do Not Improve Exam Performance. Teaching of Psychology, 32(4), 230-233.",
+          "url": "https://doi.org/10.1207/s15328023top3204_6"
+        },
+        {
+          "titre": "Whitehouse, Bredican, Heaford, de Regt & Plangger (2024). Implications of crib sheets for student well-being and exam performance: a mixed methods study. Studies in Higher Education.",
+          "url": "https://doi.org/10.1080/03075079.2024.2435563"
+        }
+      ]
+    },
+    {
+      "titre": "Pose tes questions tôt",
+      "conseil": "En fin de TD, sur le forum Moodle du module ou par mail à l'enseignant. Si tu décroches, demande un tutorat disciplinaire (renseigne-toi dans l'espace Promo sur Moodle ou auprès du responsable de formation).",
+      "pourquoi": "Les effectifs réduits rendent les enseignants accessibles (Onisep) ; une incompréhension de septembre devient un trou en décembre.",
+      "sources": [
+        {
+          "titre": "Onisep. Réussir en BUT (publié le 10/12/2024).",
+          "url": "https://www.onisep.fr/formation/apres-le-bac-les-etudes-superieures/conseils-et-strategies-d-etudes/reussir-dans-le-sup/reussir-en-but"
+        },
+        {
+          "titre": "Université Côte d'Azur. Tutorat.",
+          "url": "https://univ-cotedazur.fr/tutorat"
+        },
+        {
+          "titre": "Université de Reims Champagne-Ardenne. Top conseils pour réussir sa première année (L1, BUT1).",
+          "url": "https://www.univ-reims.fr/stlu/etudiants/conseils-pour-reussir/top-conseils-pour-reussir-sa-premiere-annee,28119,45246.html"
+        }
+      ]
+    },
+    {
+      "titre": "N'oublie aucune compétence",
+      "conseil": "Donne aussi du temps à l'anglais, la communication, la gestion de projet, l'économie et le PPP.",
+      "pourquoi": "Les compétences ne se compensent pas entre elles : l'UE 1.5 repose pour 27 points sur R1.08 (gestion) et 15 sur R1.11 (communication), et l'UE 1.6 surtout sur des modules non techniques. Pour passer en BUT2, il faut ≥ 10 dans au moins 4 compétences sur 6 et ≥ 8 partout.",
+      "sources": [
+        {
+          "titre": "IUT Nice Côte d'Azur. MCC BUT Informatique 2026-2027 (coefficients du S1, p. 3/13).",
+          "url": "https://iut.univ-cotedazur.fr/medias/fichier/mccs-buts-info-2026-2027_1790151186471-pdf"
+        },
+        {
+          "titre": "Livret d'accueil BUT Informatique 2026-2027, § 6 Règlement d'examen (p. 11) et § 4.2.3 (p. 10)",
+          "url": "",
+          "fichier": "Livret d'accueil BUT Informatique 2026-2027"
+        }
+      ]
+    },
+    {
+      "titre": "Prends les SAÉ au sérieux",
+      "conseil": "Participe vraiment aux SAÉ, prends une part technique et garde des traces datées (code, captures, comptes rendus) pour ton portfolio.",
+      "pourquoi": "Chaque SAÉ compte pour 40 % de son UE et mobilise toutes les ressources du semestre.",
+      "sources": [
+        {
+          "titre": "IUT Nice Côte d'Azur. MCC BUT Informatique 2026-2027 (coefficients du S1, p. 3/13).",
+          "url": "https://iut.univ-cotedazur.fr/medias/fichier/mccs-buts-info-2026-2027_1790151186471-pdf"
+        },
+        {
+          "titre": "Onisep. Ma 1re année en BUT informatique (témoignage de Dylan, IUT de Valence).",
+          "url": "https://www.onisep.fr/formation/apres-le-bac-les-etudes-superieures/ma-1-annee-en/ma-1-annee-en-but/but-informatique"
+        }
+      ]
+    },
+    {
+      "titre": "Surveille tes absences et tes notes",
+      "conseil": "Justifie toute absence dans les 48 h sur IUT Notes ; consulte régulièrement tes notes et calcule tes moyennes par UE (pas de moyenne générale en BUT).",
+      "pourquoi": "Au-delà de 8 h d'absence non justifiée, −0,05 point par heure sur chaque UE ; un contrôle manqué sans justificatif vaut 0.",
+      "sources": [
+        {
+          "titre": "IUT Nice Côte d'Azur. M3C communes BUT 2026-2027 (votées le 17/09/2026) : art. 11-14 (absences, rattrapages).",
+          "url": "https://iut.univ-cotedazur.fr/medias/fichier/m3c-but-communes-2026-2027-votees-au-cinst-du-17-09-26_1790150367045-pdf"
+        }
+      ]
+    },
+    {
+      "titre": "Lis ta messagerie universitaire et Moodle chaque jour",
+      "conseil": "Ouvre ta boîte @etu.univ-cotedazur.fr et les annonces Moodle tous les jours (changements de salle, dates de rendus, consignes d'évaluation).",
+      "pourquoi": "C'est la seule adresse utilisée par les enseignants et l'administration.",
+      "sources": [
+        {
+          "titre": "Livret d'accueil BUT Informatique 2026-2027, § 6 Règlement d'examen (p. 11) et § 4.2.3 (p. 10)",
+          "url": "",
+          "fichier": "Livret d'accueil BUT Informatique 2026-2027"
+        },
+        {
+          "titre": "Université de Reims Champagne-Ardenne. Top conseils pour réussir sa première année (L1, BUT1).",
+          "url": "https://www.univ-reims.fr/stlu/etudiants/conseils-pour-reussir/top-conseils-pour-reussir-sa-premiere-annee,28119,45246.html"
+        }
+      ]
+    }
+  ],
+  "erreurs_typiques_but1": [
+    {
+      "erreur": "Prendre le S1 pour un semestre d'échauffement",
+      "consequence": "En contrôle continu, les notes comptent dès septembre et chaque cours s'appuie sur le précédent.",
+      "a_la_place": "Installe ta routine de travail dès la rentrée ; le premier semestre est décisif.",
+      "sources": [
+        {
+          "titre": "L'Etudiant. Stressé par votre rentrée en BUT ? Tout se passera bien si vous suivez ces conseils.",
+          "url": "https://www.letudiant.fr/etudes/btsdut/comment-reussir-son-passage-du-lycee-au-but.html"
+        },
+        {
+          "titre": "Onisep. Ma 1re année en BUT informatique (témoignage de Dylan, IUT de Valence).",
+          "url": "https://www.onisep.fr/formation/apres-le-bac-les-etudes-superieures/ma-1-annee-en/ma-1-annee-en-but/but-informatique"
+        }
+      ]
+    },
+    {
+      "erreur": "Accumuler des absences non justifiées",
+      "consequence": "−0,05 point par heure sur chaque UE au-delà de 8 h, 0 aux contrôles manqués, et risque d'être déclaré défaillant à 25 % d'absences sur l'année.",
+      "a_la_place": "Viens en cours ; en cas d'absence, justificatif sur IUT Notes dans les 48 h.",
+      "sources": [
+        {
+          "titre": "IUT Nice Côte d'Azur. M3C communes BUT 2026-2027 (votées le 17/09/2026) : art. 11-14 (absences, rattrapages).",
+          "url": "https://iut.univ-cotedazur.fr/medias/fichier/m3c-but-communes-2026-2027-votees-au-cinst-du-17-09-26_1790150367045-pdf"
+        },
+        {
+          "titre": "L'Etudiant. Stressé par votre rentrée en BUT ? Tout se passera bien si vous suivez ces conseils.",
+          "url": "https://www.letudiant.fr/etudes/btsdut/comment-reussir-son-passage-du-lycee-au-but.html"
+        }
+      ]
+    },
+    {
+      "erreur": "Délaisser les matières « non info »",
+      "consequence": "Les compétences ne se compensent pas : une UE 1.5 ou 1.6 trop basse peut bloquer le passage en BUT2 même avec d'excellentes notes en C.",
+      "a_la_place": "Un créneau hebdomadaire pour l'anglais, la communication, la gestion et l'économie.",
+      "sources": [
+        {
+          "titre": "IUT Nice Côte d'Azur. MCC BUT Informatique 2026-2027 (coefficients du S1, p. 3/13).",
+          "url": "https://iut.univ-cotedazur.fr/medias/fichier/mccs-buts-info-2026-2027_1790151186471-pdf"
+        },
+        {
+          "titre": "Onisep. Ma 1re année en BUT informatique (témoignage de Dylan, IUT de Valence).",
+          "url": "https://www.onisep.fr/formation/apres-le-bac-les-etudes-superieures/ma-1-annee-en/ma-1-annee-en-but/but-informatique"
+        }
+      ]
+    },
+    {
+      "erreur": "Rater une date ou une heure de dépôt",
+      "consequence": "Un rendu absent ou déposé au mauvais endroit vaut 0.",
+      "a_la_place": "Toutes les échéances dans un agenda, dépôt la veille, vérification que le fichier est bien en ligne.",
+      "sources": [
+        {
+          "titre": "Université de Reims Champagne-Ardenne. Top conseils pour réussir sa première année (L1, BUT1).",
+          "url": "https://www.univ-reims.fr/stlu/etudiants/conseils-pour-reussir/top-conseils-pour-reussir-sa-premiere-annee,28119,45246.html"
+        }
+      ]
+    },
+    {
+      "erreur": "Laisser le groupe faire la SAÉ à sa place",
+      "consequence": "La SAÉ pèse 40 % de l'UE, et les compétences qu'elle entraîne sont redemandées en contrôle et en BUT2.",
+      "a_la_place": "Prends une vraie part technique et comprends ce que les autres ont fait.",
+      "sources": [
+        {
+          "titre": "IUT Nice Côte d'Azur. MCC BUT Informatique 2026-2027 (coefficients du S1, p. 3/13).",
+          "url": "https://iut.univ-cotedazur.fr/medias/fichier/mccs-buts-info-2026-2027_1790151186471-pdf"
+        }
+      ]
+    },
+    {
+      "erreur": "Attendre d'être perdu pour demander de l'aide",
+      "consequence": "Les lacunes s'accumulent vite, surtout en programmation et en maths.",
+      "a_la_place": "Questions en fin de TD, forum Moodle, tutorat dès la première difficulté.",
+      "sources": [
+        {
+          "titre": "Onisep. Réussir en BUT (publié le 10/12/2024).",
+          "url": "https://www.onisep.fr/formation/apres-le-bac-les-etudes-superieures/conseils-et-strategies-d-etudes/reussir-dans-le-sup/reussir-en-but"
+        },
+        {
+          "titre": "Université Côte d'Azur. Tutorat.",
+          "url": "https://univ-cotedazur.fr/tutorat"
+        }
+      ]
+    },
+    {
+      "erreur": "Arriver en retard à un DS ou ne pas trouver la salle",
+      "consequence": "Après la distribution des sujets, l'accès peut être refusé (tolérance exceptionnelle de 30 min au maximum).",
+      "a_la_place": "Vérifie ADE la veille et repère à l'avance les salles du bâtiment central à Fabron (ex. salle 508).",
+      "sources": [
+        {
+          "titre": "IUT Nice Côte d'Azur. M3C communes BUT 2026-2027 (votées le 17/09/2026) : art. 11-14 (absences, rattrapages).",
+          "url": "https://iut.univ-cotedazur.fr/medias/fichier/m3c-but-communes-2026-2027-votees-au-cinst-du-17-09-26_1790150367045-pdf"
+        },
+        {
+          "titre": "Livret d'accueil BUT Informatique 2026-2027, § 6 Règlement d'examen (p. 11) et § 4.2.3 (p. 10)",
+          "url": "",
+          "fichier": "Livret d'accueil BUT Informatique 2026-2027"
+        }
+      ]
+    },
+    {
+      "erreur": "Paniquer après une mauvaise note au S1",
+      "consequence": "Découragement inutile : une UE du S1 sous 10 peut encore être compensée par l'UE du S2 de la même compétence.",
+      "a_la_place": "Analyse tes erreurs, ajuste ta méthode et vise la moyenne annuelle dans chaque compétence.",
+      "sources": [
+        {
+          "titre": "IUT Nice Côte d'Azur. M3C communes BUT 2026-2027 (votées le 17/09/2026) : art. 11-14 (absences, rattrapages).",
+          "url": "https://iut.univ-cotedazur.fr/medias/fichier/m3c-but-communes-2026-2027-votees-au-cinst-du-17-09-26_1790150367045-pdf"
+        }
+      ]
+    }
+  ],
+  "routine": {
+    "chaque_jour": [
+      "Lis ta messagerie universitaire et les annonces Moodle (5 min).",
+      "Le soir, 10 min de rappel actif : écris de mémoire l'essentiel des cours de la journée, puis vérifie.",
+      "Fais tes cartes Anki du jour (15 à 20 min).",
+      "Avance d'au moins un pomodoro sur le rendu le plus proche.",
+      "Couche-toi à heure fixe pour dormir 7 à 9 h."
+    ],
+    "chaque_semaine": [
+      "Dimanche soir (15 à 20 min) : relève les échéances (Moodle, tableau de bord) et bloque tes créneaux de la semaine.",
+      "Refais sans corrigé au moins un exercice de TD de chaque module lourd (R1.01, R1.05, R1.06) ; corrige et remplis ton carnet d'erreurs.",
+      "Une séance mélangée : exercices tirés de plusieurs chapitres ou modules.",
+      "Vérifie IUT Notes : absences à justifier (48 h), nouvelles notes, moyennes par UE.",
+      "Mets à jour tes brouillons de feuille A4 pour les modules qui l'autorisent.",
+      "Une séance en binôme où vous vous interrogez mutuellement."
+    ],
+    "j_moins_7": [
+      "Note le périmètre exact du contrôle (TD, chapitres) et le matériel autorisé (feuille A4 ? calculatrice ?).",
+      "Fais un sujet blanc en conditions réelles : papier, chrono, sans corrigé.",
+      "Classe les notions en « maîtrisé / fragile / pas compris » et attaque les fragiles en rappel actif.",
+      "Pose tes dernières questions maintenant (fin de TD, forum, mail).",
+      "Rédige ta feuille A4 à partir de ton carnet d'erreurs, puis entraîne-toi une fois avec et une fois sans.",
+      "Prévois 2 ou 3 courtes séances de révision espacées d'ici le contrôle plutôt qu'une longue la veille."
+    ],
+    "veille": [
+      "Pas de nouvelle notion : une dernière séance de rappel actif sur tes points fragiles (30 à 60 min).",
+      "Prépare ton matériel : carte étudiante, stylo ou feutre noir, de quoi effacer, montre, feuille A4 si autorisée.",
+      "Vérifie l'heure et la salle sur ADE ; repère la salle si elle est dans le bâtiment central (Fabron).",
+      "Couche-toi à l'heure habituelle : pas de nuit blanche."
+    ],
+    "jour_j": [
+      "Petit-déjeuner, puis arrive 10 à 15 min en avance : après la distribution des sujets, l'entrée peut être refusée.",
+      "Stressé(e) ? Juste avant l'épreuve (dans le couloir), écris pendant une dizaine de minutes ce qui t'inquiète : dans une étude, cet exercice a amélioré les notes, surtout celles des étudiants anxieux (Ramirez & Beilock, 2011).",
+      "Lis tout le sujet, commence par ce que tu sais faire et surveille le temps.",
+      "Code sur papier : écris lisiblement, indente, puis « exécute » ton code à la main sur un petit exemple.",
+      "QCM : remplis bien les cases au feutre ou stylo noir (elles sont scannées).",
+      "Garde 5 min pour relire : points-virgules, accolades, conditions de boucle (< ou <=).",
+      "Après l'épreuve, note ce qui t'a surpris : c'est le point de départ de ta prochaine révision."
+    ],
+    "sources": [
+      {
+        "titre": "Ramirez & Beilock (2011). Writing About Testing Worries Boosts Exam Performance in the Classroom. Science, 331(6014), 211-213.",
+        "url": "https://doi.org/10.1126/science.1199427"
+      },
+      {
+        "titre": "IUT Nice Côte d'Azur. M3C communes BUT 2026-2027 (votées le 17/09/2026) : art. 11-14 (absences, rattrapages).",
+        "url": "https://iut.univ-cotedazur.fr/medias/fichier/m3c-but-communes-2026-2027-votees-au-cinst-du-17-09-26_1790150367045-pdf"
+      },
+      {
+        "titre": "Consignes de R1.01 : test papier en TD, QCM au feutre noir (cases scannées)",
+        "url": "",
+        "fichier": "Annonces Moodle R1.01 (septembre 2026)"
+      }
+    ]
+  },
+  "pomodoro": {
+    "travail_min": 25,
+    "pause_min": 5,
+    "longue_pause_min": 15,
+    "longue_pause_max_min": 30,
+    "cycles_avant_longue": 4,
+    "conseils": [
+      "Avant de lancer le minuteur, écris l'objectif précis du pomodoro (ex. « exercices 1 à 3 du TD4 de R1.05 »).",
+      "Téléphone en mode avion et hors de portée, une seule fenêtre ouverte.",
+      "Une idée parasite ? Note-la sur un papier et reprends : tu t'en occuperas à la pause.",
+      "Pendant la pause, lève-toi, bouge, bois de l'eau ; évite les réseaux sociaux, qui font déborder la pause.",
+      "Un débogage qui avance bien ? Finis ta pensée, mais prends la pause ensuite.",
+      "Adapte la durée : des blocs plus longs (ex. 50/10) pour un TP ou une SAÉ, plus courts (ex. 15/3) pour démarrer une tâche qui te rebute.",
+      "Compte tes pomodoros par module : tu verras où passe vraiment ton temps."
+    ],
+    "preuve": "Chez 87 étudiants, des pauses systématiques (24 min de travail / 6 min de pause) ont donné moins de fatigue et de distraction, plus de concentration et de motivation que des pauses prises librement, avec autant de travail accompli en moins de temps (Biwer et al., 2023).",
+    "sources": [
+      {
+        "titre": "Site officiel de la technique Pomodoro (Francesco Cirillo).",
+        "url": "https://www.pomodorotechnique.com/"
+      },
+      {
+        "titre": "Todoist. The Pomodoro Technique (25 min de travail, 5 min de pause, pause de 15 à 30 min après 4 pomodoros).",
+        "url": "https://www.todoist.com/productivity-methods/pomodoro-technique"
+      },
+      {
+        "titre": "Biwer, Wiradhany, oude Egbrink & de Bruin (2023). Understanding effort regulation: Comparing 'Pomodoro' breaks and self-regulated breaks. British Journal of Educational Psychology, 93(S2), 353-367.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36859717/"
+      }
+    ]
+  },
+  "outils": [
+    {
+      "nom": "Anki",
+      "url": "https://apps.ankiweb.net/",
+      "usage": "Cartes mémoire avec répétition espacée automatique : tu notes ta réponse, l'appli choisit quand te reposer la question.",
+      "module": "tous"
+    },
+    {
+      "nom": "Python Tutor (mode C)",
+      "url": "https://pythontutor.com/c.html",
+      "usage": "Exécute un programme C pas à pas et montre variables, tableaux, pointeurs et mémoire.",
+      "module": "R1.01"
+    },
+    {
+      "nom": "France-ioi",
+      "url": "https://www.france-ioi.org/algo/chapters.php",
+      "usage": "Cours et problèmes d'algorithmique progressifs, corrigés automatiquement, en français ; langages au choix dont C et Python.",
+      "module": "R1.01"
+    },
+    {
+      "nom": "CS50x (Harvard)",
+      "url": "https://cs50.harvard.edu/x/",
+      "usage": "Cours d'introduction gratuit dont les premières semaines se font en C (vidéos en anglais).",
+      "module": "R1.01"
+    },
+    {
+      "nom": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/fr/",
+      "usage": "Documentation de référence HTML et CSS en français.",
+      "module": "R1.02"
+    },
+    {
+      "nom": "Flexbox Froggy",
+      "url": "https://flexboxfroggy.com/#fr",
+      "usage": "Jeu en français pour maîtriser flexbox.",
+      "module": "R1.02"
+    },
+    {
+      "nom": "Grid Garden",
+      "url": "https://cssgridgarden.com/#fr",
+      "usage": "Jeu en français pour maîtriser CSS Grid.",
+      "module": "R1.02"
+    },
+    {
+      "nom": "Validateur HTML du W3C",
+      "url": "https://validator.w3.org/",
+      "usage": "Vérifie que ton code HTML est valide.",
+      "module": "R1.02"
+    },
+    {
+      "nom": "WAVE",
+      "url": "https://wave.webaim.org/",
+      "usage": "Repère les problèmes d'accessibilité d'une page web (thème du programme de R1.02).",
+      "module": "R1.02"
+    },
+    {
+      "nom": "SQLBolt",
+      "url": "https://sqlbolt.com/",
+      "usage": "Leçons SQL interactives dans le navigateur : SELECT, jointures, agrégats, création de tables (en anglais).",
+      "module": "R1.05"
+    },
+    {
+      "nom": "DB Fiddle",
+      "url": "https://www.db-fiddle.com/",
+      "usage": "Bac à sable SQL en ligne pour tester une requête sans rien installer.",
+      "module": "R1.05"
+    },
+    {
+      "nom": "Looping",
+      "url": "https://www.looping-mcd.fr/",
+      "usage": "Logiciel gratuit (Université de Toulouse) pour dessiner des modèles conceptuels de données (MCD) et des diagrammes UML.",
+      "module": "R1.05 / SAÉ 1.04"
+    },
+    {
+      "nom": "Flippy Bit",
+      "url": "https://flippybitandtheattackofthehexadecimalsfrombase16.com/",
+      "usage": "Jeu d'arcade pour s'entraîner à convertir l'hexadécimal en binaire.",
+      "module": "R1.03"
+    },
+    {
+      "nom": "Logisim-evolution",
+      "url": "https://github.com/logisim-evolution/logisim-evolution",
+      "usage": "Simulateur gratuit de circuits logiques pour vérifier tes exercices d'algèbre de Boole.",
+      "module": "R1.03"
+    },
+    {
+      "nom": "Exo7",
+      "url": "https://exo7.emath.fr/",
+      "usage": "Cours, exercices corrigés et vidéos de maths niveau L1 (logique, ensembles, récurrence...).",
+      "module": "R1.06 / R1.07"
+    },
+    {
+      "nom": "Pomofocus",
+      "url": "https://pomofocus.io/",
+      "usage": "Minuteur Pomodoro en ligne, durées réglables.",
+      "module": "tous"
+    },
+    {
+      "nom": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "usage": "Tableau blanc en ligne pour faire vite des schémas (mémoire, DOM, tables).",
+      "module": "tous"
+    },
+    {
+      "nom": "Learn Git Branching",
+      "url": "https://learngitbranching.js.org/?locale=fr_FR",
+      "usage": "Apprendre Git de façon visuelle, en français (utile pour les projets et les SAÉ).",
+      "module": "SAÉ"
+    },
+    {
+      "nom": "Affiches « Six stratégies pour apprendre »",
+      "url": "https://www.learningscientists.org/s/French-Six-Strategies-for-Effective-Learning-posters-k5dc.pdf",
+      "usage": "Les six stratégies validées (espacement, rappel, élaboration, entrelacement, exemples concrets, double codage) résumées en affiches, en français.",
+      "module": "tous"
+    },
+    {
+      "nom": "Tutorat de l'université",
+      "url": "https://univ-cotedazur.fr/tutorat",
+      "usage": "Tutorat disciplinaire par des étudiants plus avancés : renseigne-toi dans l'espace Promo sur Moodle ou auprès du responsable de formation.",
+      "module": "tous"
+    }
+  ],
+  "citations_motivation": [
+    "Un TD refait sans corrigé vaut mieux que trois TD relus.",
+    "Le code que tu écris toi-même, même faux, t'apprend plus que celui que tu recopies juste.",
+    "Chaque erreur corrigée en TD, c'est un point de moins à perdre au DS.",
+    "Vingt-cinq minutes sans téléphone, c'est déjà une vraie séance de travail.",
+    "Pas besoin d'être motivé pour commencer : commence, la motivation suivra.",
+    "Se tromper à l'entraînement ne coûte rien ; c'est là qu'il faut le faire.",
+    "Demander de l'aide tôt, c'est une compétence, pas un aveu de faiblesse.",
+    "Dormir fait partie de tes révisions."
+  ]
+}
