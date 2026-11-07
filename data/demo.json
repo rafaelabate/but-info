@@ -1,0 +1,1349 @@
+{
+ "reference": "2026-09-29",
+ "maj": "2026-09-28T20:50:00.000Z",
+ "perso": {
+  "maj": "2026-09-28T22:50:00+02:00",
+  "etudiant": {
+   "prenom": "Alex",
+   "nom": "Martin",
+   "formation": "BUT Informatique · 1re année",
+   "annee": "2026-2027",
+   "parcours": "A · Réalisation d’applications",
+   "num_etudiant": "12345678",
+   "groupes": {
+    "td": "G2",
+    "projet_s101": "G2A",
+    "r103": "Groupe 2",
+    "r105": "G02"
+   }
+  },
+  "echeances": [
+   {
+    "id": "demo-r105-td2",
+    "module": "R1.05",
+    "titre": "Dépôt TD2",
+    "type": "devoir",
+    "debut": "2026-09-18T08:00:00+02:00",
+    "limite": "2026-09-25T23:59:00+02:00",
+    "statut": "rendu",
+    "details": "Requêtes SELECT sur la base « bibliothèque ».",
+    "consignes": "",
+    "url": "https://moodle.example.org/mod/assign/view.php?id=2102"
+   },
+   {
+    "id": "demo-r103-tp1",
+    "module": "R1.03",
+    "titre": "Compte rendu TP1",
+    "type": "devoir",
+    "limite": "2026-09-27T20:00:00+02:00",
+    "statut": "rendu",
+    "details": "Portes logiques et tables de vérité, un PDF par binôme.",
+    "consignes": "",
+    "url": "https://moodle.example.org/mod/assign/view.php?id=2201"
+   },
+   {
+    "id": "demo-r101-test1",
+    "module": "R1.01",
+    "titre": "Test 1 (chapitres 1 à 3)",
+    "type": "eval",
+    "debut": "2026-09-21T08:00:00+02:00",
+    "limite": "2026-09-25T18:00:00+02:00",
+    "heure_inconnue": true,
+    "semaine": true,
+    "statut": "passe",
+    "details": "Sur papier, pendant une séance de TD.",
+    "consignes": "",
+    "url": "https://moodle.example.org/mod/forum/discuss.php?d=310"
+   },
+   {
+    "id": "demo-r101-ex4",
+    "module": "R1.01",
+    "titre": "Exercices du chapitre 4",
+    "type": "devoir",
+    "debut": "2026-09-23T08:00:00+02:00",
+    "limite": "2026-09-30T23:59:00+02:00",
+    "statut": "a_rendre",
+    "details": "Pointeurs : exercices 1 à 6, un fichier .c par exercice.",
+    "consignes": "Archive zip nommée NOM_Prenom_ch4.zip.",
+    "url": "https://moodle.example.org/mod/assign/view.php?id=2011"
+   },
+   {
+    "id": "demo-r102-eval1",
+    "module": "R1.02",
+    "titre": "Contrôle QCM HTML/CSS",
+    "type": "eval",
+    "debut": "2026-10-01T13:30:00+02:00",
+    "limite": "2026-10-01T14:30:00+02:00",
+    "statut": "a_venir",
+    "details": "TD 1 à 3 : structure HTML, sélecteurs, spécificité, boîte CSS.",
+    "consignes": "Stylo noir et carte étudiant. Documents interdits.",
+    "url": "https://moodle.example.org/mod/forum/discuss.php?d=402",
+    "lieu": "Amphi A",
+    "coef": 1,
+    "duree": 60
+   },
+   {
+    "id": "demo-sae101-j1",
+    "module": "SAÉ 1.01",
+    "titre": "Jalon 1 : cahier des charges",
+    "type": "devoir",
+    "debut": "2026-09-28T00:01:00+02:00",
+    "limite": "2026-10-02T23:59:00+02:00",
+    "statut": "a_rendre",
+    "details": "Choix du jeu, règles, découpage en fonctions. Remise de groupe.",
+    "consignes": "Un seul dépôt par groupe : README.md + schéma de décomposition.",
+    "url": "https://moodle.example.org/mod/assign/view.php?id=1101"
+   },
+   {
+    "id": "demo-but-delegues",
+    "module": "BUT",
+    "titre": "Candidature délégué de promo",
+    "type": "evenement",
+    "limite": "2026-10-05T12:00:00+02:00",
+    "statut": "facultatif",
+    "details": "Deux délégués par groupe de TD, élus pour l’année.",
+    "consignes": "Réponse au formulaire du cours BUT Informatique.",
+    "url": "https://moodle.example.org/mod/forum/discuss.php?d=90"
+   },
+   {
+    "id": "demo-r105-td4",
+    "module": "R1.05",
+    "titre": "Dépôt TD4",
+    "type": "devoir",
+    "debut": "2026-09-23T08:00:00+02:00",
+    "limite": null,
+    "statut": "a_rendre",
+    "details": "Pas de date limite affichée.",
+    "consignes": "",
+    "url": "https://moodle.example.org/mod/assign/view.php?id=2104"
+   },
+   {
+    "id": "demo-r110-oral",
+    "module": "R1.10",
+    "titre": "Oral : présentation en binôme",
+    "type": "eval",
+    "debut": "2026-10-09T08:00:00+02:00",
+    "limite": "2026-10-09T18:00:00+02:00",
+    "heure_inconnue": true,
+    "statut": "a_venir",
+    "details": "5 minutes par personne sur un outil numérique au choix.",
+    "consignes": "",
+    "url": null,
+    "duree": 10,
+    "coef": 0.5
+   },
+   {
+    "id": "demo-sae101-j2",
+    "module": "SAÉ 1.01",
+    "titre": "Jalon 2 : prototype",
+    "type": "devoir",
+    "debut": "2026-10-05T00:01:00+02:00",
+    "limite": "2026-10-09T23:59:00+02:00",
+    "statut": "a_rendre",
+    "details": "Plateau affiché en console et déplacement d’un pion.",
+    "consignes": "",
+    "url": "https://moodle.example.org/mod/assign/view.php?id=1102"
+   },
+   {
+    "id": "demo-r106-wims3",
+    "module": "R1.06",
+    "titre": "Feuille WIMS 3 : ensembles",
+    "type": "devoir",
+    "limite": "2026-10-11T23:59:00+02:00",
+    "statut": "a_rendre",
+    "details": "Score conservé : le meilleur essai.",
+    "consignes": "",
+    "url": "https://moodle.example.org/mod/url/view.php?id=2603"
+   },
+   {
+    "id": "demo-r101-mi",
+    "module": "R1.01",
+    "titre": "Test de mi-parcours",
+    "type": "eval",
+    "debut": "2026-10-12T08:00:00+02:00",
+    "limite": "2026-10-16T18:00:00+02:00",
+    "heure_inconnue": true,
+    "semaine": true,
+    "statut": "a_confirmer",
+    "details": "Annoncé en CM, date exacte pas encore publiée.",
+    "consignes": "",
+    "url": null
+   },
+   {
+    "id": "demo-sae101-j3",
+    "module": "SAÉ 1.01",
+    "titre": "Jalon 3 : version jouable",
+    "type": "devoir",
+    "debut": "2026-10-12T00:01:00+02:00",
+    "limite": "2026-10-16T23:59:00+02:00",
+    "statut": "a_rendre",
+    "details": "",
+    "consignes": "",
+    "url": "https://moodle.example.org/mod/assign/view.php?id=1103"
+   },
+   {
+    "id": "demo-r107-ds1",
+    "module": "R1.07",
+    "titre": "DS n°1",
+    "type": "eval",
+    "debut": "2026-10-21T08:00:00+02:00",
+    "limite": "2026-10-21T18:00:00+02:00",
+    "heure_inconnue": true,
+    "statut": "a_venir",
+    "details": "Fonctions, dérivées, trigonométrie.",
+    "consignes": "Calculatrice interdite.",
+    "url": null,
+    "duree": 90,
+    "coef": 1
+   },
+   {
+    "id": "demo-r102-ds",
+    "module": "R1.02",
+    "titre": "DS final HTML/CSS",
+    "type": "eval",
+    "debut": "2026-11-05T08:00:00+01:00",
+    "limite": "2026-11-05T18:00:00+01:00",
+    "heure_inconnue": true,
+    "statut": "a_venir",
+    "details": "",
+    "consignes": "Une feuille A4 manuscrite autorisée.",
+    "url": null,
+    "lieu": "Salle 508",
+    "duree": 90,
+    "coef": 1.5
+   }
+  ],
+  "annonces": [
+   {
+    "module": "R1.02",
+    "date": "2026-09-28T17:05:00+02:00",
+    "auteur": "Paul Garnier",
+    "titre": "Contrôle de jeudi",
+    "resume": "QCM de 45 questions sur les TD 1 à 3. Arrivez 10 minutes avant, placement libre en amphi A.",
+    "url": "https://moodle.example.org/mod/forum/discuss.php?d=402"
+   },
+   {
+    "module": "BUT",
+    "date": "2026-09-28T09:12:00+02:00",
+    "auteur": "Claire Bonnet",
+    "titre": "Élection des délégués",
+    "resume": "Candidatures jusqu’au lundi 5 octobre midi ; vote en TD la semaine suivante.",
+    "url": "https://moodle.example.org/mod/forum/discuss.php?d=90"
+   },
+   {
+    "module": "SAÉ 1.01",
+    "date": "2026-09-25T16:40:00+02:00",
+    "auteur": "Jean Dupont",
+    "titre": "Constitution des groupes",
+    "resume": "Groupes de 3 ou 4 dans le même TD. Le premier jalon se dépose sur Moodle avant vendredi soir.",
+    "url": "https://moodle.example.org/mod/forum/discuss.php?d=77"
+   },
+   {
+    "module": "R1.05",
+    "date": "2026-09-22T11:30:00+02:00",
+    "auteur": "Antoine Morel",
+    "titre": "Correction du TD2",
+    "resume": "Correction en ligne dans la section 2. Les requêtes avec jointure seront reprises en CM.",
+    "url": "https://moodle.example.org/mod/forum/discuss.php?d=150"
+   }
+  ],
+  "notes": {
+   "releve": "Relevé provisoire",
+   "ues": [
+    {
+     "code": "UE 1.1",
+     "competence": "Réaliser",
+     "ects": 5,
+     "moyenne": 14.5,
+     "coefs": {
+      "R1.01": 42,
+      "R1.02": 12,
+      "R1.10": 6,
+      "SAÉ 1.01": 40
+     }
+    },
+    {
+     "code": "UE 1.2",
+     "competence": "Optimiser",
+     "ects": 5,
+     "moyenne": 14.48,
+     "coefs": {
+      "R1.01": 24,
+      "R1.03": 6,
+      "R1.06": 15,
+      "R1.07": 15,
+      "SAÉ 1.02": 40
+     }
+    },
+    {
+     "code": "UE 1.3",
+     "competence": "Administrer",
+     "ects": 5,
+     "moyenne": 14.38,
+     "coefs": {
+      "R1.03": 21,
+      "R1.04": 21,
+      "R1.10": 12,
+      "R1.11": 6,
+      "SAÉ 1.03": 40
+     }
+    },
+    {
+     "code": "UE 1.4",
+     "competence": "Gérer",
+     "ects": 5,
+     "moyenne": 18.0,
+     "coefs": {
+      "R1.05": 36,
+      "R1.06": 18,
+      "R1.09": 6,
+      "SAÉ 1.04": 40
+     }
+    },
+    {
+     "code": "UE 1.5",
+     "competence": "Conduire",
+     "ects": 5,
+     "moyenne": null,
+     "coefs": {
+      "R1.02": 18,
+      "R1.08": 27,
+      "R1.11": 15,
+      "SAÉ 1.05": 40
+     }
+    },
+    {
+     "code": "UE 1.6",
+     "competence": "Collaborer",
+     "ects": 5,
+     "moyenne": null,
+     "coefs": {
+      "R1.02": 5,
+      "R1.08": 11,
+      "R1.09": 11,
+      "R1.10": 11,
+      "R1.11": 11,
+      "R1.12": 11,
+      "SAÉ 1.06": 40
+     }
+    }
+   ],
+   "modules": [
+    {
+     "code": "R1.01",
+     "titre": "Initiation au développement",
+     "moyenne": 14.5,
+     "evaluations": [
+      {
+       "titre": "Test 1",
+       "date": "2026-09-24",
+       "note": 14.5,
+       "sur": 20,
+       "coef": 1
+      }
+     ]
+    },
+    {
+     "code": "R1.02",
+     "titre": "Développement d’interfaces web",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.03",
+     "titre": "Introduction à l’architecture des ordinateurs",
+     "moyenne": 14.38,
+     "evaluations": [
+      {
+       "titre": "TP1",
+       "date": "2026-09-20",
+       "note": 16,
+       "sur": 20,
+       "coef": 0.5
+      },
+      {
+       "titre": "TP2",
+       "date": "2026-09-27",
+       "note": 12.75,
+       "sur": 20,
+       "coef": 0.5
+      }
+     ]
+    },
+    {
+     "code": "R1.04",
+     "titre": "Introduction aux systèmes d’exploitation et à leur fonctionnement",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.05",
+     "titre": "Introduction aux bases de données et SQL",
+     "moyenne": 18.0,
+     "evaluations": [
+      {
+       "titre": "Dépôt TD1",
+       "date": "2026-09-18",
+       "note": 18,
+       "sur": 20,
+       "coef": 0.25
+      }
+     ]
+    },
+    {
+     "code": "R1.06",
+     "titre": "Mathématiques discrètes",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.07",
+     "titre": "Outils mathématiques fondamentaux",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.08",
+     "titre": "Introduction à la gestion des organisations",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.09",
+     "titre": "Introduction à l’économie durable et numérique",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.10",
+     "titre": "Anglais",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.11",
+     "titre": "Bases de la communication",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.12",
+     "titre": "Projet professionnel et personnel",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "R1.AL",
+     "titre": "Remise à niveau et méthodologie",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "SAÉ 1.01",
+     "titre": "Implémentation d’un besoin client",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "SAÉ 1.02",
+     "titre": "Comparaison d’approches algorithmiques",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "SAÉ 1.03",
+     "titre": "Installation d’un poste pour le développement",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "SAÉ 1.04",
+     "titre": "Création d’une base de données",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "SAÉ 1.05",
+     "titre": "Recueil de besoins",
+     "moyenne": null,
+     "evaluations": []
+    },
+    {
+     "code": "SAÉ 1.06",
+     "titre": "Découverte de l’environnement économique et écologique",
+     "moyenne": null,
+     "evaluations": []
+    }
+   ],
+   "absences": {
+    "justifiees_h": 1.5,
+    "injustifiees_h": 0,
+    "retards": 1,
+    "liste": [
+     {
+      "debut": "2026-09-17T15:15:00+02:00",
+      "fin": "2026-09-17T16:45:00+02:00",
+      "module": "R1.10",
+      "justifiee": true
+     }
+    ],
+    "presences": 41,
+    "periode": "du 2 au 28 septembre"
+   }
+  },
+  "moodle": [
+   {
+    "code": "BUT",
+    "nom": "BUT Informatique",
+    "url": "https://moodle.example.org/course/view.php?id=100"
+   },
+   {
+    "code": "SAÉ 1.01",
+    "nom": "Implémentation d’un besoin client",
+    "url": "https://moodle.example.org/course/view.php?id=101"
+   },
+   {
+    "code": "R1.01",
+    "nom": "Initiation au développement",
+    "url": "https://moodle.example.org/course/view.php?id=201"
+   },
+   {
+    "code": "R1.02",
+    "nom": "Développement d’interfaces web",
+    "url": "https://moodle.example.org/course/view.php?id=202"
+   },
+   {
+    "code": "R1.03",
+    "nom": "Architecture des ordinateurs",
+    "url": "https://moodle.example.org/course/view.php?id=203"
+   },
+   {
+    "code": "R1.05",
+    "nom": "Bases de données et SQL",
+    "url": "https://moodle.example.org/course/view.php?id=205"
+   },
+   {
+    "code": "R1.06",
+    "nom": "Mathématiques discrètes",
+    "url": "https://moodle.example.org/course/view.php?id=206"
+   }
+  ],
+  "infos_cours": [
+   {
+    "module": "SAÉ 1.01",
+    "info": "Projet par groupe de 3 ou 4 : jeu de plateau en C dans le terminal. Un jalon par semaine sur Moodle."
+   },
+   {
+    "module": "R1.02",
+    "info": "Les TD se rendent sur le serveur de l’IUT, arborescence imposée : la correction est en partie automatique."
+   },
+   {
+    "module": "BUT",
+    "info": "Absence : justificatif à déposer sous 48 h ouvrées sur l’espace notes."
+   }
+  ],
+  "liens": {
+   "moodle": "https://moodle.example.org/my/",
+   "notes": "https://notes.example.org/",
+   "ade": "https://edt.example.org/",
+   "mail": "https://mail.example.org/",
+   "intranet": "https://intranet.example.org/",
+   "certificat": "https://scolarite.example.org/",
+   "syllabus": "https://example.org/programme-but-info.pdf",
+   "departement": "https://moodle.example.org/course/view.php?id=100"
+  },
+  "contacts": [
+   {
+    "nom": "Secrétariat du département",
+    "detail": "Lun.–ven. 9 h–12 h, 14 h–16 h",
+    "tel": "04 00 00 00 01",
+    "mail": "secretariat-info@example.org"
+   },
+   {
+    "nom": "Scolarité",
+    "detail": "Inscriptions, certificats, bourses",
+    "tel": "04 00 00 00 02",
+    "mail": "scolarite@example.org"
+   },
+   {
+    "nom": "Jean Dupont",
+    "detail": "Directeur des études · R1.01",
+    "mail": "jean.dupont@example.org"
+   },
+   {
+    "nom": "Paul Garnier",
+    "detail": "R1.02 · Dév. web",
+    "mail": "paul.garnier@example.org"
+   }
+  ],
+  "a_verifier": [
+   "Salle du DS de R1.07 pas encore publiée.",
+   "R1.05 : Dépôt TD4 ouvert sans date limite."
+  ]
+ },
+ "seances": [
+  {
+   "id": "ADEdemo0001",
+   "debut": "2026-09-28T06:00:00.000Z",
+   "fin": "2026-09-28T08:00:00.000Z",
+   "titre": "R1.01 Init dev - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0002",
+   "debut": "2026-09-28T08:15:00.000Z",
+   "fin": "2026-09-28T10:15:00.000Z",
+   "titre": "R1.01 Init dev - TP",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0003",
+   "debut": "2026-09-28T11:30:00.000Z",
+   "fin": "2026-09-28T13:00:00.000Z",
+   "titre": "R1.06 Maths discrètes - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "FONTAINE Lucie"
+   ]
+  },
+  {
+   "id": "ADEdemo0004",
+   "debut": "2026-09-28T13:15:00.000Z",
+   "fin": "2026-09-28T14:45:00.000Z",
+   "titre": "R1.10 Anglais - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "WILSON Kate"
+   ]
+  },
+  {
+   "id": "ADEdemo0005",
+   "debut": "2026-09-29T06:00:00.000Z",
+   "fin": "2026-09-29T07:30:00.000Z",
+   "titre": "R1.05 BD - CM",
+   "lieu": "Amphi B",
+   "desc": [
+    "BUT1 INFO",
+    "MOREL Antoine"
+   ]
+  },
+  {
+   "id": "ADEdemo0006",
+   "debut": "2026-09-29T07:45:00.000Z",
+   "fin": "2026-09-29T09:15:00.000Z",
+   "titre": "R1.02 Dév web - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "GARNIER Paul"
+   ]
+  },
+  {
+   "id": "ADEdemo0007",
+   "debut": "2026-09-29T09:15:00.000Z",
+   "fin": "2026-09-29T10:45:00.000Z",
+   "titre": "R1.03 Archi - TD",
+   "lieu": "Salle 510",
+   "desc": [
+    "BUT1 INFO G2",
+    "ROUSSEL Camille"
+   ]
+  },
+  {
+   "id": "ADEdemo0008",
+   "debut": "2026-09-29T12:00:00.000Z",
+   "fin": "2026-09-29T14:00:00.000Z",
+   "titre": "SAE 1.01 - Projet",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean",
+    "LEROY Sophie"
+   ]
+  },
+  {
+   "id": "ADEdemo0009",
+   "debut": "2026-09-29T13:00:00.000Z",
+   "fin": "2026-09-29T14:30:00.000Z",
+   "titre": "R1.12 PPP - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "BONNET Claire"
+   ]
+  },
+  {
+   "id": "ADEdemo0010",
+   "debut": "2026-09-29T14:30:00.000Z",
+   "fin": "2026-09-29T16:00:00.000Z",
+   "titre": "R1.04 Systèmes - TP",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "LAMBERT Hugo"
+   ]
+  },
+  {
+   "id": "ADEdemo0011",
+   "debut": "2026-09-30T06:00:00.000Z",
+   "fin": "2026-09-30T07:30:00.000Z",
+   "titre": "R1.07 Outils maths - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "FAURE Émilie"
+   ]
+  },
+  {
+   "id": "ADEdemo0012",
+   "debut": "2026-09-30T07:30:00.000Z",
+   "fin": "2026-09-30T09:00:00.000Z",
+   "titre": "R1.07 Outils maths - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "FAURE Émilie"
+   ]
+  },
+  {
+   "id": "ADEdemo0013",
+   "debut": "2026-09-30T09:00:00.000Z",
+   "fin": "2026-09-30T10:30:00.000Z",
+   "titre": "R1.11 Communication - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "MERCIER Julie"
+   ]
+  },
+  {
+   "id": "ADEdemo0014",
+   "debut": "2026-10-01T06:00:00.000Z",
+   "fin": "2026-10-01T08:00:00.000Z",
+   "titre": "R1.01 Init dev - TP",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0015",
+   "debut": "2026-10-01T08:15:00.000Z",
+   "fin": "2026-10-01T09:45:00.000Z",
+   "titre": "R1.08 Gestion - CM",
+   "lieu": "Amphi B",
+   "desc": [
+    "BUT1 INFO",
+    "GIRARD Marc"
+   ]
+  },
+  {
+   "id": "ADEdemo0016",
+   "debut": "2026-10-01T11:30:00.000Z",
+   "fin": "2026-10-01T12:30:00.000Z",
+   "titre": "R1.02 Dév web - Évaluation",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "GARNIER Paul"
+   ]
+  },
+  {
+   "id": "ADEdemo0017",
+   "debut": "2026-10-01T12:45:00.000Z",
+   "fin": "2026-10-01T14:15:00.000Z",
+   "titre": "R1.09 Économie - TD",
+   "lieu": "Salle 510",
+   "desc": [
+    "BUT1 INFO G2",
+    "BLANC Nathalie"
+   ]
+  },
+  {
+   "id": "ADEdemo0018",
+   "debut": "2026-10-01T14:30:00.000Z",
+   "fin": "2026-10-01T16:00:00.000Z",
+   "titre": "R1.03 Archi - TP",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "ROUSSEL Camille"
+   ]
+  },
+  {
+   "id": "ADEdemo0019",
+   "debut": "2026-10-02T06:00:00.000Z",
+   "fin": "2026-10-02T07:30:00.000Z",
+   "titre": "R1.06 Maths discrètes - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "FONTAINE Lucie"
+   ]
+  },
+  {
+   "id": "ADEdemo0020",
+   "debut": "2026-10-02T07:45:00.000Z",
+   "fin": "2026-10-02T09:45:00.000Z",
+   "titre": "R1.05 BD - TP",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "MOREL Antoine"
+   ]
+  },
+  {
+   "id": "ADEdemo0021",
+   "debut": "2026-10-02T11:30:00.000Z",
+   "fin": "2026-10-02T13:30:00.000Z",
+   "titre": "SAE 1.01 - Projet",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean",
+    "LEROY Sophie"
+   ]
+  },
+  {
+   "id": "ADEdemo0022",
+   "debut": "2026-10-02T13:45:00.000Z",
+   "fin": "2026-10-02T15:15:00.000Z",
+   "titre": "R1.10 Anglais - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "WILSON Kate"
+   ]
+  },
+  {
+   "id": "ADEdemo0023",
+   "debut": "2026-10-05T06:00:00.000Z",
+   "fin": "2026-10-05T08:00:00.000Z",
+   "titre": "R1.01 Init dev - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0024",
+   "debut": "2026-10-05T08:15:00.000Z",
+   "fin": "2026-10-05T10:15:00.000Z",
+   "titre": "R1.01 Init dev - TP",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0025",
+   "debut": "2026-10-05T11:30:00.000Z",
+   "fin": "2026-10-05T13:00:00.000Z",
+   "titre": "R1.06 Maths discrètes - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "FONTAINE Lucie"
+   ]
+  },
+  {
+   "id": "ADEdemo0026",
+   "debut": "2026-10-05T13:15:00.000Z",
+   "fin": "2026-10-05T14:45:00.000Z",
+   "titre": "R1.10 Anglais - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "WILSON Kate"
+   ]
+  },
+  {
+   "id": "ADEdemo0027",
+   "debut": "2026-10-06T06:00:00.000Z",
+   "fin": "2026-10-06T07:30:00.000Z",
+   "titre": "R1.05 BD - CM",
+   "lieu": "Amphi B",
+   "desc": [
+    "BUT1 INFO",
+    "MOREL Antoine"
+   ]
+  },
+  {
+   "id": "ADEdemo0028",
+   "debut": "2026-10-06T07:45:00.000Z",
+   "fin": "2026-10-06T09:15:00.000Z",
+   "titre": "R1.02 Dév web - TP",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "GARNIER Paul"
+   ]
+  },
+  {
+   "id": "ADEdemo0029",
+   "debut": "2026-10-06T09:15:00.000Z",
+   "fin": "2026-10-06T10:45:00.000Z",
+   "titre": "R1.03 Archi - TD",
+   "lieu": "Salle 510",
+   "desc": [
+    "BUT1 INFO G2",
+    "ROUSSEL Camille"
+   ]
+  },
+  {
+   "id": "ADEdemo0030",
+   "debut": "2026-10-06T12:00:00.000Z",
+   "fin": "2026-10-06T14:00:00.000Z",
+   "titre": "SAE 1.01 - Projet",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean",
+    "LEROY Sophie"
+   ]
+  },
+  {
+   "id": "ADEdemo0031",
+   "debut": "2026-10-06T14:15:00.000Z",
+   "fin": "2026-10-06T15:45:00.000Z",
+   "titre": "R1.04 Systèmes - TP",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "LAMBERT Hugo"
+   ]
+  },
+  {
+   "id": "ADEdemo0032",
+   "debut": "2026-10-07T06:00:00.000Z",
+   "fin": "2026-10-07T07:30:00.000Z",
+   "titre": "R1.07 Outils maths - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "FAURE Émilie"
+   ]
+  },
+  {
+   "id": "ADEdemo0033",
+   "debut": "2026-10-07T07:30:00.000Z",
+   "fin": "2026-10-07T09:00:00.000Z",
+   "titre": "R1.07 Outils maths - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "FAURE Émilie"
+   ]
+  },
+  {
+   "id": "ADEdemo0034",
+   "debut": "2026-10-07T09:00:00.000Z",
+   "fin": "2026-10-07T10:30:00.000Z",
+   "titre": "R1.11 Communication - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "MERCIER Julie"
+   ]
+  },
+  {
+   "id": "ADEdemo0035",
+   "debut": "2026-10-08T06:00:00.000Z",
+   "fin": "2026-10-08T08:00:00.000Z",
+   "titre": "R1.01 Init dev - TD",
+   "lieu": "Salle 510",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0036",
+   "debut": "2026-10-08T08:15:00.000Z",
+   "fin": "2026-10-08T09:45:00.000Z",
+   "titre": "R1.08 Gestion - CM",
+   "lieu": "Amphi B",
+   "desc": [
+    "BUT1 INFO",
+    "GIRARD Marc"
+   ]
+  },
+  {
+   "id": "ADEdemo0037",
+   "debut": "2026-10-08T11:30:00.000Z",
+   "fin": "2026-10-08T13:00:00.000Z",
+   "titre": "ANNULÉ - R1.09 Économie - TD",
+   "lieu": "Salle 510",
+   "desc": [
+    "BUT1 INFO G2",
+    "BLANC Nathalie"
+   ]
+  },
+  {
+   "id": "ADEdemo0038",
+   "debut": "2026-10-08T11:30:00.000Z",
+   "fin": "2026-10-08T13:30:00.000Z",
+   "titre": "SAE 1.05 Recueil besoins - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "GIRARD Marc"
+   ]
+  },
+  {
+   "id": "ADEdemo0039",
+   "debut": "2026-10-08T12:00:00.000Z",
+   "fin": "2026-10-08T13:30:00.000Z",
+   "titre": "R1.11 Communication - TD",
+   "lieu": "Salle 306",
+   "desc": [
+    "BUT1 INFO G2",
+    "MERCIER Julie"
+   ]
+  },
+  {
+   "id": "ADEdemo0040",
+   "debut": "2026-10-08T14:00:00.000Z",
+   "fin": "2026-10-08T15:30:00.000Z",
+   "titre": "R1.12 PPP - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "BONNET Claire"
+   ]
+  },
+  {
+   "id": "ADEdemo0041",
+   "debut": "2026-10-09T06:00:00.000Z",
+   "fin": "2026-10-09T07:30:00.000Z",
+   "titre": "R1.06 Maths discrètes - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "FONTAINE Lucie"
+   ]
+  },
+  {
+   "id": "ADEdemo0042",
+   "debut": "2026-10-09T07:45:00.000Z",
+   "fin": "2026-10-09T09:45:00.000Z",
+   "titre": "R1.05 BD - TP",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "MOREL Antoine"
+   ]
+  },
+  {
+   "id": "ADEdemo0043",
+   "debut": "2026-10-09T11:30:00.000Z",
+   "fin": "2026-10-09T13:30:00.000Z",
+   "titre": "SAE 1.01 - Projet",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean",
+    "LEROY Sophie"
+   ]
+  },
+  {
+   "id": "ADEdemo0044",
+   "debut": "2026-10-09T13:45:00.000Z",
+   "fin": "2026-10-09T15:15:00.000Z",
+   "titre": "R1.10 Anglais - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "WILSON Kate"
+   ]
+  },
+  {
+   "id": "ADEdemo0045",
+   "debut": "2026-10-12T06:00:00.000Z",
+   "fin": "2026-10-12T08:00:00.000Z",
+   "titre": "R1.01 Init dev - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0046",
+   "debut": "2026-10-12T08:15:00.000Z",
+   "fin": "2026-10-12T10:15:00.000Z",
+   "titre": "R1.01 Init dev - TP",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0047",
+   "debut": "2026-10-12T11:30:00.000Z",
+   "fin": "2026-10-12T13:00:00.000Z",
+   "titre": "R1.04 Systèmes - CM",
+   "lieu": "Amphi B",
+   "desc": [
+    "BUT1 INFO",
+    "LAMBERT Hugo"
+   ]
+  },
+  {
+   "id": "ADEdemo0048",
+   "debut": "2026-10-12T13:15:00.000Z",
+   "fin": "2026-10-12T14:45:00.000Z",
+   "titre": "R1.06 Maths discrètes - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "FONTAINE Lucie"
+   ]
+  },
+  {
+   "id": "ADEdemo0049",
+   "debut": "2026-10-13T06:00:00.000Z",
+   "fin": "2026-10-13T07:30:00.000Z",
+   "titre": "R1.05 BD - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "MOREL Antoine"
+   ]
+  },
+  {
+   "id": "ADEdemo0050",
+   "debut": "2026-10-13T07:45:00.000Z",
+   "fin": "2026-10-13T09:15:00.000Z",
+   "titre": "R1.02 Dév web - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "GARNIER Paul"
+   ]
+  },
+  {
+   "id": "ADEdemo0051",
+   "debut": "2026-10-13T09:15:00.000Z",
+   "fin": "2026-10-13T10:45:00.000Z",
+   "titre": "R1.03 Archi - TD",
+   "lieu": "Salle 510",
+   "desc": [
+    "BUT1 INFO G2",
+    "ROUSSEL Camille"
+   ]
+  },
+  {
+   "id": "ADEdemo0052",
+   "debut": "2026-10-13T12:00:00.000Z",
+   "fin": "2026-10-13T14:00:00.000Z",
+   "titre": "SAE 1.01 - Projet",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean",
+    "LEROY Sophie"
+   ]
+  },
+  {
+   "id": "ADEdemo0053",
+   "debut": "2026-10-13T14:15:00.000Z",
+   "fin": "2026-10-13T15:45:00.000Z",
+   "titre": "R1.10 Anglais - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "WILSON Kate"
+   ]
+  },
+  {
+   "id": "ADEdemo0054",
+   "debut": "2026-10-14T06:00:00.000Z",
+   "fin": "2026-10-14T07:30:00.000Z",
+   "titre": "R1.07 Outils maths - TD",
+   "lieu": "Salle 508",
+   "desc": [
+    "BUT1 INFO G2",
+    "FAURE Émilie"
+   ]
+  },
+  {
+   "id": "ADEdemo0055",
+   "debut": "2026-10-14T07:45:00.000Z",
+   "fin": "2026-10-14T09:15:00.000Z",
+   "titre": "R1.09 Économie - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "BLANC Nathalie"
+   ]
+  },
+  {
+   "id": "ADEdemo0056",
+   "debut": "2026-10-14T09:15:00.000Z",
+   "fin": "2026-10-14T10:45:00.000Z",
+   "titre": "R1.11 Communication - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "MERCIER Julie"
+   ]
+  },
+  {
+   "id": "ADEdemo0057",
+   "debut": "2026-10-15T06:00:00.000Z",
+   "fin": "2026-10-15T08:00:00.000Z",
+   "titre": "R1.01 Init dev - TP",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean"
+   ]
+  },
+  {
+   "id": "ADEdemo0058",
+   "debut": "2026-10-15T08:15:00.000Z",
+   "fin": "2026-10-15T09:45:00.000Z",
+   "titre": "R1.08 Gestion - TD",
+   "lieu": "Salle 510",
+   "desc": [
+    "BUT1 INFO G2",
+    "GIRARD Marc"
+   ]
+  },
+  {
+   "id": "ADEdemo0059",
+   "debut": "2026-10-15T11:30:00.000Z",
+   "fin": "2026-10-15T13:30:00.000Z",
+   "titre": "SAE 1.03 Installation poste - TP",
+   "lieu": "Salle TP 406",
+   "desc": [
+    "BUT1 INFO G2",
+    "LAMBERT Hugo"
+   ]
+  },
+  {
+   "id": "ADEdemo0060",
+   "debut": "2026-10-15T12:30:00.000Z",
+   "fin": "2026-10-15T14:00:00.000Z",
+   "titre": "R1.12 PPP - TD",
+   "lieu": "Salle 305",
+   "desc": [
+    "BUT1 INFO G2",
+    "BONNET Claire"
+   ]
+  },
+  {
+   "id": "ADEdemo0061",
+   "debut": "2026-10-15T14:15:00.000Z",
+   "fin": "2026-10-15T15:45:00.000Z",
+   "titre": "R1.04 Systèmes - TP",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "LAMBERT Hugo"
+   ]
+  },
+  {
+   "id": "ADEdemo0062",
+   "debut": "2026-10-16T06:00:00.000Z",
+   "fin": "2026-10-16T07:30:00.000Z",
+   "titre": "R1.06 Maths discrètes - CM",
+   "lieu": "Amphi A",
+   "desc": [
+    "BUT1 INFO",
+    "FONTAINE Lucie"
+   ]
+  },
+  {
+   "id": "ADEdemo0063",
+   "debut": "2026-10-16T07:45:00.000Z",
+   "fin": "2026-10-16T09:45:00.000Z",
+   "titre": "R1.05 BD - TP",
+   "lieu": "Salle TP 402",
+   "desc": [
+    "BUT1 INFO G2",
+    "MOREL Antoine"
+   ]
+  },
+  {
+   "id": "ADEdemo0064",
+   "debut": "2026-10-16T11:30:00.000Z",
+   "fin": "2026-10-16T13:30:00.000Z",
+   "titre": "SAE 1.01 - Projet",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "DUPONT Jean",
+    "LEROY Sophie"
+   ]
+  },
+  {
+   "id": "ADEdemo0065",
+   "debut": "2026-10-16T13:45:00.000Z",
+   "fin": "2026-10-16T15:15:00.000Z",
+   "titre": "R1.02 Dév web - TP",
+   "lieu": "Salle TP 404",
+   "desc": [
+    "BUT1 INFO G2",
+    "GARNIER Paul"
+   ]
+  }
+ ],
+ "moodle": [
+  {
+   "id": "demo-m1@moodle",
+   "debut": "2026-10-02T21:59:00.000Z",
+   "fin": "2026-10-02T21:59:00.000Z",
+   "titre": "Jalon 1 : cahier des charges doit être rendu",
+   "cours": "TBFTE101",
+   "desc": ""
+  },
+  {
+   "id": "demo-m2@moodle",
+   "debut": "2026-10-04T21:00:00.000Z",
+   "fin": "2026-10-04T21:00:00.000Z",
+   "titre": "Compte rendu TP2 doit être rendu",
+   "cours": "TBFTR103",
+   "desc": "Un PDF par binôme."
+  },
+  {
+   "id": "demo-m3@moodle",
+   "debut": "2026-10-07T16:00:00.000Z",
+   "fin": "2026-10-07T16:00:00.000Z",
+   "titre": "Quiz SQL n°1 ferme",
+   "cours": "TBFTR105",
+   "desc": ""
+  },
+  {
+   "id": "demo-m4@moodle",
+   "debut": "2026-10-09T21:59:00.000Z",
+   "fin": "2026-10-09T21:59:00.000Z",
+   "titre": "Jalon 2 : prototype doit être rendu",
+   "cours": "TBFTE101",
+   "desc": ""
+  },
+  {
+   "id": "demo-m5@moodle",
+   "debut": "2026-10-16T21:59:00.000Z",
+   "fin": "2026-10-16T21:59:00.000Z",
+   "titre": "Jalon 3 : version jouable doit être rendu",
+   "cours": "TBFTE101",
+   "desc": ""
+  }
+ ]
+}

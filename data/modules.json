@@ -1,0 +1,2145 @@
+{
+ "maj": "2026-09-28",
+ "modules": [
+  {
+   "code": "R1.01",
+   "titre": "Initiation au développement",
+   "type": "ressource",
+   "competences": [
+    "Réaliser",
+    "Optimiser"
+   ],
+   "heures": "70 h dont 38 h de TP",
+   "resume": "Apprendre à programmer en C : transformer un problème en algorithme, puis en programme qui compile, s'exécute et donne le bon résultat.",
+   "progression": [
+    {
+     "type": "cours",
+     "titre": "Chapitre 1 - Panorama de l'algorithmique et de la programmation en C",
+     "notions": [
+      "algorithme et ses 5 ingrédients (séquence, conditions, boucles, variables, fonctions)",
+      "pseudo-code",
+      "compilation avec gcc puis exécution",
+      "types char, int, double, bool",
+      "entrées-sorties : printf, scanf, putchar, getchar",
+      "premiers if/else, while et fonctions"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Chapitre 2 - Structures de contrôle et algèbre de Boole",
+     "notions": [
+      "&&, ||, ! et tables de vérité",
+      "else if, switch, opérateur ternaire",
+      "for, while, do-while",
+      "break, continue, return",
+      "organigrammes et couverture des branches",
+      "++ et --, priorité et ordre d'évaluation des opérateurs"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Chapitre 3 - Fonctions et procédures",
+     "notions": [
+      "prototype, définition, appel",
+      "fonction ou procédure",
+      "documentation Doxygen (@param, @return)",
+      "passage des arguments par valeur",
+      "portée, masquage, variables globales et static",
+      "conception descendante, DRY, KISS, assert"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Chapitre 4 - Pointeurs et représentation des données en mémoire",
+     "notions": [
+      "opérateurs & et *, %p, NULL",
+      "passage par adresse pour modifier une variable",
+      "sizeof et taille des types",
+      "dépassement de capacité",
+      "conversions implicites et cast",
+      "imprécision des flottants ; (avancé) const, pile et tas"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Mémo - l'essentiel du C",
+     "notions": [
+      "formats de printf",
+      "guide de style",
+      "priorité des opérateurs",
+      "conventions du pseudo-code",
+      "représentation des données en machine"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD1A - Bases de l'algorithmique et du C",
+     "notions": [
+      "main, variables, affichage",
+      "compiler et exécuter avec gcc en ligne de commande",
+      "lire au clavier avec scanf",
+      "premiers if/else et while"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD1B - Algorithmes, pseudo-code et programmes",
+     "notions": [
+      "corriger des erreurs de syntaxe et de logique",
+      "passer du pseudo-code au C et inversement",
+      "type et valeur d'expressions mêlant int, double et char",
+      "division entière par soustractions successives"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD2A - Utiliser des conditions et des boucles",
+     "notions": [
+      "if, else if, else",
+      "analyser et corriger des organigrammes",
+      "for, while, do-while",
+      "somme avec une boucle",
+      "maximum et minimum au fil d'une saisie"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD2B - Approfondir les conditions, boucles et expressions en C",
+     "notions": [
+      "continue et break",
+      "opérateur ternaire et expressions logiques",
+      "switch-case et division par zéro",
+      "tracer des boucles imbriquées",
+      "test de primalité",
+      "affichage de motifs"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD2C - Boucles, produit itératif et tables",
+     "notions": [
+      "factorielle et puissance entière",
+      "tables de valeurs avec des boucles imbriquées",
+      "tracer un do-while contenant un switch",
+      "opérateur ternaire",
+      "affichage aligné en tableau"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD3A - Fonctions et procédures en C",
+     "notions": [
+      "déclaration absente ou incohérente, return fautif",
+      "déclarer, définir, appeler",
+      "documenter une fonction",
+      "passage par valeur",
+      "composer des fonctions (calcul séparé de l'affichage)",
+      "sortir d'une boucle avec return"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD3B - Portée, conception descendante et fonctions booléennes",
+     "notions": [
+      "blocs, masquage, variables globales",
+      "variable static",
+      "décomposer un problème en fonctions",
+      "précondition avec assert",
+      "fonctions booléennes (primalité, condition de jeu)"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD4A - Initiation aux pointeurs",
+     "notions": [
+      "& et *",
+      "NULL, %p, affichage en binaire (%b) et en hexadécimal (%x)",
+      "modifier une variable via un pointeur",
+      "passage par adresse dans une fonction",
+      "cast entre entier et flottant"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD4B - Pointeurs, pièges et représentation mémoire",
+     "notions": [
+      "plusieurs pointeurs vers la même variable",
+      "sizeof et taille d'un pointeur",
+      "prédire la sortie d'un programme à pointeurs",
+      "const et pointeurs",
+      "littéraux 0b et 0x, <limits.h>, dépassement de capacité"
+     ]
+    }
+   ],
+   "a_maitriser": [
+    "Savoir écrire un programme C complet (#include <stdio.h>, int main, return 0), le compiler avec gcc (gcc prog.c -o prog) et l'exécuter (./prog).",
+    "Savoir choisir le bon type (char, int, double, bool) et le bon format dans printf et scanf (%c, %d, %lf, %s), sans oublier le & devant la variable dans scanf.",
+    "Savoir prévoir le type et la valeur d'une expression : division entière (5 / 2 vaut 2), modulo %, conversions implicites (char < int < double), priorité des opérateurs, ++ et --.",
+    "Savoir écrire et combiner des conditions avec &&, || et ! (tables de vérité, lois de De Morgan) et choisir entre if / else if, switch et l'opérateur ternaire.",
+    "Savoir choisir la bonne boucle (for, while, do-while), garantir qu'elle se termine et utiliser break, continue et return à bon escient.",
+    "Savoir dérouler un programme à la main dans un tableau de variables (une ligne par étape ou par tour de boucle) et prédire exactement ce qu'il affiche.",
+    "Savoir déclarer (prototype), définir, documenter (@param, @return) et appeler une fonction, et distinguer fonction et procédure.",
+    "Savoir expliquer le passage par valeur, la portée et la durée de vie des variables (bloc, masquage, globale, static) et découper un problème en fonctions (conception descendante).",
+    "Savoir utiliser un pointeur : & (adresse), * (valeur pointée), %p, NULL, et écrire une fonction qui modifie une variable de l'appelant en recevant son adresse.",
+    "Savoir expliquer sizeof, le dépassement de capacité, le cast (double) et pourquoi on ne compare jamais deux double avec ==."
+   ],
+   "comment_reviser": [
+    "Écris le code à la main, sur papier, sans ordinateur : le test 1 était sur papier et les QCM se remplissent au feutre noir.",
+    "Déroule chaque programme des TD dans un tableau de variables avant de l'exécuter, puis vérifie ta prédiction avec Python Tutor ou la console C France-ioi.",
+    "Refais les QCM des TD sur le site du cours (but.lyceum.fr/r101 : ils n'apparaissent pas dans les PDF) et les exercices « que va afficher ce programme ? » (TD2B, TD2C, TD3A, TD4A, TD4B) : c'est le format des évaluations.",
+    "Range un fichier par exercice dans « Mes programmes C » (un dossier par TD : td01a, td01b…) ; sans gcc sur ta machine, code sur la console France-ioi.",
+    "Pour les pointeurs, dessine toujours des cases (nom, adresse, valeur) et des flèches : c'est ce qui débloque le chapitre 4.",
+    "Garde sous la main le mémo (Cours/), le poly « Le langage C » de E. Guérin (Ressources complémentaires/) et ta fiche des chapitres 1 à 3 (Révisions/).",
+    "Anticipe le chapitre 5 (tableaux) : il s'appuie directement sur les pointeurs du chapitre 4."
+   ],
+   "pieges": [
+    "Oublier le & dans scanf(\"%d\", &x), ou lire un double avec %f au lieu de %lf.",
+    "5 / 2 vaut 2 (division entière entre deux int) : écris 5.0 / 2 ou (double)a / b pour obtenir 2.5.",
+    "Écrire = (affectation) au lieu de == (comparaison) : if (x = 5) est toujours vrai.",
+    "Mettre un ; juste après if (…), while (…) ou for (…) : le bloc qui suit n'est plus contrôlé par la condition.",
+    "Lire un caractère après un autre scanf : le '\\n' resté dans le tampon est lu à la place de ta lettre ; écris scanf(\" %c\", &c) avec un espace.",
+    "Croire qu'une fonction void doubler(int n) modifie la variable de l'appelant : elle travaille sur une copie ; il faut lui passer l'adresse (int* n).",
+    "Appeler une fonction avant sa déclaration (erreur « déclaration implicite ») ou oublier le return d'une fonction qui n'est pas void.",
+    "Comparer deux double avec == (0.1 + 0.2 == 0.3 est faux) : compare plutôt fabs(a - b) < 1e-6.",
+    "Déréférencer un pointeur NULL ou non initialisé : le programme plante (segmentation fault).",
+    "Avec les réglages du prof (-Wall -Werror), un simple avertissement (variable inutilisée, mauvais format dans printf) empêche la compilation."
+   ],
+   "ressources": [
+    {
+     "nom": "Python Tutor (C)",
+     "url": "https://pythontutor.com/c.html",
+     "type": "outil",
+     "pourquoi": "Exécute ton code pas à pas en dessinant la pile, les variables et les pointeurs sous forme de flèches : idéal pour le chapitre 4 (il compile en C17 : ajoute #include <stdbool.h> pour utiliser bool)."
+    },
+    {
+     "nom": "France-IOI – parcours d'algorithmique",
+     "url": "https://www.france-ioi.org/algo/chapters.php",
+     "type": "exercices",
+     "pourquoi": "Exercices progressifs corrigés automatiquement, en français et gratuits, dans le langage de ton choix (dont le C) : parfait pour les boucles et les conditions."
+    },
+    {
+     "nom": "Console C en ligne (Codecast, France-ioi)",
+     "url": "https://codecast.france-ioi.org/v5/",
+     "type": "outil",
+     "pourquoi": "La console recommandée dans ton dossier R1.01 : écrire et exécuter du C dans le navigateur tant que gcc n'est pas installé sur ton PC."
+    },
+    {
+     "nom": "OpenClassrooms – Apprenez à programmer en C",
+     "url": "https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c",
+     "type": "cours",
+     "pourquoi": "Cours gratuit en français (environ 10 h) qui reprend variables, conditions, boucles, fonctions puis pointeurs et tableaux avec d'autres exemples que ton cours."
+    },
+    {
+     "nom": "Zeste de Savoir – Le langage C",
+     "url": "https://zestedesavoir.com/tutoriels/755/le-langage-c-1/",
+     "type": "cours",
+     "pourquoi": "Tutoriel libre et rigoureux, avec exercices et TP, pour approfondir un point précis (types, pointeurs, représentation en mémoire)."
+    },
+    {
+     "nom": "OnlineGDB – compilateur C en ligne",
+     "url": "https://www.onlinegdb.com/online_c_compiler",
+     "type": "outil",
+     "pourquoi": "Compile avec gcc et débogue ligne par ligne (points d'arrêt, valeurs des variables) directement dans le navigateur."
+    }
+   ]
+  },
+  {
+   "code": "R1.02",
+   "titre": "Développement d'interfaces web",
+   "type": "ressource",
+   "competences": [
+    "Réaliser",
+    "Conduire",
+    "Collaborer"
+   ],
+   "heures": "16 h dont 12 h de TP",
+   "resume": "Créer des pages web propres et valides : la structure en HTML, la mise en forme et la mise en page en CSS (flexbox, grid, responsive), puis la mise en ligne sur le serveur de l'IUT.",
+   "progression": [
+    {
+     "type": "cours",
+     "titre": "Résumé de cours - HTML",
+     "notions": [
+      "séparer structure (HTML) et forme (CSS)",
+      "syntaxe des balises, balises autofermantes",
+      "attributs id et class",
+      "structure type d'une page",
+      "principales balises",
+      "valider sa page"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Résumé de cours - CSS",
+     "notions": [
+      "syntaxe et sélecteurs (classes, identifiants, combinaisons, pseudo-sélecteurs)",
+      "propriétés courantes",
+      "modèle de boîte",
+      "positionnement, flottants, couches",
+      "flexbox et grid",
+      "site réactif, transformations, animations, validation"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Mémo CSS flexbox et grid (fourni à l'évaluation finale)",
+     "notions": [
+      "aide-mémoire des propriétés flexbox",
+      "aide-mémoire des propriétés grid",
+      "document fourni le jour du DS final"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD0 - Avant de commencer",
+     "notions": [
+      "dossier local www/r102",
+      "VS Code et ses extensions (dont le validateur W3C)",
+      "connexion au serveur et FileZilla",
+      "mise en ligne et vérification du site",
+      "routine de fin de séance"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD1 - Introduction à HTML (XHTML 5)",
+     "notions": [
+      "Internet, adresse IP, URL et web",
+      "structure, contenu et mise en forme",
+      "HTML et XHTML (syntaxe stricte)",
+      "en-tête : encodage et titre",
+      "titres, textes, images, liens, listes, entités",
+      "validation W3C et rendu ; raccourcis Emmet"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD2 - Introduction à CSS",
+     "notions": [
+      "lier une feuille de style",
+      "cascade et DOM",
+      "sélecteurs simples (balise, classe, identifiant)",
+      "propriétés de texte, de boîte et de liste",
+      "sélecteurs avancés : combinateurs, :has(), attributs, pseudo-classes et pseudo-éléments",
+      "règles de priorité et calcul de la spécificité"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD3 - Les principes de la mise en page en CSS",
+     "notions": [
+      "boîtes block, inline et inline-block",
+      "marges, bordures, padding et unités",
+      "centrage horizontal",
+      "propriété display",
+      "position, couches et contexte d'empilement (menu déroulant)",
+      "éléments flottants et contexte de formatage (BFC)"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD4 - Utilisation de Flexbox et Grid",
+     "notions": [
+      "display: flex, direction et axes",
+      "alignement (justify-content, align-items)",
+      "répartition de l'espace libre",
+      "display: grid, colonnes, lignes et zones nommées",
+      "unité fr, espacement (gap), alignement dans la grille",
+      "exercice récapitulatif"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD5 - Compléments de HTML",
+     "notions": [
+      "formulaires : form, fieldset, label, input",
+      "validation HTML5 (required, pattern, min, max) et pseudo-classes",
+      "tableaux",
+      "vidéo et audio",
+      "iframes",
+      "images sectorisées"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD6 - CSS et réactivité",
+     "notions": [
+      "viewport et simulation d'un smartphone",
+      "requêtes média : types et caractéristiques",
+      "le piège de :hover sur écran tactile",
+      "fonction clamp()",
+      "requêtes de conteneur"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD7 - Compléments de CSS (facultatif)",
+     "notions": [
+      "variables CSS",
+      "polices (@font-face, Google Fonts)",
+      "dégradés et motifs",
+      "transformations 2D et 3D",
+      "transitions et animations"
+     ]
+    }
+   ],
+   "a_maitriser": [
+    "Savoir écrire une page HTML5 valide en syntaxe stricte (XHTML) : doctype, <html lang=\"fr\">, <head> avec meta charset et title, balises en minuscules toutes fermées (<img … />), attributs entre guillemets.",
+    "Savoir choisir la balise adaptée au sens : titres h1 à h6 dans l'ordre, p, listes ul/ol/li, liens a (href, ancre #id, mailto), images avec alt, header/nav/main/section/article/footer, tableaux, formulaires.",
+    "Savoir lier une feuille CSS externe et cibler les éléments avec les sélecteurs : balise, .classe, #id, descendant (espace), enfant >, frères + et ~, attributs [ ], pseudo-classes (:hover, :nth-child, :not, :has) et pseudo-éléments (::before).",
+    "Savoir calculer la spécificité d'un sélecteur et prévoir quelle règle l'emporte (spécificité, puis ordre d'écriture ; héritage).",
+    "Savoir expliquer le modèle de boîte (contenu, padding, border, margin), la différence block / inline / inline-block, et centrer un bloc horizontalement (margin: auto).",
+    "Savoir utiliser position (static, relative, absolute, fixed, sticky) et z-index, et savoir ce que fait float.",
+    "Savoir construire une mise en page avec flexbox (flex-direction, justify-content, align-items, flex-wrap, flex-grow) et avec grid (grid-template-columns, grid-template-areas, unité fr, gap).",
+    "Savoir rendre une page responsive : meta viewport, requêtes média, unités relatives, clamp().",
+    "Savoir valider HTML et CSS avec les validateurs du W3C, puis mettre en ligne ton site avec FileZilla et vérifier l'affichage."
+   ],
+   "comment_reviser": [
+    "QCM du mardi 29/09 (TD1 à TD3) : relis ta fiche (Révisions/) et écris ta feuille A4 manuscrite recto-verso, seul document autorisé : spécificité, sélecteurs, modèle de boîte, display, position.",
+    "Refais sans ordinateur les questions des TD : dessiner le DOM et compter ses nœuds (TD2), calculer des spécificités (TD2), dessiner une boîte avec ses marges (TD3).",
+    "Teste chaque propriété en direct dans les outils de développement du navigateur (F12, onglet Éléments : styles appliqués, règles barrées, schéma du modèle de boîte).",
+    "Avant le TD4 et le DS : fais Flexbox Froggy et Grid Garden ; le mémo flexbox/grid est fourni au DS, entraîne-toi à t'en servir vite.",
+    "Passe chaque page au validateur W3C (HTML : validator.w3.org ; CSS : jigsaw.w3.org/css-validator) avant de la déposer.",
+    "Dépose tes TD sur le serveur avec FileZilla au fil de l'eau et vérifie l'affichage en ligne : les TD 1 à 6 sont notés (rendu avant le 15/01)."
+   ],
+   "pieges": [
+    "Balises mal fermées ou mal imbriquées (<p><strong>…</p></strong>) : le navigateur corrige en silence, le validateur non.",
+    "Utiliser le même id deux fois dans une page : un id est unique, une classe peut se répéter.",
+    "Confondre p:hover (le paragraphe survolé) et p :hover (n'importe quel élément survolé dans un paragraphe) : l'espace est le sélecteur descendant.",
+    "Confondre :not(:has(em)) (ne contient aucun em) et :has(:not(em)) (contient au moins un élément qui n'est pas un em).",
+    "Oublier que padding et border s'ajoutent à width (box-sizing: content-box par défaut).",
+    "Donner width, height ou des marges verticales à un élément inline (span, a) : sans effet tant qu'il n'est pas en inline-block ou block.",
+    "Mettre justify-content ou align-items sur les enfants au lieu du conteneur flex, ou oublier que les axes s'inversent avec flex-direction: column.",
+    "Utiliser position: absolute sans ancêtre positionné (position: relative) : l'élément se place par rapport à la page entière.",
+    "Chemins de fichiers qui marchent chez toi mais pas sur le serveur : majuscules, espaces, accents ou chemin absolu local (C:\\…).",
+    "Garder <html lang=\"en\"> et <title>Document</title> du modèle de page de VS Code."
+   ],
+   "ressources": [
+    {
+     "nom": "MDN – Apprendre le développement web",
+     "url": "https://developer.mozilla.org/fr/docs/Learn_web_development",
+     "type": "cours",
+     "pourquoi": "La référence gratuite (en français) pour vérifier une balise ou une propriété CSS, avec exemples et exercices."
+    },
+    {
+     "nom": "Flexbox Froggy",
+     "url": "https://flexboxfroggy.com/#fr",
+     "type": "jeu",
+     "pourquoi": "Place les grenouilles avec justify-content, align-items, flex-direction… : la façon la plus rapide de retenir flexbox avant le TD4 et le DS."
+    },
+    {
+     "nom": "Grid Garden",
+     "url": "https://cssgridgarden.com/#fr",
+     "type": "jeu",
+     "pourquoi": "Arrose le potager avec grid-column, grid-row et grid-template : le pendant de Froggy pour grid."
+    },
+    {
+     "nom": "CSS Diner",
+     "url": "https://flukeout.github.io/",
+     "type": "jeu",
+     "pourquoi": "Des niveaux courts pour s'entraîner aux sélecteurs (descendant, >, +, ~, :first-child, :not…), exactement ce qui tombe au QCM (en anglais, très simple)."
+    },
+    {
+     "nom": "Validateur HTML du W3C",
+     "url": "https://validator.w3.org/",
+     "type": "outil",
+     "pourquoi": "Vérifie ta page par URL, fichier ou copier-coller ; à passer avant chaque rendu (pour le CSS : jigsaw.w3.org/css-validator)."
+    },
+    {
+     "nom": "Specificity Calculator",
+     "url": "https://specificity.keegan.st/",
+     "type": "outil",
+     "pourquoi": "Tape un sélecteur, il affiche sa spécificité : pour vérifier tes calculs du TD2."
+    }
+   ]
+  },
+  {
+   "code": "R1.03",
+   "titre": "Introduction à l'architecture des ordinateurs",
+   "type": "ressource",
+   "competences": [
+    "Optimiser",
+    "Administrer"
+   ],
+   "heures": "16 h dont 6 h de TP",
+   "resume": "Comprendre comment un ordinateur représente l'information (binaire, hexadécimal, complément à 2, flottants), comment la logique de Boole devient des circuits, et comment un processeur exécute un programme (assembleur 8086).",
+   "progression": [
+    {
+     "type": "cours",
+     "titre": "0 - Introduction",
+     "notions": [
+      "composants d'un PC et de la carte mère",
+      "bit, octet et unités",
+      "historique et évolution des processeurs",
+      "bases 2, 8 et 16",
+      "codage des caractères (ASCII, Unicode) et des flottants (IEEE 754)"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "1 - Arithmétique binaire et algèbre de Boole",
+     "notions": [
+      "addition binaire et retenue",
+      "complément à 2, soustraction et dépassement (overflow)",
+      "tables de vérité, axiomes, lois de De Morgan",
+      "tableaux de Karnaugh",
+      "opérations sur les chaînes de bits",
+      "portes logiques et circuits combinatoires"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "2 - Architecture - Généralités",
+     "notions": [
+      "unité centrale : processeur, mémoire, chipset, bus",
+      "horloge, cycles et MIPS",
+      "unité de commande, compteur ordinal, UAL, registres, indicateurs",
+      "exécution d'une instruction pas à pas",
+      "hiérarchie des mémoires",
+      "adresses logiques et physiques, pagination, segmentation, swap"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "3 - Assembleur 8086 (généralités, procédures, interruptions)",
+     "notions": [
+      "segments de pile, de données et de code (SS, SP, BP, DS, CS, IP)",
+      "squelette d'un programme, déclarations DB, DW, DUP",
+      "MOV, ADD, SUB, MUL, DIV, CMP et sauts conditionnels",
+      "pile : PUSH et POP",
+      "procédures : CALL, RET, passage de paramètres",
+      "interruptions : INT 21h, IRET, vecteurs d'interruption"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP1 - Matériel du PC et représentation de l'information",
+     "notions": [
+      "composants d'un PC",
+      "conversions entre bases 2, 8, 10 et 16 (avec virgule)",
+      "entiers relatifs : signe et valeur absolue, complément à 1, complément à 2, excédent",
+      "flottants IEEE 754"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP2 - Algèbre de Boole (+ devoir)",
+     "notions": [
+      "ET et OU à partir de NON",
+      "OU exclusif et tables de vérité",
+      "simplification algébrique",
+      "somme de produits et produit de sommes",
+      "tableaux de Karnaugh",
+      "devoir : exercices complémentaires"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP3 - Fonctions logiques et simplification (+ devoir)",
+     "notions": [
+      "demi-additionneur et additionneur complet",
+      "Karnaugh à 4 et 5 variables",
+      "code de Gray",
+      "loi de De Morgan à k termes (par récurrence)",
+      "complément à 2 sur 4 bits",
+      "devoir : 8 exercices"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP4 - Introduction à l'assembleur",
+     "notions": [
+      "Emu8086 : compiler, émuler, exécuter pas à pas",
+      "registres, IP et registres de segment",
+      "vue mémoire et variables DB/DW",
+      "sauts JE et JMP",
+      "pile : PUSH, POP, SP et BP"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP5 - Registres, tableaux et boucles",
+     "notions": [
+      "AX = AH:AL (demi-registres)",
+      "opérations arithmétiques et logiques",
+      "adressage avec BX",
+      "boucles avec des sauts",
+      "parcours et affichage d'une chaîne de caractères",
+      "pile (exercice à rendre)"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP6 - Procédures et pile",
+     "notions": [
+      "DIV : quotient dans AL, reste dans AH",
+      "procédures CALL et RET",
+      "paramètres passés par registres",
+      "paramètres passés par la pile ([BP+4], [BP+6])",
+      "résultat renvoyé par la pile"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP7 - Interruptions",
+     "notions": [
+      "IRQ dans le gestionnaire de périphériques",
+      "table des vecteurs d'interruption (INT 21h en 0000:0084)",
+      "déclencher une interruption logicielle DOS",
+      "IRET",
+      "conversion d'une valeur en ASCII"
+     ]
+    }
+   ],
+   "a_maitriser": [
+    "Savoir convertir un nombre entre les bases 2, 8, 10 et 16, y compris avec une partie après la virgule (121,25 en binaire).",
+    "Savoir coder un entier relatif sur n bits (signe et valeur absolue, complément à 1, complément à 2, excédent 2^(n-1)) et donner l'intervalle représentable.",
+    "Savoir additionner et soustraire en binaire, et repérer la retenue (carry) et le dépassement (overflow).",
+    "Savoir coder et décoder un flottant IEEE 754 simple précision (signe, exposant biaisé, mantisse).",
+    "Savoir simplifier une expression booléenne avec les lois de l'algèbre de Boole et de De Morgan, et passer d'une table de vérité à une somme de produits ou un produit de sommes.",
+    "Savoir simplifier une fonction avec un tableau de Karnaugh (3, 4 ou 5 variables, lignes et colonnes en code de Gray).",
+    "Savoir construire un demi-additionneur puis un additionneur complet avec des portes logiques.",
+    "Savoir décrire les composants d'un ordinateur (unité de commande, UAL, registres, mémoire, bus, horloge) et les étapes de l'exécution d'une instruction.",
+    "Savoir lire et écrire un petit programme 8086 (segments, MOV, ADD, SUB, CMP, sauts, boucles) et le suivre pas à pas dans Emu8086.",
+    "Savoir expliquer la pile (PUSH, POP, SP, BP), les procédures (CALL, RET, passage de paramètres) et les interruptions (INT 21h, IRET, table des vecteurs)."
+   ],
+   "comment_reviser": [
+    "Fais des conversions 10 minutes par jour (jeu binaire Cisco) : la vitesse compte. Connais par cœur les puissances de 2 jusqu'à 2^16 et la correspondance hexadécimal ↔ 4 bits.",
+    "Pour Karnaugh, numérote toujours lignes et colonnes en code de Gray (00, 01, 11, 10) et vérifie ton résultat avec un solveur en ligne, après l'avoir fait à la main.",
+    "Refais les exercices complémentaires des devoirs TP2 et TP3 sans regarder tes réponses, puis compare.",
+    "En assembleur, exécute en pas à pas (Single step dans Emu8086) et note à chaque instruction les valeurs des registres, de IP, de SP et des indicateurs (ZF, CF, SF, OF).",
+    "Dessine l'état de la pile après chaque PUSH, POP, CALL et RET (TP4 exercice 2, TP6).",
+    "Revois la vidéo sur la soustraction binaire signée (lien dans Cours/) et fais le lien avec R1.01 (sizeof, dépassement de capacité) et le chapitre 4 de R1.06 (numération) : mêmes notions, autre angle."
+   ],
+   "pieges": [
+    "Lire 1111 1111 comme 255 alors que le nombre est signé en complément à 2 (il vaut -1) : vérifie toujours si l'énoncé parle de nombres signés.",
+    "Confondre retenue (carry, utile pour les nombres non signés) et dépassement (overflow, utile pour les nombres signés).",
+    "Oublier d'ajouter 1 après avoir inversé les bits pour obtenir le complément à 2.",
+    "Dans un tableau de Karnaugh : ordre binaire naturel au lieu du code de Gray, regroupements par les bords oubliés, groupes dont la taille n'est pas une puissance de 2.",
+    "Appliquer De Morgan à moitié : non(A.B) = non A + non B (le ET devient un OU, et inversement).",
+    "En 8086, mélanger les tailles (MOV AL, 1A2BH est refusé car AL ne fait que 8 bits) ou oublier d'initialiser DS avec le segment de données.",
+    "Laisser la pile déséquilibrée : chaque PUSH doit avoir son POP (dans l'ordre inverse), sinon RET revient à une mauvaise adresse.",
+    "Oublier que DIV BL range le quotient dans AL et le reste dans AH.",
+    "Rater une échéance : les devoirs se déposent sur Moodle, dans l'espace de ton groupe, et se ferment à l'heure pile."
+   ],
+   "ressources": [
+    {
+     "nom": "Cisco Binary Game",
+     "url": "https://learningcontent.cisco.com/games/binary/index.html",
+     "type": "jeu",
+     "pourquoi": "Conversions binaire ↔ décimal contre la montre : le meilleur entraînement pour gagner en vitesse."
+    },
+    {
+     "nom": "IEEE-754 Floating Point Converter",
+     "url": "https://www.h-schmidt.net/FloatConverter/IEEE754.html",
+     "type": "outil",
+     "pourquoi": "Coche les bits de signe, d'exposant et de mantisse et vois la valeur obtenue : pour vérifier tes codages de flottants du TP1."
+    },
+    {
+     "nom": "Karnaugh Map Solver",
+     "url": "https://www.charlie-coleman.com/experiments/kmap/",
+     "type": "outil",
+     "pourquoi": "Entre ta fonction (mintermes), il dessine les regroupements et donne l'expression simplifiée : pour vérifier tes tableaux de Karnaugh."
+    },
+    {
+     "nom": "CircuitVerse – simulateur",
+     "url": "https://circuitverse.org/simulator",
+     "type": "outil",
+     "pourquoi": "Simulateur de circuits logiques dans le navigateur : construis ton demi-additionneur et ton additionneur complet (TP3) et teste-les."
+    },
+    {
+     "nom": "NandGame",
+     "url": "https://nandgame.com/",
+     "type": "jeu",
+     "pourquoi": "Construis un ordinateur niveau par niveau à partir de portes NAND : relie algèbre de Boole, additionneur, mémoire et processeur."
+    },
+    {
+     "nom": "8086 Online Emulator",
+     "url": "https://yjdoc2.github.io/8086-emulator-web/",
+     "type": "outil",
+     "pourquoi": "Exécute du code 8086 pas à pas dans le navigateur pour réviser MOV, ADD, CMP, sauts et pile sans Emu8086 ; il ne gère pas les interruptions DOS (INT 21h)."
+    }
+   ]
+  },
+  {
+   "code": "R1.04",
+   "titre": "Introduction aux systèmes d'exploitation",
+   "type": "ressource",
+   "competences": [
+    "Administrer"
+   ],
+   "heures": "19 h dont 14 h de TP",
+   "resume": "Comprendre à quoi sert un système d'exploitation et savoir t'en servir en ligne de commande (surtout sous Linux) : fichiers, droits, processus, utilisateurs, premiers scripts.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir expliquer le rôle d'un système d'exploitation (noyau, pilotes, gestion des processus, de la mémoire et des fichiers) et citer les grandes familles (Linux/Unix, Windows, macOS, Android).",
+    "Savoir te déplacer et manipuler des fichiers en ligne de commande : pwd, ls -l, cd, mkdir, cp, mv, rm, cat, less, avec des chemins absolus et relatifs (/, ~, ., ..).",
+    "Savoir lire et modifier des droits (rwx pour le propriétaire, le groupe et les autres) avec chmod, en symbolique et en octal (755, 644), et changer de propriétaire avec chown.",
+    "Savoir chercher et filtrer : man, find, grep, redirections (>, >>, <) et tubes (|) avec wc, sort, head, tail.",
+    "Savoir observer et gérer les processus : ps, top, kill, & et jobs, notions de PID et de processus parent.",
+    "Savoir gérer utilisateurs et groupes : whoami, id, sudo, adduser, /etc/passwd, /etc/group.",
+    "Savoir écrire un petit script shell (#!/bin/bash, variables, arguments $1, if, for) et le rendre exécutable.",
+    "Savoir décrire les étapes d'installation d'un système : partitions, démarrage (BIOS/UEFI, chargeur d'amorçage), paquets (apt), fichiers de configuration dans /etc."
+   ],
+   "comment_reviser": [
+    "Pratique 15 minutes par jour dans un vrai terminal : sans Linux ni WSL sur ton PC, utilise JSLinux dans le navigateur ou les machines de l'IUT, en attendant d'installer WSL ou une machine virtuelle (voir SAÉ 1.03).",
+    "Tiens un carnet de commandes : pour chaque commande, sa syntaxe, deux options utiles et un exemple que tu as réellement testé.",
+    "Prends le réflexe man ls ou ls --help avant de chercher sur Internet.",
+    "Pour les droits, convertis rwxr-x--- ↔ 750 dans les deux sens jusqu'à le faire sans réfléchir.",
+    "Joue aux premiers niveaux d'OverTheWire Bandit (en SSH depuis le terminal Windows) : chaque niveau oblige à combiner les commandes vues en cours.",
+    "Fais le lien avec R1.03 (processeur, mémoire, interruptions) et R1.01 (compiler avec gcc dans un terminal)."
+   ],
+   "pieges": [
+    "Lancer rm -r ou rm * sans vérifier le dossier courant (pwd) : sous Linux, il n'y a pas de corbeille.",
+    "Oublier que Linux distingue majuscules et minuscules (Fichier.txt et fichier.txt sont deux fichiers différents).",
+    "Confondre chemin absolu (/home/…) et chemin relatif (docs/…).",
+    "Mettre des espaces dans les noms de fichiers sans guillemets : la commande voit plusieurs arguments.",
+    "Faire chmod 777 « pour que ça marche » : c'est donner tous les droits à tout le monde.",
+    "Confondre > (écrase le fichier) et >> (ajoute à la fin).",
+    "Oublier qu'un script doit être rendu exécutable (chmod +x script.sh) et se lance avec ./script.sh.",
+    "Copier une commande trouvée sur Internet (surtout avec sudo) sans la comprendre : fais-la d'abord expliquer par explainshell."
+   ],
+   "ressources": [
+    {
+     "nom": "OverTheWire – Bandit",
+     "url": "https://overthewire.org/wargames/bandit/",
+     "type": "jeu",
+     "pourquoi": "Un jeu en ligne de commande : chaque niveau cache le mot de passe du suivant, à trouver avec ls, cat, find, grep, les droits… Excellent pour pratiquer."
+    },
+    {
+     "nom": "JSLinux",
+     "url": "https://bellard.org/jslinux/",
+     "type": "outil",
+     "pourquoi": "Un vrai Linux qui tourne dans ton navigateur : parfait pour t'entraîner aux commandes tant que tu n'as pas Linux sur ton PC."
+    },
+    {
+     "nom": "Linux Journey",
+     "url": "https://labex.io/linuxjourney",
+     "type": "cours",
+     "pourquoi": "Cours gratuit et progressif (ligne de commande, fichiers, droits, processus, utilisateurs, démarrage) en anglais simple, avec petits quiz."
+    },
+    {
+     "nom": "explainshell",
+     "url": "https://explainshell.com/",
+     "type": "outil",
+     "pourquoi": "Colle une commande : chaque option est expliquée à partir des pages de manuel."
+    },
+    {
+     "nom": "Documentation Ubuntu francophone – Le terminal",
+     "url": "https://doc.ubuntu-fr.org/terminal",
+     "type": "cours",
+     "pourquoi": "La référence en français pour les commandes de base, les droits et l'administration d'un système Linux."
+    },
+    {
+     "nom": "Terminus (MIT)",
+     "url": "https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html",
+     "type": "jeu",
+     "pourquoi": "Un petit jeu d'aventure où l'on se déplace avec cd, ls, mv… : idéal pour mémoriser les commandes de base."
+    }
+   ]
+  },
+  {
+   "code": "R1.05",
+   "titre": "Introduction aux bases de données et SQL",
+   "type": "ressource",
+   "competences": [
+    "Gérer"
+   ],
+   "heures": "36 h dont 18 h de TP",
+   "resume": "Concevoir une base de données à partir d'un cahier des charges (diagramme de classes UML), la traduire en tables relationnelles normalisées, puis la créer et l'interroger en SQL avec MySQL.",
+   "progression": [
+    {
+     "type": "cm",
+     "titre": "CM1 - Introduction à la conception de BD",
+     "notions": [
+      "base de données et SGBD",
+      "niveaux conceptuel, logique, physique",
+      "diagramme de classes UML",
+      "associations et multiplicités (cardinalités)",
+      "rôles, associations réflexives et multiples",
+      "méthode : entités, puis associations, puis attributs"
+     ]
+    },
+    {
+     "type": "cm",
+     "titre": "CM2 - Compléments de conception de BD",
+     "notions": [
+      "classe d'association",
+      "contraintes d'intégrité",
+      "attribut, classe ou association ?",
+      "hiérarchie de classes (héritage)",
+      "agrégation et composition",
+      "associations n-aires ; patron commande / partie de commande"
+     ]
+    },
+    {
+     "type": "cm",
+     "titre": "CM3 - Compléments de conception et schéma relationnel",
+     "notions": [
+      "normalisation des classes (1FN, 2FN, 3FN, BCNF)",
+      "modèle relationnel : relation, attribut, domaine, degré, cardinalité",
+      "valeur NULL",
+      "clés candidates, primaire et étrangère",
+      "passage UML → relationnel : classes et associations 1-1, 1-*, *-*"
+     ]
+    },
+    {
+     "type": "cm",
+     "titre": "CM5 - Schéma relationnel normalisé",
+     "notions": [
+      "redondance et anomalies d'une table unique",
+      "dépendances fonctionnelles",
+      "1NF, 2NF, 3NF",
+      "forme normale de Boyce-Codd",
+      "dénormalisation"
+     ]
+    },
+    {
+     "type": "cm",
+     "titre": "CM6 - Introduction à SQL",
+     "notions": [
+      "algèbre relationnelle",
+      "SELECT … FROM … WHERE",
+      "opérateurs de restriction",
+      "produit cartésien et jointure",
+      "alias",
+      "fonctions d'agrégation (COUNT)"
+     ]
+    },
+    {
+     "type": "cm",
+     "titre": "CM7 - Interrogation d'une BD avec SQL",
+     "notions": [
+      "UNION, intersection, différence",
+      "SUM, AVG, MIN, MAX",
+      "GROUP BY et HAVING",
+      "ORDER BY",
+      "EXISTS et division",
+      "MySQL et phpMyAdmin"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD1 - Modélisation conceptuelle",
+     "notions": [
+      "diagramme de classes d'une bibliothèque",
+      "club de tennis",
+      "vente par correspondance"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD2 - Suite de la modélisation conceptuelle",
+     "notions": [
+      "cinéma (films, salles, séances, projections)",
+      "agence immobilière",
+      "cours et intervenants",
+      "gestion du personnel"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD3 - Modélisation conceptuelle (fin) et schéma relationnel",
+     "notions": [
+      "puits de pétrole (héritage, attributs d'association)",
+      "clinique vétérinaire",
+      "ateliers",
+      "laboratoire"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD4 - Passage de l'UML au schéma relationnel",
+     "notions": [
+      "clés primaires et étrangères",
+      "exemple de base correspondant à un schéma",
+      "choisir le bon schéma relationnel",
+      "laboratoire, journal, usine de production"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD4-bis - Exercices supplémentaires (début du TD5)",
+     "notions": [
+      "convertir un schéma conceptuel en schéma relationnel",
+      "suivre un cours (association porteuse d'attributs)",
+      "hôpital"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD5 - Passage au schéma relationnel (suite)",
+     "notions": [
+      "cours, hôpital, cinéma",
+      "salon des antiquaires",
+      "magasin de plantes en gros"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD5 - Passage au schéma relationnel (suite) - version longue",
+     "notions": [
+      "conversions UML → relationnel (cours, hôpital, cinéma)",
+      "normaliser une relation issue d'un tableur (association « Objectifs »)",
+      "dépendances fonctionnelles et 3NF (pièce, prime, chef de projet, sport)"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD6 - Normalisation et interrogation d'une BD",
+     "notions": [
+      "clé d'une relation",
+      "causes de non-respect de la 1NF",
+      "dépendances fonctionnelles et décomposition en 3NF",
+      "interroger une base de films",
+      "modifier le contenu d'une base"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD6 - Interrogation d'une BD (ancienne version)",
+     "notions": [
+      "interroger à la main une base de films (genres, réalisateurs, acteurs)",
+      "lire les liens entre tables",
+      "modifier le contenu d'une base"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD7 - Création de BD relationnelles avec MySQL (phpMyAdmin)",
+     "notions": [
+      "connexion à phpMyAdmin (identifiant ENT)",
+      "bases nommées login_*",
+      "créer des tables, clés primaires et étrangères",
+      "gestion des stocks"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD8 - Interrogation de BD",
+     "notions": [
+      "importer bibliotheque.sql",
+      "SELECT, WHERE, ORDER BY",
+      "jointures (auteurs et pays, livres et tags)",
+      "COUNT et conditions (livres non rendus)"
+     ]
+    }
+   ],
+   "a_maitriser": [
+    "Savoir lire un cahier des charges et en extraire classes, attributs et associations avec leurs multiplicités (0..1, 1, 0..*, 1..*).",
+    "Savoir utiliser les notions avancées du diagramme de classes : classe d'association, héritage, agrégation et composition, association réflexive ou n-aire.",
+    "Savoir traduire un diagramme de classes en schéma relationnel : une relation par classe, clé primaire, clés étrangères (#), table de jonction pour une association plusieurs-à-plusieurs.",
+    "Savoir identifier les dépendances fonctionnelles et vérifier ou obtenir les formes normales 1NF, 2NF et 3NF (et BCNF).",
+    "Savoir créer une base et ses tables dans phpMyAdmin/MySQL (types, PRIMARY KEY, FOREIGN KEY, NOT NULL) et importer un script .sql.",
+    "Savoir écrire des requêtes SELECT … FROM … WHERE avec les opérateurs (=, <>, LIKE, BETWEEN, IN, IS NULL), DISTINCT et ORDER BY.",
+    "Savoir faire des jointures entre plusieurs tables (condition sur les clés) et utiliser des alias.",
+    "Savoir utiliser COUNT, SUM, AVG, MIN, MAX avec GROUP BY et HAVING.",
+    "Savoir utiliser UNION, intersection, différence et EXISTS, et exprimer une division (« … pour tous les … »).",
+    "Savoir modifier le contenu d'une base avec INSERT, UPDATE et DELETE."
+   ],
+   "comment_reviser": [
+    "Pour chaque énoncé de TD (bibliothèque, cinéma, hôpital…), refais le diagramme de classes sans regarder, puis traduis-le en schéma relationnel : c'est l'enchaînement attendu en évaluation.",
+    "Apprends les règles de passage UML → relationnel sous forme de tableau (1-1, 1-*, *-*, classe d'association, héritage) et applique-les mécaniquement.",
+    "Pour normaliser, écris d'abord la liste des dépendances fonctionnelles, puis vérifie 1NF, 2NF et 3NF dans l'ordre.",
+    "Entraîne-toi au SQL sur une vraie base : importe bibliotheque.sql (TD8) dans phpMyAdmin ou DataGrip et réponds aux questions, en vérifiant chaque résultat à la main sur les tables.",
+    "Construis une requête dans l'ordre logique : FROM et jointures (quelles tables), WHERE (quelles lignes), GROUP BY et HAVING, puis SELECT et ORDER BY.",
+    "Dépose chaque TD sur Moodle dès qu'il est terminé (liens de dépôt dans Mes rendus/) : c'est à la fois du travail dû et la meilleure révision."
+   ],
+   "pieges": [
+    "Lire une multiplicité du mauvais côté : relis la phrase dans les deux sens (« un lecteur fait plusieurs emprunts », « un emprunt concerne un seul lecteur »).",
+    "Placer la clé étrangère du mauvais côté d'une association 1-* (elle va dans la table côté « plusieurs ») ou oublier la table de jonction d'une association *-*.",
+    "Oublier les attributs d'une classe d'association : ils vont dans la table de jonction.",
+    "Mettre plusieurs valeurs dans une même case (liste de mots-clés, « nom prénom ») : la relation n'est plus en 1NF.",
+    "Oublier la condition de jointure : on obtient un produit cartésien (toutes les combinaisons de lignes).",
+    "Mettre un agrégat dans le WHERE (WHERE COUNT(*) > 2) : il faut HAVING après GROUP BY.",
+    "Sélectionner une colonne qui n'est ni dans le GROUP BY ni dans un agrégat.",
+    "Tester une valeur manquante avec = NULL au lieu de IS NULL.",
+    "Recopier les noms de tables de l'énoncé du TD8 : le script crée emprunt et tags_par_livre (pas Emprunts ni TagsParLivre), et sur un serveur Linux MySQL peut distinguer majuscules et minuscules dans les noms de tables."
+   ],
+   "ressources": [
+    {
+     "nom": "SQLBolt",
+     "url": "https://sqlbolt.com/",
+     "type": "exercices",
+     "pourquoi": "Leçons interactives très courtes (SELECT, WHERE, jointures, agrégats) avec exercices directement dans le navigateur : idéal pour débuter (en anglais)."
+    },
+    {
+     "nom": "SQLZoo",
+     "url": "https://sqlzoo.net/",
+     "type": "exercices",
+     "pourquoi": "Des dizaines de requêtes à écrire sur de vraies tables (pays, prix Nobel, football) pour s'entraîner aux jointures et au GROUP BY."
+    },
+    {
+     "nom": "sql.sh",
+     "url": "https://sql.sh/",
+     "type": "cours",
+     "pourquoi": "Cours et fiches SQL en français, commande par commande, avec exemples : parfait pour vérifier une syntaxe."
+    },
+    {
+     "nom": "SQL Murder Mystery",
+     "url": "https://mystery.knightlab.com/",
+     "type": "jeu",
+     "pourquoi": "Résous une enquête policière en écrivant des requêtes de plus en plus complexes : un bon entraînement aux jointures."
+    },
+    {
+     "nom": "DB Fiddle",
+     "url": "https://www.db-fiddle.com/",
+     "type": "outil",
+     "pourquoi": "Crée des tables et teste tes requêtes sur MySQL en ligne, sans installation, pour vérifier tes réponses de TD."
+    },
+    {
+     "nom": "diagrams.net (draw.io)",
+     "url": "https://app.diagrams.net/",
+     "type": "outil",
+     "pourquoi": "Dessine proprement tes diagrammes de classes UML (formes UML intégrées) pour les rendus de TD et la SAÉ 1.04."
+    }
+   ]
+  },
+  {
+   "code": "R1.06",
+   "titre": "Mathématiques discrètes",
+   "type": "ressource",
+   "competences": [
+    "Optimiser",
+    "Gérer"
+   ],
+   "heures": "28 h dont 7 h de TP",
+   "resume": "Les outils mathématiques de base de l'informaticien : raisonner et démontrer, logique, ensembles et dénombrement, applications et relations, arithmétique et congruences (jusqu'au chiffrement RSA).",
+   "progression": [
+    {
+     "type": "cours",
+     "titre": "Chapitre 1 - Terminologie et méthodologie",
+     "notions": [
+      "démarche mathématique et vocabulaire (définition, théorème, lemme…)",
+      "démonstration par hypothèse auxiliaire",
+      "par contraposée",
+      "par l'absurde",
+      "par disjonction de cas",
+      "par récurrence simple et forte"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Chapitre 2 - Quelques éléments de logique",
+     "notions": [
+      "termes et propositions",
+      "non, et, ou, implication, équivalence",
+      "tables de vérité",
+      "contraposée et réciproque",
+      "lois de De Morgan",
+      "prédicats, quantificateurs et leur négation"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Chapitre 3 - Ensembles et dénombrement",
+     "notions": [
+      "appartenance, inclusion, ensemble des parties",
+      "intersection, union, complémentaire, différence, différence symétrique",
+      "produit cartésien",
+      "cardinal d'un ensemble fini",
+      "arrangements, permutations, combinaisons",
+      "ensembles infinis dénombrables"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Chapitre 4 - Numération (non traité en R1.06, vu en R1.03)",
+     "notions": [
+      "écriture positionnelle",
+      "conversions de base",
+      "opérations en base B et complément",
+      "encodage des entiers et des flottants"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Chapitre 5 - Applications et relations",
+     "notions": [
+      "application, image, antécédent, image réciproque",
+      "injection, surjection, bijection, composition",
+      "suites",
+      "relations binaires",
+      "relations d'équivalence et classes",
+      "relations d'ordre"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Chapitre 6 - Arithmétique",
+     "notions": [
+      "divisibilité et division euclidienne",
+      "nombres premiers, tests de primalité, crible d'Ératosthène",
+      "PGCD, PPCM, théorème de Bézout",
+      "congruences et Z/nZ",
+      "théorème d'Euler",
+      "chiffrement RSA"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD0 - Rappels et compléments",
+     "notions": [
+      "signes, fractions et puissances",
+      "développement et factorisation",
+      "équations, inéquations et fonctions usuelles",
+      "lecture d'un algorithme"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Fiche - Signe d'un polynôme du 2nd degré",
+     "notions": [
+      "discriminant",
+      "racines",
+      "forme canonique",
+      "tableau de signes"
+     ]
+    },
+    {
+     "type": "cours",
+     "titre": "Fiche méthodes - Étude de fonction et de signe",
+     "notions": [
+      "dérivée et sens de variation",
+      "tableau de variations",
+      "minimum et maximum",
+      "nombre de solutions d'une équation"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD1 - Méthodes de raisonnement (corrigé disponible)",
+     "notions": [
+      "contraposée",
+      "disjonction des cas",
+      "absurde",
+      "récurrence et récurrence forte",
+      "récurrence et algorithmes",
+      "« l'hérédité ne fait pas tout »"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD1 - Méthodes de raisonnement (corrigé)",
+     "notions": [
+      "rédaction type de chaque méthode de démonstration",
+      "contraposée, disjonction de cas, absurde",
+      "récurrence simple et forte"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD2 - Un peu de logique",
+     "notions": [
+      "opérateurs logiques et tables de vérité",
+      "négation et lois de De Morgan",
+      "quantificateurs",
+      "énigmes logiques"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD3 - Ensembles et dénombrement",
+     "notions": [
+      "opérations sur les ensembles et diagrammes de Venn",
+      "∈ ou ⊂ ?",
+      "produit cartésien",
+      "ensemble des parties",
+      "dénombrement"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD4 - Numération",
+     "notions": [
+      "changements de base (avec virgule)",
+      "plus grand nombre sur k chiffres",
+      "représentation des nombres dans l'ordinateur"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD5 - Applications et relations",
+     "notions": [
+      "applications injectives et surjectives",
+      "fonctions à variables réelles",
+      "relations d'équivalence et d'ordre",
+      "ordre sur R²"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD6.1 - Fondements de l'arithmétique",
+     "notions": [
+      "variant de boucle et de récursion",
+      "test naïf de primalité",
+      "PGCD, PPCM et algorithme d'Euclide (implémentation Python)",
+      "lemme de Gauss",
+      "équations diophantiennes"
+     ]
+    },
+    {
+     "type": "td",
+     "titre": "TD6.2 - Arithmétique modulaire",
+     "notions": [
+      "congruences et critères de divisibilité",
+      "équations aux congruences",
+      "l'ensemble Z/nZ",
+      "indicatrice et théorème d'Euler",
+      "test de primalité de Miller-Rabin"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP A - Introduction à Python (facultatif, corrigé fourni)",
+     "notions": [
+      "interpréteur Python",
+      "affichage et calculs",
+      "flottants : 0.1 + 0.1 + 0.1 == 0.3 ?",
+      "fonctions (fractions, équations)"
+     ]
+    },
+    {
+     "type": "tp",
+     "titre": "TP B - Structures de contrôle et listes (facultatif, corrigé fourni)",
+     "notions": [
+      "chaînes, listes et ensembles",
+      "listes en compréhension",
+      "if, for, while et indentation",
+      "tables de vérité en Python",
+      "suite de Syracuse"
+     ]
+    }
+   ],
+   "a_maitriser": [
+    "Savoir rédiger une démonstration par contraposée, par l'absurde, par disjonction de cas et par récurrence (simple et forte), en annonçant la méthode.",
+    "Savoir écrire la table de vérité d'une proposition, utiliser les lois de De Morgan et nier une phrase avec quantificateurs (la négation de ∀ est ∃, et inversement).",
+    "Savoir distinguer implication, réciproque et contraposée : P ⇒ Q équivaut à non Q ⇒ non P, pas à Q ⇒ P.",
+    "Savoir manipuler les ensembles (∈ et ⊂, ∩, ∪, complémentaire, différence, produit cartésien, ensemble des parties) et dénombrer (cardinal, arrangements, permutations, combinaisons).",
+    "Savoir montrer qu'une application est injective, surjective ou bijective, et calculer une image et une image réciproque.",
+    "Savoir vérifier qu'une relation est une relation d'équivalence (réflexive, symétrique, transitive) ou d'ordre (réflexive, antisymétrique, transitive) et décrire les classes d'équivalence.",
+    "Savoir faire une division euclidienne, décomposer en facteurs premiers et calculer PGCD et PPCM avec l'algorithme d'Euclide.",
+    "Savoir trouver des coefficients de Bézout (Euclide étendu) et résoudre une équation diophantienne ax + by = c.",
+    "Savoir calculer avec les congruences, trouver un inverse modulo n, utiliser le théorème d'Euler et expliquer le principe du chiffrement RSA.",
+    "Savoir lire un algorithme en pseudo-code ou en Python (c'est tout ce qui est exigé côté programmation)."
+   ],
+   "comment_reviser": [
+    "Travaille avec le corrigé du TD1 (le seul publié) : refais chaque exercice seul, puis compare la rédaction, pas seulement le résultat.",
+    "Avance les feuilles WIMS au fil des semaines plutôt qu'en décembre ; avant chaque exercice, clique sur « Suspendre l'enregistrement » pour comprendre la syntaxe attendue, car un score ne peut pas être réinitialisé.",
+    "Fais-toi une fiche « méthodes de démonstration » : pour chaque méthode, la phrase d'amorce type et un exemple court.",
+    "Fais les calculs à la main (tables de vérité, PGCD, Bézout, congruences), puis vérifie-les avec un outil en ligne.",
+    "Si le calcul de base te ralentit (fractions, puissances, signe d'un trinôme), refais le TD0 et les fiches du dossier Révisions/.",
+    "Entraîne-toi à lire du pseudo-code et du Python ; les TP Python facultatifs sont corrigés.",
+    "Pose tes questions en fin de TD ou sur le forum « Questions diverses » de Moodle."
+   ],
+   "pieges": [
+    "Démontrer la réciproque (Q ⇒ P) au lieu de la contraposée (non Q ⇒ non P).",
+    "Récurrence sans initialisation, ou hérédité qui utilise ce qu'on veut démontrer (le TD1 montre que « l'hérédité ne fait pas tout »).",
+    "Mal nier une phrase : non(P et Q) = non P ou non Q ; non(∀x, P(x)) = ∃x, non P(x).",
+    "Oublier que « faux ⇒ n'importe quoi » est vrai (table de vérité de l'implication).",
+    "Confondre a ∈ A et {a} ⊂ A, ou ∅ ∈ A et ∅ ⊂ A.",
+    "Confondre injective (au plus un antécédent) et surjective (au moins un antécédent).",
+    "Oublier une propriété (souvent la transitivité ou l'antisymétrie) en vérifiant une relation d'équivalence ou d'ordre.",
+    "« Simplifier » une congruence par a comme avec des réels : ce n'est permis que si a est inversible modulo n (PGCD(a, n) = 1).",
+    "Dans WIMS, valider une réponse avant d'avoir compris la syntaxe attendue : le point perdu ne se rattrape pas."
+   ],
+   "ressources": [
+    {
+     "nom": "Exo7 – cours et exercices de 1re année",
+     "url": "https://exo7.emath.fr/un.html",
+     "type": "cours",
+     "pourquoi": "Cours en PDF, exercices corrigés et vidéos sur « Logique et raisonnements », « Ensembles et applications » et « Arithmétique » : exactement les chapitres de R1.06."
+    },
+    {
+     "nom": "Exo7Math (YouTube)",
+     "url": "https://www.youtube.com/@Exo7Math",
+     "type": "video",
+     "pourquoi": "Les vidéos de cours et de corrections d'exercices d'Exo7, pour revoir une notion en quelques minutes."
+    },
+    {
+     "nom": "Bibm@th",
+     "url": "https://www.bibmath.net/",
+     "type": "exercices",
+     "pourquoi": "Une grande banque d'exercices corrigés classés par thème et par difficulté (logique, ensembles, relations, arithmétique)."
+    },
+    {
+     "nom": "WIMS – Université Côte d'Azur",
+     "url": "https://wims.univ-cotedazur.fr/",
+     "type": "exercices",
+     "pourquoi": "Le serveur d'exercices de l'université, utilisé pour tes feuilles WIMS (accès par Moodle) : les valeurs changent à chaque essai."
+    },
+    {
+     "nom": "Truth Table Tool (Stanford CS103)",
+     "url": "https://web.stanford.edu/class/cs103/tools/truth-table-tool/",
+     "type": "outil",
+     "pourquoi": "Tape une formule logique, il affiche sa table de vérité : pour vérifier tes exercices du TD2."
+    },
+    {
+     "nom": "dCode – identité de Bézout",
+     "url": "https://www.dcode.fr/identite-bezout",
+     "type": "outil",
+     "pourquoi": "Calcule les coefficients de Bézout (Euclide étendu) avec les étapes, en français : pour vérifier tes calculs du chapitre 6."
+    }
+   ]
+  },
+  {
+   "code": "R1.07",
+   "titre": "Outils mathématiques fondamentaux",
+   "type": "ressource",
+   "competences": [
+    "Optimiser"
+   ],
+   "heures": "17 h dont 7 h de TP",
+   "resume": "Remise à niveau en calcul : fractions, puissances, équations, polynômes, lecture de courbes de fonctions, puis matrices et résolution de systèmes par le pivot de Gauss.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir calculer sans calculatrice avec fractions, puissances et racines, et développer ou factoriser une expression (identités remarquables).",
+    "Savoir résoudre équations et inéquations du 1er et du 2nd degré (discriminant, signe d'un trinôme, tableau de signes).",
+    "Savoir manipuler un polynôme : degré, racines, factorisation par (x - a).",
+    "Savoir étudier une fonction : dérivée, signe de la dérivée, tableau de variations, et relier la courbe à l'expression (fonctions affines, carré, inverse, exponentielle, logarithme).",
+    "Savoir calculer avec des matrices : somme, produit (en vérifiant les dimensions), transposée, matrice identité.",
+    "Savoir écrire un système linéaire sous forme matricielle et le résoudre par la méthode du pivot de Gauss.",
+    "Savoir interpréter le nombre de solutions d'un système : aucune, une seule ou une infinité.",
+    "Savoir vérifier un résultat (calcul inverse, calculatrice, tracé de courbe) et repérer une erreur de calcul."
+   ],
+   "comment_reviser": [
+    "Fais 15 à 20 minutes de calcul à la main chaque jour : pour une remise à niveau, la régularité compte plus que la durée.",
+    "Utilise les fiches du dossier Révisions de R1.06 (TD0 de rappels, signe d'un polynôme du 2nd degré, étude de fonction) : elles couvrent déjà une partie du programme.",
+    "Pour le pivot de Gauss, écris chaque opération sur les lignes (L2 ← L2 - 2L1) à côté du système : ça évite les erreurs et ça montre ta démarche.",
+    "Avant un produit de matrices, vérifie les dimensions : (n × p) fois (p × q) donne (n × q).",
+    "Trace la fonction sur GeoGebra après ton étude pour contrôler ton tableau de variations.",
+    "Quand un point bloque, revois-le sur Exo7 (Systèmes linéaires, Matrices, Polynômes) ou sur Maths et tiques pour les rappels de lycée."
+   ],
+   "pieges": [
+    "Se tromper de signe en développant -(a - b) ou en multipliant par un nombre négatif.",
+    "Écrire (a + b)² = a² + b² : il manque le double produit 2ab.",
+    "« Simplifier » une fraction en barrant des termes d'une somme : (a + b) / a n'est pas égal à b.",
+    "Multiplier des matrices case par case, ou croire que AB = BA (le produit n'est pas commutatif).",
+    "Dans le pivot de Gauss, oublier d'appliquer l'opération au second membre, ou combiner une ligne avec elle-même.",
+    "Oublier de changer le sens d'une inégalité quand on multiplie ou divise par un nombre négatif.",
+    "Conclure « pas de solution » quand une ligne devient 0 = 0 : c'est une infinité de solutions (seul 0 = k avec k non nul donne aucune solution)."
+   ],
+   "ressources": [
+    {
+     "nom": "Exo7 – cours et exercices de 1re année",
+     "url": "https://exo7.emath.fr/un.html",
+     "type": "cours",
+     "pourquoi": "Cours, exercices corrigés et vidéos sur « Systèmes linéaires », « Matrices », « Polynômes » et « Fonctions » au niveau 1re année."
+    },
+    {
+     "nom": "Maths et tiques (Yvan Monka)",
+     "url": "https://www.maths-et-tiques.fr/",
+     "type": "video",
+     "pourquoi": "Cours et vidéos très clairs de niveau lycée pour combler une lacune (fractions, second degré, dérivées)."
+    },
+    {
+     "nom": "Matrix Reshish – pivot de Gauss",
+     "url": "https://matrix.reshish.com/fr/",
+     "type": "outil",
+     "pourquoi": "Calculatrice matricielle en français qui résout un système par le pivot de Gauss en détaillant chaque étape : pour vérifier tes calculs."
+    },
+    {
+     "nom": "GeoGebra – calculatrice graphique",
+     "url": "https://www.geogebra.org/calculator",
+     "type": "outil",
+     "pourquoi": "Trace une fonction et lis racines, extremums et intersections pour contrôler une étude de fonction."
+    },
+    {
+     "nom": "WolframAlpha",
+     "url": "https://www.wolframalpha.com/",
+     "type": "outil",
+     "pourquoi": "Vérifie un calcul, une factorisation, une dérivée ou la solution d'un système en tapant l'expression."
+    }
+   ]
+  },
+  {
+   "code": "R1.08",
+   "titre": "Gestion de projet et des organisations",
+   "type": "ressource",
+   "competences": [
+    "Conduire",
+    "Collaborer"
+   ],
+   "heures": "25 h dont 7 h de TP",
+   "resume": "Comprendre comment fonctionne une organisation (entreprise, association, administration) et sa transformation numérique, et découvrir les bases de la gestion de projet.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir définir une organisation et sa finalité (lucrative ou non), et la classer : entreprise privée ou publique, association, administration ; TPE, PME, ETI ou grande entreprise ; secteur d'activité.",
+    "Savoir identifier les parties prenantes (internes et externes) et les grandes fonctions d'une organisation (production, commerciale, ressources humaines, finance, système d'information).",
+    "Savoir lire et dessiner un organigramme et reconnaître une structure hiérarchique, fonctionnelle, divisionnelle, matricielle ou en réseau.",
+    "Savoir réaliser un diagnostic stratégique simple : PESTEL pour l'environnement, SWOT pour croiser forces et faiblesses avec opportunités et menaces.",
+    "Savoir expliquer les enjeux de la transformation numérique (digitalisation, télétravail, nouvelles formes de management, entreprise virtuelle) et de la responsabilité sociétale des entreprises (RSE).",
+    "Savoir situer le système d'information et le service informatique (DSI) dans une organisation.",
+    "Savoir décrire les étapes d'un projet (besoin, cahier des charges, planification, réalisation, recette) et les rôles (client, chef de projet, équipe).",
+    "Savoir utiliser les outils de base de la gestion de projet (découpage en tâches, diagramme de Gantt, tableau Kanban) et comparer approche classique (cycle en V) et agile (Scrum)."
+   ],
+   "comment_reviser": [
+    "Apprends chaque définition avec un exemple réel : une entreprise que tu connais, son statut, sa taille, sa structure, sa stratégie.",
+    "Fais une fiche par outil d'analyse (PESTEL, SWOT, organigramme) avec un exemple complet : tu les réutiliseras en SAÉ 1.05 et 1.06.",
+    "En étude de cas, pars toujours du texte : surligne les indices (acteurs, contraintes, forces, faiblesses) avant de remplir un tableau.",
+    "Applique les outils de gestion de projet à tes propres SAÉ (tableau Kanban dans Trello, planning de Gantt) : c'est la meilleure révision.",
+    "Garde 2 ou 3 exemples récents de transformation numérique (France Num, presse économique) pour illustrer tes réponses."
+   ],
+   "pieges": [
+    "Confondre stratégie (objectifs à long terme, choix) et structure (organisation interne, organigramme).",
+    "Dans un SWOT, ranger un élément externe dans forces/faiblesses (qui sont internes) ou l'inverse.",
+    "Réciter une définition sans l'appliquer au cas : en étude de cas, chaque idée doit s'appuyer sur un élément du texte.",
+    "Croire que « agile » veut dire sans plan ni documentation.",
+    "Réduire la transformation numérique à l'achat d'outils : elle change aussi l'organisation du travail et le management."
+   ],
+   "ressources": [
+    {
+     "nom": "MOOC Gestion de projet",
+     "url": "https://gestiondeprojet.pm/",
+     "type": "cours",
+     "pourquoi": "MOOC gratuit en français (Centrale Lille) avec des vidéos courtes sur le cadrage, la planification et le pilotage d'un projet ; sessions régulières."
+    },
+    {
+     "nom": "OpenClassrooms – Initiez-vous à la gestion de projet agile",
+     "url": "https://openclassrooms.com/fr/courses/4507926-initiez-vous-a-la-gestion-de-projet-agile",
+     "type": "cours",
+     "pourquoi": "Cours gratuit (environ 6 h) : personas, user stories, backlog, Kanban et Lean, directement réutilisables en SAÉ 1.05."
+    },
+    {
+     "nom": "Le Guide Scrum 2020 (en français)",
+     "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-French.pdf",
+     "type": "cours",
+     "pourquoi": "Le texte de référence de Scrum en 15 pages : rôles, événements et artefacts, sans interprétation."
+    },
+    {
+     "nom": "Bpifrance Création – l'analyse PESTEL",
+     "url": "https://bpifrance-creation.fr/encyclopedie/letude-marche/outils-danalyse/etudier-lenvironnement-du-marche-lanalyse-pestel",
+     "type": "cours",
+     "pourquoi": "Fiche gratuite et claire sur les 6 facteurs de l'environnement d'une entreprise, avec un exemple et une matrice à télécharger."
+    },
+    {
+     "nom": "France Num",
+     "url": "https://www.francenum.gouv.fr/",
+     "type": "cours",
+     "pourquoi": "Le portail officiel de la transformation numérique des TPE et PME : guides, témoignages et baromètre annuel pour des exemples concrets."
+    },
+    {
+     "nom": "Trello",
+     "url": "https://trello.com/",
+     "type": "outil",
+     "pourquoi": "Tableau Kanban gratuit (à faire, en cours, fini) pour organiser le travail d'équipe de tes SAÉ."
+    }
+   ]
+  },
+  {
+   "code": "R1.09",
+   "titre": "Économie durable et numérique",
+   "type": "ressource",
+   "competences": [
+    "Gérer",
+    "Collaborer"
+   ],
+   "heures": "18 h dont 4 h de TP",
+   "resume": "Découvrir les bases de l'économie (marchés, acteurs, croissance, mondialisation), l'économie des données et l'impact environnemental du numérique, pour concevoir des services plus sobres.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir définir et illustrer les notions de base : marché (offre, demande, prix), agents économiques (ménages, entreprises, État, banques), PIB et croissance, inflation, chômage.",
+    "Savoir expliquer une défaillance de marché (monopole, externalité, bien public, asymétrie d'information) et le rôle de l'État (politique budgétaire, politique monétaire, régulation).",
+    "Savoir décrire la mondialisation et ses effets (échanges, chaînes de valeur mondiales, délocalisations).",
+    "Savoir expliquer les modèles économiques du numérique : plateformes, gratuité financée par la publicité, abonnement, freemium, effets de réseau.",
+    "Savoir expliquer pourquoi les données ont une valeur (marché de la donnée) et ce que le RGPD impose aux organisations.",
+    "Savoir situer les impacts environnementaux du numérique (fabrication des équipements, réseaux, centres de données) et citer des ordres de grandeur avec leur source.",
+    "Savoir citer des principes d'écoconception d'un service numérique (sobriété fonctionnelle, pages légères, durée de vie des équipements) et d'économie circulaire.",
+    "Savoir lire, construire et commenter un graphique ou un tableau de données économiques (évolution, part en %, taux de variation)."
+   ],
+   "comment_reviser": [
+    "Construis un lexique : chaque notion en une phrase, avec un exemple tiré du numérique.",
+    "Entraîne-toi à calculer un taux de variation ((valeur d'arrivée - valeur de départ) / valeur de départ × 100) et une part en %, et à commenter un graphique en 3 phrases : tendance, chiffre clé, explication.",
+    "Relie chaque notion à un cas concret : publicité ciblée (gratuité), plateformes de mise en relation, RGPD et CNIL (données).",
+    "Mesure l'écoindex de tes pages de R1.02 et de sites que tu utilises : tu verras concrètement ce qui alourdit une page.",
+    "Garde 2 ou 3 chiffres officiels récents (études ADEME-Arcep) sur l'impact du numérique, toujours avec la source et l'année."
+   ],
+   "pieges": [
+    "Confondre croissance (hausse du PIB) et développement (amélioration du bien-être), ou valeur nominale et valeur réelle (corrigée de l'inflation).",
+    "Donner un chiffre sans source ni année : en économie, un chiffre se cite toujours avec sa source.",
+    "Croire que l'impact du numérique vient surtout des e-mails ou des centres de données : c'est la fabrication des équipements, surtout des terminaux, qui pèse le plus.",
+    "Confondre « gratuit » et « sans modèle économique » : quand un service est gratuit, ce sont souvent tes données ou ton attention qui sont vendues.",
+    "Paraphraser un document au lieu de l'analyser : dégage l'idée principale, puis explique-la avec une notion du cours."
+   ],
+   "ressources": [
+    {
+     "nom": "Citéco – la Cité de l'économie",
+     "url": "https://www.citeco.fr/",
+     "type": "cours",
+     "pourquoi": "Le musée de l'économie propose des fiches de révision et des vidéos gratuites pour comprendre marché, monnaie, croissance ou mondialisation."
+    },
+    {
+     "nom": "Arcep – l'empreinte environnementale du numérique",
+     "url": "https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/lempreinte-environnementale-du-numerique.html",
+     "type": "cours",
+     "pourquoi": "Les chiffres officiels (études ADEME-Arcep) sur l'impact du numérique en France : pour citer des données fiables."
+    },
+    {
+     "nom": "Impact CO2 (ADEME) – numérique",
+     "url": "https://impactco2.fr/outils/numerique",
+     "type": "outil",
+     "pourquoi": "Compare l'empreinte carbone d'un smartphone, d'un ordinateur ou d'un usage avec les données de l'ADEME : pour avoir les bons ordres de grandeur."
+    },
+    {
+     "nom": "RGESN – référentiel d'écoconception de services numériques",
+     "url": "https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/",
+     "type": "cours",
+     "pourquoi": "Le référentiel officiel (Arcep, Arcom, ADEME, version 2024) : des critères concrets pour concevoir un site ou une application plus sobre."
+    },
+    {
+     "nom": "EcoIndex",
+     "url": "https://www.ecoindex.fr/",
+     "type": "outil",
+     "pourquoi": "Donne une note environnementale à une page web (poids, nombre de requêtes, taille du DOM) : teste tes pages de R1.02."
+    },
+    {
+     "nom": "CNIL – RGPD : de quoi parle-t-on ?",
+     "url": "https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on",
+     "type": "cours",
+     "pourquoi": "L'explication officielle des règles sur les données personnelles : indispensable pour parler du marché de la donnée."
+    }
+   ]
+  },
+  {
+   "code": "R1.10",
+   "titre": "Anglais",
+   "type": "ressource",
+   "competences": [
+    "Réaliser",
+    "Administrer",
+    "Collaborer"
+   ],
+   "heures": "21 h dont 7 h de TP",
+   "resume": "L'anglais de l'informatique : comprendre une documentation ou un tutoriel, parler de matériel et de logiciel, et présenter un travail à l'oral.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir nommer en anglais les composants et périphériques (motherboard, CPU, RAM, hard drive, screen…) et les actions courantes (to install, to download, to compile, to run, to debug, to deploy).",
+    "Savoir lire une documentation technique ou un message d'erreur en anglais et en extraire l'information utile, sans tout traduire.",
+    "Savoir comprendre un tutoriel vidéo ou un podcast technique : l'idée générale d'abord, puis les détails.",
+    "Savoir décrire un processus ou le fonctionnement d'un programme avec des connecteurs (first, then, if, otherwise, finally).",
+    "Savoir préparer et faire une courte présentation orale structurée (introduction, plan annoncé, transitions, conclusion) avec un support visuel.",
+    "Savoir écrire un e-mail professionnel simple ou un rapport de bug (contexte, étapes, résultat attendu, résultat obtenu).",
+    "Savoir employer les temps de base (présent simple et continu, prétérit, present perfect) et la voix passive fréquente en documentation (the file is saved)."
+   ],
+   "comment_reviser": [
+    "Passe ton téléphone, VS Code et ton navigateur en anglais : le vocabulaire rentre sans effort.",
+    "Quand tu codes, lis la documentation officielle en anglais (MDN, devdocs, pages man) plutôt qu'une traduction.",
+    "Tiens une liste de vocabulaire technique (mot, traduction, phrase d'exemple) enrichie après chaque cours d'informatique.",
+    "Écoute 6 minutes d'anglais par jour (BBC 6 Minute English, un talk TED avec sous-titres anglais).",
+    "Pour l'oral, répète à voix haute en te chronométrant et enregistre-toi une fois pour repérer hésitations et mots mal prononcés.",
+    "Pour te situer, fais un test d'entraînement de type TOEIC (exemples officiels gratuits d'ETS)."
+   ],
+   "pieges": [
+    "Les faux amis : actually (en fait), eventually (finalement), library (bibliothèque), to control (commander, pas vérifier : to check).",
+    "Oublier le -s à la 3e personne du présent (the program runs).",
+    "Traduire mot à mot du français (I have 18 years, it depends of) au lieu de I am 18, it depends on.",
+    "Lire ses diapositives à l'oral au lieu de parler au public.",
+    "Mal prononcer des mots techniques courants (data, cache, Linux, width, height) : vérifie avec un dictionnaire audio."
+   ],
+   "ressources": [
+    {
+     "nom": "BBC Learning English – 6 Minute English",
+     "url": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english",
+     "type": "cours",
+     "pourquoi": "Des podcasts de 6 minutes avec transcription et vocabulaire expliqué : une écoute par jour suffit."
+    },
+    {
+     "nom": "British Council – LearnEnglish",
+     "url": "https://learnenglish.britishcouncil.org/",
+     "type": "exercices",
+     "pourquoi": "Des milliers d'activités gratuites classées par niveau : grammaire, vocabulaire, écoute, lecture, écriture."
+    },
+    {
+     "nom": "TED Talks",
+     "url": "https://www.ted.com/talks",
+     "type": "video",
+     "pourquoi": "Des conférences courtes sur la technologie, avec sous-titres et transcriptions, et de bons modèles de présentation orale."
+    },
+    {
+     "nom": "Cambridge Dictionary",
+     "url": "https://dictionary.cambridge.org/",
+     "type": "outil",
+     "pourquoi": "Dictionnaire avec prononciation audio (britannique et américaine) et exemples : pour vérifier le sens et la prononciation d'un terme technique."
+    },
+    {
+     "nom": "ETS – préparation au TOEIC",
+     "url": "https://www.ets.org/toeic/test-takers/prepare.html",
+     "type": "exercices",
+     "pourquoi": "Les tests d'exemple officiels et gratuits du TOEIC Listening & Reading pour évaluer ton niveau."
+    }
+   ]
+  },
+  {
+   "code": "R1.11",
+   "titre": "Bases de la communication",
+   "type": "ressource",
+   "competences": [
+    "Administrer",
+    "Conduire",
+    "Collaborer"
+   ],
+   "heures": "21 h dont 7 h de TP",
+   "resume": "Bien communiquer : chercher et vérifier l'information, prendre des notes, résumer, mener un entretien avec un client, concevoir un document clair et prendre la parole en public.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir chercher une information de façon méthodique (mots-clés, catalogue de la BU, bases de données) et évaluer la fiabilité d'une source (auteur, date, intention, recoupement).",
+    "Savoir citer tes sources (citation entre guillemets, référence complète) pour ne jamais plagier.",
+    "Savoir prendre des notes efficacement (abréviations, structure, mots-clés) et les reformuler.",
+    "Savoir résumer un document et faire la synthèse de plusieurs documents autour d'une problématique.",
+    "Savoir préparer et mener un entretien ou un questionnaire de recueil des besoins (questions ouvertes et fermées, reformulation, compte rendu).",
+    "Savoir concevoir un document de communication lisible (hiérarchie des titres, mise en page, visuels) sur papier ou en numérique.",
+    "Savoir prendre la parole en public : structurer ton intervention, gérer voix, regard, posture et temps, répondre aux questions.",
+    "Savoir adapter ton message au destinataire (client, équipe, enseignant) et rédiger un e-mail professionnel."
+   ],
+   "comment_reviser": [
+    "Entraîne-toi sur des documents du quotidien : résume un article en 5 lignes, puis en une phrase.",
+    "Construis ta méthode de prise de notes pendant les cours des autres modules et relis tes notes le soir même.",
+    "Répète chaque oral au moins deux fois à voix haute, chronométré, devant quelqu'un ou en t'enregistrant.",
+    "Prépare un modèle de compte rendu d'entretien (contexte, participants, besoins exprimés, décisions, questions en suspens) : il te servira en SAÉ 1.05.",
+    "Relis chaque écrit avant de le rendre, à voix haute, avec un dictionnaire pour les doutes d'orthographe.",
+    "Garde en tête le règlement d'examen : le plagiat et l'usage non signalé d'une IA dans un travail rendu sont traités comme des fraudes."
+   ],
+   "pieges": [
+    "Copier-coller une source sans guillemets ni référence : c'est du plagiat, même involontaire.",
+    "Utiliser une IA sans le signaler dans un devoir, un exposé ou un DS : c'est considéré comme une fraude (livret d'accueil).",
+    "Confondre résumé (on suit l'auteur, sans donner son avis) et synthèse (on confronte plusieurs documents autour d'une problématique).",
+    "Poser des questions orientées en entretien (« Vous voulez bien un site web, non ? ») : on obtient ce qu'on croit, pas le vrai besoin.",
+    "Surcharger ses diapositives de texte et les lire.",
+    "Se fier à la première page de résultats d'un moteur de recherche sans vérifier l'auteur ni la date."
+   ],
+   "ressources": [
+    {
+     "nom": "Infosphère (UQAM)",
+     "url": "https://infosphere.uqam.ca/",
+     "type": "cours",
+     "pourquoi": "Tutoriel gratuit en français sur toute la démarche de recherche : préparer, trouver, évaluer ses sources, rédiger et citer."
+    },
+    {
+     "nom": "METODA – autoformation des BU Côte d'Azur",
+     "url": "https://bu.univ-cotedazur.fr/se-former/site-dautoformation-metoda",
+     "type": "cours",
+     "pourquoi": "Le site d'autoformation à la recherche documentaire des bibliothèques de ton université."
+    },
+    {
+     "nom": "Bibliothèques Université Côte d'Azur",
+     "url": "https://bu.univ-cotedazur.fr/",
+     "type": "outil",
+     "pourquoi": "Catalogue, ressources en ligne et formations des BU, dont celle de l'IUT."
+    },
+    {
+     "nom": "FUN MOOC – L'éloquence pour tous",
+     "url": "https://www.fun-mooc.fr/fr/cours/leloquence-pour-tous/",
+     "type": "cours",
+     "pourquoi": "MOOC gratuit (4 semaines, environ 8 h) sur la structure du discours, le non-verbal, la voix et la confiance à l'oral ; vérifie qu'une session est ouverte."
+    },
+    {
+     "nom": "Nielsen Norman Group – User Interviews",
+     "url": "https://www.nngroup.com/articles/user-interviews/",
+     "type": "cours",
+     "pourquoi": "Méthode claire pour préparer et mener un entretien sans influencer les réponses (en anglais) : utile pour la SAÉ 1.05."
+    },
+    {
+     "nom": "Dictionnaire Le Robert en ligne",
+     "url": "https://dictionnaire.lerobert.com/",
+     "type": "outil",
+     "pourquoi": "Orthographe, définitions, synonymes et conjugaison pour relire tes écrits."
+    }
+   ]
+  },
+  {
+   "code": "R1.12",
+   "titre": "Projet professionnel et personnel",
+   "type": "ressource",
+   "competences": [
+    "Collaborer",
+    "Réaliser",
+    "Optimiser",
+    "Administrer",
+    "Gérer",
+    "Conduire"
+   ],
+   "heures": "11 h dont 3 h de TP",
+   "resume": "Mieux te connaître, comprendre les compétences du BUT et découvrir les métiers de l'informatique pour construire ton projet (parcours, stage, alternance) et ton portfolio.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir nommer les 6 compétences du BUT Informatique (Réaliser, Optimiser, Administrer, Gérer, Conduire, Collaborer) et expliquer ce que sont un apprentissage critique (AC) et une SAÉ.",
+    "Savoir relier ce que tu fais en TD et en SAÉ à des apprentissages critiques précis (par exemple AC11.03 : faire des essais et évaluer leurs résultats).",
+    "Savoir décrire tes qualités, tes motivations et tes centres d'intérêt en t'appuyant sur des exemples concrets (situation, action, résultat).",
+    "Savoir présenter 3 ou 4 métiers de l'informatique (missions, compétences, conditions de travail, formation, débouchés) à partir de sources fiables.",
+    "Savoir expliquer le parcours proposé à l'IUT (parcours A : réalisation d'applications) et les possibilités de stage, d'alternance (BUT2 ou BUT3) et de mobilité internationale.",
+    "Savoir rédiger un CV et un profil en ligne cohérents, et soigner ton identité numérique.",
+    "Savoir alimenter ton portfolio avec des preuves (code, captures, rapports) et t'auto-évaluer."
+   ],
+   "comment_reviser": [
+    "Tiens un carnet de bord, une page par SAÉ : ce que tu as fait, ce que tu as appris, la preuve (fichier, capture) et l'AC concerné ; c'est la matière du portfolio.",
+    "Lis les fiches du semestre 1 dans le programme national (Administratif/Programme national du BUT Informatique (2022).pdf) pour t'approprier le vocabulaire : AC, composantes essentielles, SAÉ.",
+    "Compare 3 fiches métiers (ONISEP, Métierscope) et note ce qui t'attire et ce qui ne t'attire pas.",
+    "Si l'alternance t'intéresse en BUT2 ou BUT3, prépare-toi dès maintenant : la demande se dépose sur Moodle entre fin janvier et fin mars (règles dans le cours « BUT Informatique »).",
+    "Va aux rencontres avec les entreprises et les anciens étudiants, et garde les contacts."
+   ],
+   "pieges": [
+    "Répondre de façon générale (« je suis motivé et curieux ») sans exemple qui le prouve.",
+    "Recopier la liste des AC sans montrer de preuve concrète de ce que tu sais faire.",
+    "Choisir un métier sur son seul nom ou son salaire, sans regarder le quotidien réel.",
+    "Attendre la 2e année pour chercher un stage ou une alternance : les candidatures se préparent des mois à l'avance.",
+    "Négliger ton identité numérique (photos, pseudos, profils publics) : les recruteurs vérifient."
+   ],
+   "ressources": [
+    {
+     "nom": "ONISEP – Informatique : métiers et emploi",
+     "url": "https://www.onisep.fr/metier/decouvrir-le-monde-professionnel/informatique/les-metiers-et-l-emploi-dans-l-informatique",
+     "type": "cours",
+     "pourquoi": "Panorama officiel des métiers de l'informatique, de l'emploi et des formations, avec des fiches métiers détaillées."
+    },
+    {
+     "nom": "Métierscope (France Travail) – Développeur / Développeuse informatique",
+     "url": "https://candidat.francetravail.fr/metierscope/fiche-metier/M1805/developpeur-developpeuse-informatique",
+     "type": "cours",
+     "pourquoi": "Fiche métier officielle de France Travail (code ROME M1805) : activités, compétences et environnements de travail."
+    },
+    {
+     "nom": "Cigref – nomenclature des profils métiers du SI (2025)",
+     "url": "https://www.cigref.fr/nomenclature-des-profils-metiers-du-si-version-2025",
+     "type": "cours",
+     "pourquoi": "La référence des grandes entreprises : des dizaines de profils métiers du numérique décrits (missions, activités, compétences)."
+    },
+    {
+     "nom": "Welcome to the Jungle",
+     "url": "https://www.welcometothejungle.com/fr",
+     "type": "outil",
+     "pourquoi": "Découvre des entreprises de l'intérieur (équipes, métiers, vidéos) et des offres de stage et d'alternance."
+    }
+   ]
+  },
+  {
+   "code": "SAÉ 1.01",
+   "titre": "Implémentation d'un besoin client",
+   "type": "sae",
+   "competences": [
+    "Réaliser"
+   ],
+   "heures": null,
+   "resume": "Ta première application pour un client : comprendre son besoin, concevoir une solution simple, la coder et prouver qu'elle fonctionne avec des jeux d'essais.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir reformuler le besoin du client en une liste de fonctionnalités testables (entrées, sorties, cas limites).",
+    "Savoir concevoir avant de coder : découpage en fonctions, pseudo-code, maquette d'écran si l'interface est web.",
+    "Savoir implémenter proprement en C : noms explicites, fonctions courtes et documentées (@param, @return), code indenté, compilation sans avertissement.",
+    "Savoir construire un jeu d'essais : pour chaque cas (normal, limite, erreur), l'entrée, le résultat attendu et le résultat obtenu.",
+    "Savoir produire des traces d'exécution qui prouvent que l'application respecte la spécification.",
+    "Savoir vérifier des préconditions avec assert et gérer les saisies invalides.",
+    "Savoir sauvegarder et versionner ton code (commits réguliers) et travailler à plusieurs sans écraser le travail des autres.",
+    "Savoir lire une consigne ou une documentation technique en anglais."
+   ],
+   "comment_reviser": [
+    "Elle pèse lourd : pour chaque compétence, 40 % de la note vient des SAÉ (livret d'accueil), et la SAÉ 1.01 est la seule SAÉ de « Réaliser » au S1.",
+    "Relis l'énoncé en surlignant chaque exigence du client et fais-en une liste à cocher avant le rendu.",
+    "Écris le jeu d'essais avant de coder, puis rejoue-le après chaque modification.",
+    "Avance par petites étapes qui compilent : une fonction à la fois, testée tout de suite.",
+    "Garde des copies datées de ton travail ou utilise Git : un fichier perdu la veille du rendu ne se rattrape pas.",
+    "Si le livrable comporte un site web, soigne sa validité W3C : les sites des SAÉ comptent aussi en R1.02 (coef 0,5).",
+    "Garde des preuves (captures des tests, versions successives) pour ton portfolio (R1.12)."
+   ],
+   "pieges": [
+    "Tout coder dans main sans fonctions : impossible à tester et à corriger.",
+    "Ne tester que le cas qui marche : oublier les cas limites (0, négatif, saisie vide, valeur maximale).",
+    "Rendre un programme qui ne compile pas sur une autre machine (avertissements traités comme des erreurs, chemins absolus).",
+    "Livrer des traces d'exécution qui ne correspondent pas à la version finale du code.",
+    "Faire écrire le code par une IA sans le signaler : c'est une fraude selon le règlement d'examen, et tu ne pourrais pas l'expliquer à l'oral.",
+    "Découvrir la date de rendu la veille : note les échéances dès qu'elles sont annoncées."
+   ],
+   "ressources": [
+    {
+     "nom": "Learn Git Branching",
+     "url": "https://learngitbranching.js.org/?locale=fr_FR",
+     "type": "jeu",
+     "pourquoi": "Apprends Git (commit, branche, fusion) de façon visuelle et interactive, en français."
+    },
+    {
+     "nom": "GitHub Docs – Hello World",
+     "url": "https://docs.github.com/fr/get-started/using-github/hello-world",
+     "type": "cours",
+     "pourquoi": "Le tutoriel officiel en français pour créer un dépôt, une branche et un commit."
+    },
+    {
+     "nom": "Python Tutor (C)",
+     "url": "https://pythontutor.com/c.html",
+     "type": "outil",
+     "pourquoi": "Visualise l'exécution de ton programme pour comprendre un bug avant de le corriger."
+    },
+    {
+     "nom": "Doxygen – documenter le code",
+     "url": "https://www.doxygen.nl/manual/docblocks.html",
+     "type": "cours",
+     "pourquoi": "La syntaxe des commentaires de documentation (@param, @return) vue en R1.01 ; ton projet « Mes programmes C » contient déjà un Doxyfile."
+    },
+    {
+     "nom": "cppreference – assert",
+     "url": "https://en.cppreference.com/c/error/assert",
+     "type": "cours",
+     "pourquoi": "La référence de la macro assert pour vérifier les préconditions de tes fonctions pendant les tests."
+    }
+   ]
+  },
+  {
+   "code": "SAÉ 1.02",
+   "titre": "Comparaison d'approches algorithmiques",
+   "type": "sae",
+   "competences": [
+    "Optimiser"
+   ],
+   "heures": null,
+   "resume": "Résoudre un même problème de plusieurs façons (par exemple différents tris ou recherches), mesurer leurs performances et expliquer laquelle choisir et pourquoi.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir analyser un problème et le découper en étapes algorithmiques simples, avec des structures de données adaptées (tableaux…).",
+    "Savoir implémenter et dérouler à la main les algorithmes classiques : recherche séquentielle, recherche dichotomique, tri par sélection, par insertion, à bulles.",
+    "Savoir compter les opérations (comparaisons, échanges) et estimer la complexité (O(log n), O(n), O(n²)) dans le meilleur et le pire cas.",
+    "Savoir mesurer un temps d'exécution en C (clock()) sur des données de tailles croissantes, en répétant les mesures.",
+    "Savoir présenter des mesures dans un tableau et un graphique (taille des données en abscisse, temps en ordonnée) et les interpréter.",
+    "Savoir justifier le choix d'un algorithme selon des critères explicites (temps, mémoire, simplicité, données déjà triées ou non).",
+    "Savoir argumenter la terminaison et la correction d'un algorithme (variant et invariant de boucle, vus en R1.06)."
+   ],
+   "comment_reviser": [
+    "Elle compte pour 40 % de la note de la compétence « Optimiser » (livret : 60 % ressources, 40 % SAÉ ; c'est la seule SAÉ de cette compétence au S1).",
+    "Anime chaque tri sur VisuAlgo, puis refais-le à la main sur un tableau de 6 valeurs en notant chaque échange.",
+    "Teste sur des données de tailles croissantes (1 000, 10 000, 100 000 éléments) et de formes différentes (aléatoires, déjà triées, triées à l'envers) : c'est là que les écarts apparaissent.",
+    "Compte les comparaisons avec un compteur dans ton code en plus du chronomètre : c'est plus stable qu'une mesure de temps.",
+    "Relis le TD6.1 de R1.06 (variant de boucle, algorithme d'Euclide) pour argumenter terminaison et correction."
+   ],
+   "pieges": [
+    "Mesurer une seule exécution sur un petit tableau : le temps affiché est du bruit (souvent 0 ms).",
+    "Comparer des algorithmes sur des données différentes : utilise une copie du même tableau pour chaque méthode.",
+    "Utiliser la recherche dichotomique sur un tableau non trié.",
+    "Confondre « plus rapide sur mon exemple » et « meilleure complexité ».",
+    "Oublier de conclure : la présentation doit dire quelle approche choisir, dans quel contexte et pourquoi.",
+    "Dépasser les bornes d'un tableau (indice n au lieu de n - 1) : résultats faux ou plantage."
+   ],
+   "ressources": [
+    {
+     "nom": "VisuAlgo – tris",
+     "url": "https://visualgo.net/en/sorting",
+     "type": "outil",
+     "pourquoi": "Anime pas à pas les tris (bulles, sélection, insertion, fusion, rapide…) avec le pseudo-code (en anglais)."
+    },
+    {
+     "nom": "Toptal – Sorting Algorithms Animations",
+     "url": "https://www.toptal.com/developers/sorting-algorithms",
+     "type": "outil",
+     "pourquoi": "Compare visuellement plusieurs tris sur des données aléatoires, presque triées, inversées ou avec peu de valeurs distinctes."
+    },
+    {
+     "nom": "Big-O Cheat Sheet",
+     "url": "https://www.bigocheatsheet.com/",
+     "type": "cours",
+     "pourquoi": "Tableau des complexités des tris et recherches classiques, avec le graphique des croissances O(1), O(log n), O(n), O(n²)."
+    },
+    {
+     "nom": "cppreference – clock",
+     "url": "https://en.cppreference.com/c/chrono/clock",
+     "type": "cours",
+     "pourquoi": "Comment mesurer un temps processeur en C avec clock() et CLOCKS_PER_SEC."
+    },
+    {
+     "nom": "France-IOI – parcours d'algorithmique",
+     "url": "https://www.france-ioi.org/algo/chapters.php",
+     "type": "exercices",
+     "pourquoi": "Des problèmes progressifs (en C possible) pour t'entraîner à analyser un problème et à écrire un algorithme efficace."
+    }
+   ]
+  },
+  {
+   "code": "SAÉ 1.03",
+   "titre": "Installation d'un poste pour le développement",
+   "type": "sae",
+   "competences": [
+    "Administrer"
+   ],
+   "heures": null,
+   "resume": "Préparer un ordinateur prêt pour développer : choisir, installer et configurer le système et les outils, puis rédiger une notice et présenter tes choix.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir identifier les composants matériels et logiciels d'un poste (processeur, mémoire, stockage, système, pilotes) et vérifier qu'ils conviennent au besoin.",
+    "Savoir comparer des solutions (Windows avec MSYS2, WSL, machine virtuelle, double démarrage) selon des critères explicites et justifier ton choix.",
+    "Savoir installer un système d'exploitation (clé USB d'installation ou machine virtuelle, partitions, compte utilisateur).",
+    "Savoir installer et configurer les outils de développement : compilateur gcc, VS Code et ses extensions, Git, client FTP, SGBD.",
+    "Savoir utiliser les fonctions de base d'un système multitâche et multi-utilisateur (comptes, droits, processus, gestionnaire de paquets).",
+    "Savoir rédiger une notice d'utilisation claire : étapes numérotées, captures d'écran, résultat attendu, dépannage.",
+    "Savoir représenter l'architecture logicielle du poste dans un schéma (matériel, système, outils, projets).",
+    "Savoir présenter tes choix à l'oral et suivre une documentation d'installation en anglais."
+   ],
+   "comment_reviser": [
+    "Elle compte pour 40 % de la note de la compétence « Administrer » (livret : 60 % ressources, 40 % SAÉ ; c'est la seule SAÉ de cette compétence au S1).",
+    "Entraîne-toi sur ton propre PC : installe VS Code et gcc (MSYS2) pour R1.01 avec la documentation officielle en notant chaque étape, c'est le brouillon de ta notice.",
+    "Teste l'installation d'un Linux dans une machine virtuelle (VirtualBox) : tu peux tout recommencer sans risque pour ton Windows.",
+    "Pour chaque choix, garde une trace du pourquoi (tableau comparatif avec critères) : c'est le dossier d'étude attendu.",
+    "Fais tester ta notice par quelqu'un qui ne connaît pas le sujet et note où il bloque.",
+    "Sauvegarde tes données avant toute manipulation des partitions ou du démarrage."
+   ],
+   "pieges": [
+    "Installer « ce que tout le monde utilise » sans justifier le choix par le besoin du client.",
+    "Oublier d'ajouter le compilateur au PATH : gcc est introuvable dans le terminal.",
+    "Toucher aux partitions ou au démarrage (double démarrage) sans sauvegarde.",
+    "Écrire une notice qui saute des étapes « évidentes » ou sans captures : l'utilisateur reste bloqué.",
+    "Télécharger des logiciels sur des sites non officiels : passe par le site de l'éditeur.",
+    "Présenter une liste d'outils à l'oral sans montrer le poste fonctionner : une démonstration courte vaut mieux."
+   ],
+   "ressources": [
+    {
+     "nom": "MSYS2",
+     "url": "https://www.msys2.org/",
+     "type": "outil",
+     "pourquoi": "La distribution qui installe gcc sous Windows, celle qu'attend le projet C de R1.01 (C:\\msys64\\ucrt64\\bin\\gcc.exe)."
+    },
+    {
+     "nom": "VS Code – C/C++ avec MinGW-w64",
+     "url": "https://code.visualstudio.com/docs/cpp/config-mingw",
+     "type": "cours",
+     "pourquoi": "Le tutoriel officiel pas à pas pour installer gcc avec MSYS2 et configurer VS Code pour compiler et déboguer du C."
+    },
+    {
+     "nom": "Microsoft Learn – Installer WSL",
+     "url": "https://learn.microsoft.com/fr-fr/windows/wsl/install",
+     "type": "cours",
+     "pourquoi": "La documentation officielle en français pour avoir un vrai Linux (Ubuntu) dans Windows."
+    },
+    {
+     "nom": "VirtualBox",
+     "url": "https://www.virtualbox.org/",
+     "type": "outil",
+     "pourquoi": "Logiciel gratuit de machines virtuelles pour installer et tester un Linux sans toucher à ton Windows."
+    },
+    {
+     "nom": "Ubuntu – Install Ubuntu Desktop",
+     "url": "https://ubuntu.com/tutorials/install-ubuntu-desktop",
+     "type": "cours",
+     "pourquoi": "Le tutoriel officiel d'installation d'Ubuntu : clé USB, partitionnement, premier démarrage."
+    },
+    {
+     "nom": "Documentation Ubuntu francophone",
+     "url": "https://doc.ubuntu-fr.org/",
+     "type": "cours",
+     "pourquoi": "La documentation communautaire en français pour installer et configurer à peu près tout sous Linux."
+    }
+   ]
+  },
+  {
+   "code": "SAÉ 1.04",
+   "titre": "Création d'une base de données",
+   "type": "sae",
+   "competences": [
+    "Gérer"
+   ],
+   "heures": null,
+   "resume": "Concevoir et créer une vraie base de données à partir d'un cahier des charges : modèle UML, schéma relationnel, script SQL de création, jeu de données et rapport sur l'utilité de ces données.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir analyser un cahier des charges et produire un diagramme de classes UML complet (classes, attributs, associations, multiplicités).",
+    "Savoir traduire ce modèle en schéma relationnel normalisé (3NF) avec clés primaires et étrangères.",
+    "Savoir écrire le script SQL de création (CREATE TABLE, types, PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE) en créant les tables dans le bon ordre.",
+    "Savoir constituer un jeu de données réaliste et cohérent (INSERT) qui respecte toutes les contraintes, y compris des cas limites.",
+    "Savoir écrire des requêtes qui démontrent que la base répond aux besoins (jointures, agrégats, GROUP BY).",
+    "Savoir expliquer dans un rapport l'importance des données pour l'entreprise (usages, valeur, qualité, RGPD)."
+   ],
+   "comment_reviser": [
+    "Elle compte pour 40 % de la note de la compétence « Gérer » (livret : 60 % ressources, 40 % SAÉ ; c'est la seule SAÉ de cette compétence au S1).",
+    "Termine d'abord les TD de R1.05 (TD3 à TD8) : ils reprennent exactement les étapes de la SAÉ (UML, relationnel, normalisation, SQL).",
+    "Fais valider ton modèle conceptuel avant d'écrire la moindre ligne de SQL : une erreur de conception coûte cher ensuite.",
+    "Écris un script rejouable du début à la fin (DROP TABLE IF EXISTS, CREATE dans l'ordre des dépendances, puis INSERT) et teste-le sur une base vide.",
+    "Prépare pour chaque besoin du cahier des charges une requête qui y répond : c'est la meilleure preuve que ta base fonctionne.",
+    "Pour le rapport, appuie-toi sur R1.09 (valeur des données, RGPD)."
+   ],
+   "pieges": [
+    "Créer les tables dans le désordre : une clé étrangère ne peut pas référencer une table pas encore créée.",
+    "Un jeu de données trop petit ou incohérent (clé étrangère vers un identifiant inexistant, dates impossibles).",
+    "Oublier les contraintes (NOT NULL, UNIQUE, clés étrangères) : la base accepte alors n'importe quoi.",
+    "Mettre de vraies données personnelles dans le jeu d'essai : utilise des données fictives.",
+    "Rendre un modèle UML et un script SQL qui ne correspondent plus après des modifications.",
+    "Des noms de tables et de colonnes incohérents (accents, espaces, majuscules mélangées)."
+   ],
+   "ressources": [
+    {
+     "nom": "diagrams.net (draw.io)",
+     "url": "https://app.diagrams.net/",
+     "type": "outil",
+     "pourquoi": "Pour dessiner le diagramme de classes UML (formes UML intégrées) et l'exporter proprement."
+    },
+    {
+     "nom": "dbdiagram.io",
+     "url": "https://dbdiagram.io/",
+     "type": "outil",
+     "pourquoi": "Décris tes tables en quelques lignes de texte et obtiens le schéma relationnel avec les liens entre clés."
+    },
+    {
+     "nom": "Mockaroo",
+     "url": "https://www.mockaroo.com/",
+     "type": "outil",
+     "pourquoi": "Génère gratuitement jusqu'à 1 000 lignes de données fictives réalistes (noms, dates, e-mails, villes) en CSV ou en SQL."
+    },
+    {
+     "nom": "data.gouv.fr",
+     "url": "https://www.data.gouv.fr/",
+     "type": "outil",
+     "pourquoi": "Des milliers de jeux de données publics et gratuits si tu veux partir de données réelles non personnelles."
+    },
+    {
+     "nom": "MySQL 8.0 – CREATE TABLE",
+     "url": "https://dev.mysql.com/doc/refman/8.0/en/create-table.html",
+     "type": "cours",
+     "pourquoi": "La référence officielle de la création de tables : types, contraintes, clés étrangères."
+    },
+    {
+     "nom": "DB Fiddle",
+     "url": "https://www.db-fiddle.com/",
+     "type": "outil",
+     "pourquoi": "Exécute ton script complet sur un MySQL en ligne pour vérifier qu'il passe sans erreur du début à la fin."
+    }
+   ]
+  },
+  {
+   "code": "SAÉ 1.05",
+   "titre": "Recueil de besoins",
+   "type": "sae",
+   "competences": [
+    "Conduire"
+   ],
+   "heures": null,
+   "resume": "Jouer l'analyste face à un client : l'interroger pour comprendre ce qu'il veut vraiment, formaliser ses besoins (questionnaire, personas, scénarios, maquettes) et les présenter.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir préparer un questionnaire ou un guide d'entretien adapté au client (questions ouvertes pour explorer, fermées pour confirmer).",
+    "Savoir mener un entretien : écouter, relancer, reformuler, faire préciser les priorités et les contraintes (budget, délais, public).",
+    "Savoir identifier les acteurs d'un projet (client, utilisateurs, équipe) et les phases d'un cycle de développement.",
+    "Savoir formaliser les besoins : personas, scénarios d'usage, user stories (« En tant que…, je veux… afin de… »), liste de fonctionnalités priorisée.",
+    "Savoir réaliser des maquettes (croquis puis maquette numérique) pour valider les besoins avec le client.",
+    "Savoir présenter les besoins à l'oral avec un support numérique (diaporama, affiche ou site web) et intégrer les retours du client."
+   ],
+   "comment_reviser": [
+    "Elle compte pour 40 % de la note de la compétence « Conduire » (livret : 60 % ressources, 40 % SAÉ ; c'est la seule SAÉ de cette compétence au S1).",
+    "Prépare l'entretien par écrit (objectifs, questions, ordre) et rédige le compte rendu le jour même.",
+    "Reformule le besoin et fais-le valider par le client (« Si je résume, vous voulez… ») avant de passer aux maquettes.",
+    "Commence les maquettes sur papier pour itérer vite, puis passe à un outil numérique.",
+    "Mobilise R1.11 (entretien, prise de parole), R1.08 (organisation du client) et R1.02 (maquette web) ; si ton support est un site web, il compte aussi en R1.02 (coef 0,5).",
+    "Répète la présentation en équipe, chronométrée, avec une répartition claire de la parole."
+   ],
+   "pieges": [
+    "Proposer une solution technique avant d'avoir compris le problème du client.",
+    "Poser des questions orientées ou fermées trop tôt : tu confirmes tes idées au lieu de découvrir les besoins.",
+    "Confondre le client (celui qui commande) et l'utilisateur final (celui qui se sert du produit).",
+    "Des personas inventés sans lien avec les réponses recueillies.",
+    "Des maquettes trop détaillées (couleurs, polices) alors que la structure n'est pas encore validée.",
+    "Produire les livrables avec une IA sans le signaler : fraude selon le règlement d'examen."
+   ],
+   "ressources": [
+    {
+     "nom": "OpenClassrooms – Initiez-vous à la gestion de projet agile",
+     "url": "https://openclassrooms.com/fr/courses/4507926-initiez-vous-a-la-gestion-de-projet-agile",
+     "type": "cours",
+     "pourquoi": "Comprendre l'utilisateur par l'entretien et les personas, puis écrire des user stories et un backlog (gratuit, environ 6 h)."
+    },
+    {
+     "nom": "Atlassian – les user stories",
+     "url": "https://www.atlassian.com/fr/agile/project-management/user-stories",
+     "type": "cours",
+     "pourquoi": "Explication claire en français de la forme « En tant que… je veux… afin de… », avec des exemples."
+    },
+    {
+     "nom": "Nielsen Norman Group – Personas",
+     "url": "https://www.nngroup.com/articles/persona/",
+     "type": "cours",
+     "pourquoi": "Comment construire des personas à partir de vraies données sur les utilisateurs (en anglais)."
+    },
+    {
+     "nom": "Excalidraw",
+     "url": "https://excalidraw.com/",
+     "type": "outil",
+     "pourquoi": "Tableau blanc gratuit au style dessiné à la main, idéal pour des maquettes rapides (wireframes), même à plusieurs."
+    },
+    {
+     "nom": "Penpot",
+     "url": "https://penpot.app/",
+     "type": "outil",
+     "pourquoi": "Outil de maquettage libre et gratuit dans le navigateur pour passer du croquis à une maquette propre et partageable."
+    },
+    {
+     "nom": "Framaforms",
+     "url": "https://framaforms.org/",
+     "type": "outil",
+     "pourquoi": "Crée un questionnaire en ligne libre et gratuit ; les formulaires restent actifs 6 mois par défaut."
+    }
+   ]
+  },
+  {
+   "code": "SAÉ 1.06",
+   "titre": "Découverte de l'environnement économique et écologique",
+   "type": "sae",
+   "competences": [
+    "Collaborer"
+   ],
+   "heures": null,
+   "resume": "En équipe, étudier une entreprise ou un secteur du numérique (positionnement économique ou écologique, concurrents, impacts), puis en faire un rapport et une présentation numérique.",
+   "progression": [],
+   "a_maitriser": [
+    "Savoir collecter des informations fiables sur une entreprise (statut, taille, chiffre d'affaires, activité, concurrents) et citer tes sources.",
+    "Savoir analyser son environnement et sa stratégie avec des outils simples : PESTEL, SWOT, parties prenantes.",
+    "Savoir évaluer son positionnement écologique : impact environnemental de ses produits ou services, démarche RSE, écoconception.",
+    "Savoir synthétiser ces informations dans un rapport structuré (problématique, plan, conclusion) et des documents numériques clairs.",
+    "Savoir travailler en équipe : répartir les tâches, tenir un planning, communiquer, gérer un désaccord.",
+    "Savoir présenter à l'oral le travail de l'équipe et exploiter des sources en anglais."
+   ],
+   "comment_reviser": [
+    "Elle compte pour 40 % de la note de la compétence « Collaborer » (livret : 60 % ressources, 40 % SAÉ ; c'est la seule SAÉ de cette compétence au S1).",
+    "Dès la première séance, fixez les rôles, un planning et un outil partagé (tableau Trello, dossier commun) ; notez qui fait quoi.",
+    "Tenez la bibliographie au fil de l'eau (lien, auteur, date, ce qu'on en retient) : c'est long à refaire à la fin.",
+    "Prenez les chiffres dans des sources officielles (INSEE, Arcep, ADEME, registres d'entreprises) et croisez-les.",
+    "Construisez le rapport autour d'une problématique (une question), pas d'un catalogue d'informations.",
+    "Répétez l'oral ensemble, avec des transitions entre les intervenants."
+   ],
+   "pieges": [
+    "Faire un exposé encyclopédique sans analyse ni problématique.",
+    "Des chiffres sans source ni date, ou la communication de l'entreprise elle-même prise pour argent comptant.",
+    "Un travail d'équipe qui se résume à coller des parties écrites séparément (style et plan incohérents).",
+    "Mélanger positionnement économique (marché, concurrents, modèle économique) et positionnement écologique (impacts, RSE) quand le sujet demande l'un des deux.",
+    "Plagiat ou IA non signalée : fraude selon le règlement d'examen.",
+    "Des diapositives surchargées de texte."
+   ],
+   "ressources": [
+    {
+     "nom": "Societe.com",
+     "url": "https://www.societe.com/",
+     "type": "outil",
+     "pourquoi": "Informations gratuites sur les entreprises françaises (SIREN, dirigeants, chiffre d'affaires quand il est publié)."
+    },
+    {
+     "nom": "INSEE",
+     "url": "https://www.insee.fr/fr/accueil",
+     "type": "outil",
+     "pourquoi": "Les statistiques officielles sur les entreprises, les secteurs et l'économie française pour situer ton étude."
+    },
+    {
+     "nom": "Bpifrance Création – l'analyse PESTEL",
+     "url": "https://bpifrance-creation.fr/encyclopedie/letude-marche/outils-danalyse/etudier-lenvironnement-du-marche-lanalyse-pestel",
+     "type": "cours",
+     "pourquoi": "La méthode pas à pas pour analyser l'environnement d'une entreprise, avec un exemple et une matrice à télécharger."
+    },
+    {
+     "nom": "Arcep – l'empreinte environnementale du numérique",
+     "url": "https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/lempreinte-environnementale-du-numerique.html",
+     "type": "cours",
+     "pourquoi": "Les chiffres officiels sur l'impact environnemental du numérique en France pour le volet écologique."
+    },
+    {
+     "nom": "Infosphère (UQAM)",
+     "url": "https://infosphere.uqam.ca/",
+     "type": "cours",
+     "pourquoi": "Pour trouver, évaluer et citer correctement tes sources."
+    },
+    {
+     "nom": "Canva",
+     "url": "https://www.canva.com/fr_fr/",
+     "type": "outil",
+     "pourquoi": "Pour créer gratuitement des documents numériques soignés (infographie, affiche, diaporama) à partir de modèles."
+    }
+   ]
+  }
+ ]
+}
